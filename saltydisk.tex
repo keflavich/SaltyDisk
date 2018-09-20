@@ -1,0 +1,129 @@
+
+\documentclass[twocolumn]{aastex62}
+\input{preface}
+\newcommand{\sourcei}{SrcI\xspace}
+\newcommand{\sourcen}{SrcN\xspace}
+\newcommand{\sourcex}{SrcX\xspace}
+\begin{document}
+\input{authors}
+
+\title{Orion \sourcei's disk is salty}
+\begin{abstract}
+    We report the detection of NaCl and KCl and the $^{37}$Cl and $^{41}$K
+    isotopologues toward the disk around Orion \sourcei.
+    This is the first detection of these molecules in the interstellar
+    medium not associated with the ejecta of evolved stars.
+    These lines are likely to be unique tracers of a rare process, either
+    the birth of high-mass stars or the aftermath of a stellar collision.
+\end{abstract}
+
+\section{Introduction}
+Molecules consisting of alkali metals and halogens have been detected
+toward evolved stars including IRC +10216 \citep{Cernicharo1987a}, 
+
+
+\section{Observations}
+The observations presented here are described in \citet{Ginsburg2018a} as part
+of ALMA project 2016.1.00165.S.  We use the robust 0.5 weighted spectral cubes
+from all three bands (B3 3 mm, B6 1 mm, B7 0.85 mm) for the spectral analysis
+presented here.
+
+Appendix D of that paper describes the spectral extraction method,
+which we summarize here.  We used the U232.511 line (which we identify here as
+NaCl v=1 J=18-17) to create a velocity centroid map.  For each spectrum with
+a measured velocity, we shifted the spectrum to 0 \kms, then averaged those
+spectra.  The averaging area is approximately the extent of the continuum
+disk, 0.03 square arcseconds, or about 20 beam areas at band 6.
+
+In that appendix, we reported that ``there is no consistent pattern to the
+detected lines and no individual species can explain more than a few of the
+observed lines.''  This statement was incorrect, as there are obvious carriers
+for the majority of the unidentified lines that we had simply overlooked:
+NaCl (11 transitions in-band, 10 detections), Na$^{37}$Cl (8 transitions, 8
+detections), KCl (8 transitions, 8 detections), $^{41}$KCl (8 transitions, 4
+detections), and K$^{37}$Cl (7 transitions, 5 detections).
+The nondetections all occur in the wings of other lines or in absorption
+features from the surrounding molecular cloud.
+
+Figures 1-3 shows the spectra with all lines labeled.
+
+\begin{figure*}[!htp]
+\includegraphics[scale=1,width=6in]{figures/lines_labeled_OrionSourceI_B3_spw0_robust0.5.pdf}
+\includegraphics[scale=1,width=6in]{figures/lines_labeled_OrionSourceI_B3_spw1_robust0.5.pdf}
+\includegraphics[scale=1,width=6in]{figures/lines_labeled_OrionSourceI_B3_spw2_robust0.5.pdf}
+\includegraphics[scale=1,width=6in]{figures/lines_labeled_OrionSourceI_B3_spw3_robust0.5.pdf}
+\caption{Stacked spectra  B3}
+\label{fig:spectrab3}
+\end{figure*}
+\begin{figure*}[!htp]
+\includegraphics[scale=1,width=6in]{figures/lines_labeled_OrionSourceI_B6_spw0_robust0.5.pdf}
+\includegraphics[scale=1,width=6in]{figures/lines_labeled_OrionSourceI_B6_spw1_robust0.5.pdf}
+\includegraphics[scale=1,width=6in]{figures/lines_labeled_OrionSourceI_B6_spw2_robust0.5.pdf}
+\includegraphics[scale=1,width=6in]{figures/lines_labeled_OrionSourceI_B6_spw3_robust0.5.pdf}
+\caption{Stacked spectra B6}
+\label{fig:spectrab6}
+\end{figure*}
+\begin{figure*}[!htp]
+\includegraphics[scale=1,width=6in]{figures/lines_labeled_OrionSourceI_B7.lb_spw0_robust0.5.pdf}
+\includegraphics[scale=1,width=6in]{figures/lines_labeled_OrionSourceI_B7.lb_spw1_robust0.5.pdf}
+\includegraphics[scale=1,width=6in]{figures/lines_labeled_OrionSourceI_B7.lb_spw2_robust0.5.pdf}
+\includegraphics[scale=1,width=6in]{figures/lines_labeled_OrionSourceI_B7.lb_spw3_robust0.5.pdf}
+\caption{Stacked spectra B7}
+\label{fig:spectrab7}
+\end{figure*}
+
+\section{Results}
+We have clearly identified the carrier of the majority [what number?]
+of unidentified lines in the \citet{Ginsburg2018a} spectra.
+The lines have amplitudes in the range 0.5-3 mJy \perbeam, corresponding
+to brightness temperatures 5-20 K.
+
+The low observed brightness temperatures suggest that the emission from
+these lines is optically thin.
+
+
+We plot and fit rotational diagrams to measure the abundance and temperature of
+these molecules.  However, the results are ambiguous: for each vibrational
+state with more than one detected transition, we are able to fit an excitation
+temperature, but the abundances of the vibrationally excited states are much
+higher than the ground state.  This distribution implies that the lines are
+radiatively excited, and suggests that many of the unidentified transitions in
+our bandpass may be from uncatalogued higher vibrational states of these same
+molecules, since the abundance rises nearly linearly from v=0 to v=4 for NaCl.
+
+The excitation temperatures derived from the rotational diagram fits are in the
+range 50-100 K, which implies that the lines are sub-thermally excited.  The
+radiation temperature within 50 AU of a $10^4$ \lsun star should be $T_R>500$ K,
+so how do we get lower temperatures?
+{\color{red} This is a place for some discussion: is it possible that the gas
+is cooler and the transitions we're seeing are affected by collisions?
+This is the process invoked in \citet{Kaplan2017a}, but it doesn't make sense here:
+it requires the gas to be below the radiation temperature.  Also, the critical density
+of these transitions is likely to be absurdly high, given their A-values in the 0.1s
+range.}
+
+\section{Discussion}
+The lines we have reported have only been seen in a small handful of other sources,
+all of which were moderately high-mass evolved stars blowing off their envelopes.
+The known detections include the carbon star envelope IRC +10216 \citep{Cernicharo1987a},
+the post-AGB star envelope CRL 2688 \citep{Highberger2003a}, and the oxygen-rich
+evolved star envelopes of VY Canis Majoris and IK Tauri \citep{Milam2007a}.
+In these evolved stars, v=0 rotational transitions of NaCl were observed
+with rotational temperatures $T_{rot}\sim70-100$ K.
+% Carbon star envelope IRC +10216, d ~ 170 pc
+% CRL2688 post-AGB * \citep{Highberger2003a} ~ 1 kpc
+% IK Tauri, VY Canis Majoris \citep{Milam2007a}
+
+These lines trace a rare physical phenomenon.  They are therefore an excellent tracer
+of this phenomenon, assuming they are detected
+
+Sodium and potassium are rarely observed in the dense molecular interstellar medium.
+They are usually assumed to be rapidly incorporated into dust grains [cite?  Milam
+says this, but there's a better original source].  Since we clearly observe NaCl
+and KCl in the atmosphere of the disk, it is clear that there is a zone where either
+dust has not yet formed or where dust is destroyed and returned to the gas phase.
+{\color{red} What can we say about the dust destruction/sublimation zone?  I need
+to do some disk research; there must be a dust sublimation zone at the surfaces
+of disks in addition to the radial one.}
+
+\end{document}
