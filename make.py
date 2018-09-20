@@ -66,9 +66,9 @@ def do_everything():
     if not os.system('bibexport')==0:
         print("bibexport is not installed.")
     else:
-        assert os.system('bibexport -o extracted.bib {papername}.aux').format(papername=name) == 0
+        assert os.system('bibexport -o extracted.bib {papername}.aux'.format(papername=name)) == 0
         print("bibexport created extracted.bib")
-        
+
         try:
             update_bibentries.update_bibentries()
             print("Successfully updated bibentries")
