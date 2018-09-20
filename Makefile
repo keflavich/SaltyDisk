@@ -15,8 +15,8 @@ all: gitstuff.tex saltydisk
 .PHONY: saltydisk
 saltydisk: 
 	echo "texpath: ${texpath}"
-	python make_apjform.py
 	python make.py --texpath=${texpath}
+	python make_apjform.py
 	gs -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=saltydisk_compressed.pdf saltydisk.pdf
 	python paper2arxiv.py --apj
 	python paper2arxiv.py
