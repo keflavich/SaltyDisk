@@ -22,6 +22,14 @@ Molecules consisting of alkali metals and halogens have been detected
 toward evolved stars including IRC +10216 \citep{Cernicharo1987a}, 
 {\color{red}Discussion of AGB*s is now in the discussion session.}
 
+The lines of NaCl and KCl have been catalogued by \citet{Caris2004a}
+and more comprehensively and thoroughly by \citet{Barton2014a}.
+The latter includes over 10$^5$ transitions for each species
+with levels up to $E_U\sim5\ee{4}$ K.  Prior to this work,
+no astronomical detections of vibrationally excited transitions
+of any of these species have been reported \citep[e.g., see the review
+by][]{McGuire2018}
+
 In \citet[][the brine paper]{Ginsburg2018b}, we used lines of
 \water and one or more unknown species to measure the rotation curve of
 the disk around \sourcei.  We have now identified these unknown lines as
@@ -38,20 +46,27 @@ which we summarize here.  We used the U232.511 line (which we identify here as
 NaCl v=1 J=18-17) to create a velocity centroid map.  For each spectrum with
 a measured velocity, we shifted the spectrum to 0 \kms, then averaged those
 spectra.  The averaging area is approximately the extent of the continuum
-disk, 0.03 square arcseconds, or about 20 beam areas at band 6.
+disk, 0.03 square arcseconds, or about 20 beam areas at band 6, resulting
+in an improvement in the signal-to-noise of about $4\times$.
 
-In that appendix, we reported that ``there is no consistent pattern to the
-detected lines and no individual species can explain more than a few of the
-observed lines.''  This statement was incorrect, as there are obvious carriers
-for the majority of the unidentified lines that we had simply overlooked:
-{\color{red}The following needs to be updated; I found many more transitions:}
-NaCl (11 transitions in-band, 10 detections), Na$^{37}$Cl (8 transitions, 8
-detections), KCl (8 transitions, 8 detections), $^{41}$KCl (8 transitions, 4
-detections), and K$^{37}$Cl (7 transitions, 5 detections).
-The nondetections all occur in the wings of other lines or in absorption
-features from the surrounding molecular cloud.
 
-Figures 1-3 shows the spectra with all lines labeled.
+\section{Results}
+We have clearly identified the carrier of the majority [what number?]
+of unidentified lines in the \citet{Ginsburg2018b} spectra.
+The lines have amplitudes in the range 0.5-3 mJy \perbeam, corresponding
+to brightness temperatures 5-20 K.
+
+In the appendix of \citet{Ginsburg2018b}, we reported that ``there is no
+consistent pattern to the detected lines and no individual species can explain
+more than a few of the observed lines.''  This statement was incorrect, as
+there are obvious carriers for the majority of the unidentified lines that we
+had simply overlooked: NaCl, KCl, and their isotopologues.
+
+Figures 1-3 shows the spectra with lines labeled.  We have labeled all of the
+detections and marginal detections of salt lines.  We also labeled the most
+prominent outflow (e.g., SiO and H$_2$O) lines.
+%We additionally labeled
+%\emph{some} of the lines that were not detected because of severe confusion
 
 \begin{figure*}[!htp]
 \includegraphics[scale=1,width=5.5in]{figures/lines_labeled_OrionSourceI_B3_spw0_robust0.5.pdf}
@@ -78,11 +93,6 @@ Figures 1-3 shows the spectra with all lines labeled.
 \label{fig:spectrab7}
 \end{figure*}
 
-\section{Results}
-We have clearly identified the carrier of the majority [what number?]
-of unidentified lines in the \citet{Ginsburg2018b} spectra.
-The lines have amplitudes in the range 0.5-3 mJy \perbeam, corresponding
-to brightness temperatures 5-20 K.
 
 In Tables \ref{tab:all_detections_B3}-\ref{tab:all_detections_B7}, we report
 all of the lines that are in our observable band and whether or not they were
@@ -94,6 +104,12 @@ not Gaussian and may be affected by other lines).
 We additionally include a flag `c' for `confused', which we add to the flag
 string if the line is blended with another brighter line of a different species.
 
+\textbf{\color{red} At the moment, all of the line frequencies are shifted
+to higher frequencies by 17 \kms (KCl) and 3 \kms (NaCl) because of a discrepancy
+between the \citep{Barton2014a} catalog line frequencies and those of CDMS,
+JPL, and SLAIM.  The latter three, catalogued in Splatalogue, agree, and they
+agree better with my measurements.}
+
 \input{lines_in_band3.tex}
 \input{lines_in_band6.tex}
 \input{lines_in_band7.tex}
@@ -101,26 +117,6 @@ string if the line is blended with another brighter line of a different species.
 The low observed brightness temperatures suggest that the emission from
 these lines is optically thin.
 
-
-We plot and fit rotational diagrams to measure the abundance and temperature of
-these molecules.  However, the results are ambiguous: for each vibrational
-state with more than one detected transition, we are able to fit an excitation
-temperature, but the abundances of the vibrationally excited states are much
-higher than the ground state.  This distribution implies that the lines are
-radiatively excited, and suggests that many of the unidentified transitions in
-our bandpass may be from uncatalogued higher vibrational states of these same
-molecules, since the abundance rises nearly linearly from v=0 to v=4 for NaCl.
-
-The excitation temperatures derived from the rotational diagram fits are in the
-range 50-100 K, which implies that the lines are sub-thermally excited.  The
-radiation temperature within 50 AU of a $10^4$ \lsun star should be $T_R>500$ K,
-so how do we get lower temperatures?
-{\color{red} This is a place for some discussion: is it possible that the gas
-is cooler and the transitions we're seeing are affected by collisions?
-This is the process invoked in \citet{Kaplan2017a}, but it doesn't make sense here:
-it requires the gas to be below the radiation temperature.  Also, the critical density
-of these transitions is likely to be absurdly high, given their A-values in the 0.1s
-range.}
 
 
 
@@ -192,6 +188,25 @@ with $T_*\sim4000$ K \citep{Testi2010a}, excites molecules to high vibrational
 excitation states, from which they cascade through rovibrational transitions
 down to the v=0 state, providing a relatively uniform level population
 from $E_U=0$ to $E_U\approx T_*$ instead of a thermal level population.
+
+% We plot and fit rotational diagrams to measure the abundance and temperature of
+% these molecules.  However, the results are ambiguous: for each vibrational
+% state with more than one detected transition, we are able to fit an excitation
+% temperature, but the abundances of the vibrationally excited states are much
+% higher than the ground state.  This distribution implies that the lines are
+% radiatively excited.
+% 
+% The excitation temperatures derived from the rotational diagram fits are in the
+% range 50-100 K.  The
+% radiation temperature within 50 AU of a $10^4$ \lsun star should be $T_R>500$ K,
+% so how do we get lower temperatures?
+% {\color{red} This is a place for some discussion: is it possible that the gas
+% is cooler and the transitions we're seeing are affected by collisions?
+% This is the process invoked in \citet{Kaplan2017a}, but it doesn't make sense here:
+% it requires the gas to be below the radiation temperature.  Also, the critical density
+% of these transitions is likely to be absurdly high, given their A-values in the 0.1s
+% range.}
+
 
 \begin{figure*}[!htp]
 \includegraphics[scale=1,width=3.5in]{figures/KCl_rotational_diagrams.pdf}
