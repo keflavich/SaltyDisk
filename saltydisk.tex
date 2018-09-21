@@ -145,18 +145,42 @@ to dissociate the molecules [would be nice to back this up with numbers].  Alter
 at high densities and more moderate temperatures, the salts would likely be absorbed
 into dust grains.
 
-Within each vibrational state for which we have several transitions, we can measure
-a rotational temperature.  For the KCl v=0 state, in which we have detected 4 rotational
-transitions from $30 < E_U < 400$ K, the best fit rotational temperature is
-$T_{rot}\sim105$ K.  At such a low temperature, the populations of the vibrationally
-excited states should be effectively zero.  These observations combined suggest
-that there is a radiative mechanism exciting the vibrational states.
+We calculate the level population as
+\begin{equation}
+    N_u = \frac{8 \pi \nu k_B}{g_u c^2 h A_{ul}} \int T_A d\nu
+%    nline = 8 * np.pi * freq * constants.k_B / constants.h / Aul / constants.c**2
+%    # term2 = np.exp(-constants.h*freq/(constants.k_B*Tex)) -1
+%    # term2 -> kt / hnu
+%    # kelvin-hertz
+%    Khz = (kkms * (freq/constants.c)).to(u.K * u.MHz)
+%    return (nline * Khz / degeneracies).to(u.cm**-2)
+\end{equation}
+{\color{red} (this is mostly a sanity check)}
+
+Within each vibrational state for which we have several transitions, we can
+measure a rotational temperature.  For the KCl v=0 state, in which we have
+detected 4 rotational transitions from $30 < E_U < 400$ K, the best fit
+rotational temperature is $T_{rot}\sim105$ K (Figure
+\ref{fig:rotationdiagrams}).  At such a low temperature, the populations of the
+vibrationally excited states should be effectively zero.  These observations
+combined suggest that there is a radiative mechanism exciting the vibrational
+states.
 
 A plausible scenario is that the hot radiation field from the central star,
 with $T_*\sim4000$ K \citep{Testi2010a}, excites molecules to high vibrational
 excitation states, from which they cascade through rovibrational transitions
 down to the v=0 state, providing a relatively uniform level population
 from $E_U=0$ to $E_U\approx T_*$ instead of a thermal level population.
+
+\begin{figure*}[!htp]
+\includegraphics[scale=1,width=3.5in]{figures/KCl_rotational_diagrams.pdf}
+\includegraphics[scale=1,width=3.5in]{figures/NaCl_rotational_diagrams.pdf}
+\caption{Rotational energy diagrams for the KCl and NaCl lines.  While each
+vibrational state can internally be explained reasonably well by a single
+consistent rotation temperature in the range $T_{rot}\sim50-150$ K, the population
+distribution between vibrational excitation states cannot.}
+\label{fig:rotationdiagrams}
+\end{figure*}
 
 \input{NaCl_line_parameters.tex}
 \input{Na37Cl_line_parameters.tex}
