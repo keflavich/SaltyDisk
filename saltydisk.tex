@@ -9,31 +9,45 @@
 
 \title{Orion \sourcei's disk is salty}
 \begin{abstract}
-    We report the detection of NaCl and KCl and the $^{37}$Cl and $^{41}$K
+    We report the detection of NaCl and KCl and their $^{37}$Cl and $^{41}$K
     isotopologues toward the disk around Orion \sourcei.
     This is the first detection of these molecules in the interstellar
-    medium not associated with the ejecta of evolved stars.
+    medium not associated with the ejecta of evolved stars.  It is also
+    the first ever detection of the vibrationally excited states of these
+    lines in the ISM, up to v=8.
     These lines are likely to be unique tracers of a rare process, either
     the birth of high-mass stars or the aftermath of a stellar collision.
 \end{abstract}
 
 \section{Introduction}
 Molecules consisting of alkali metals and halogens have been detected
-toward evolved stars including IRC +10216 \citep{Cernicharo1987a},
-{\color{red}Discussion of AGB*s is now in the discussion session.}
+toward evolved stars including the carbon star IRC +10216 \citep{Cernicharo1987a},
+oxygen-rich evolved stars IK Tauri and VY Canis Majoris \citep{Milam2007a},
+and the post-AGB star envelope CRL 2688 \citep{Highberger2003a}.
+The limited environments in which these molecules have been detected
+suggests that they only exist in the gas phase for a brief period
+when being ejected from dying stars before being incorporated into
+dust grains.
 
-The lines of NaCl and KCl have been catalogued by \citet{Caris2004a}
-and more comprehensively and thoroughly by \citet{Barton2014a}.
-The latter includes over 10$^5$ transitions for each species
-with levels up to $E_U\sim5\ee{4}$ K.  Prior to this work,
-no astronomical detections of vibrationally excited transitions
-of any of these species have been reported \citep[e.g., see the review
-by][]{McGuire2018}
+The lines of NaCl and KCl have been catalogued by \citet{Caris2004a} and more
+comprehensively by \citet{Barton2014a}.  The latter includes over 10$^5$
+transitions for each species with levels up to $E_U\sim5\ee{4}$ K.  Prior to
+this work, no astronomical detections of vibrationally excited transitions of
+any of these species have been reported \citep[e.g., see the review
+by][]{McGuire2018a}.
 
-In \citet[][the brine paper]{Ginsburg2018b}, we used lines of
-\water and one or more unknown species to measure the rotation curve of
-the disk around \sourcei.  We have now identified these unknown lines as
-transitions of NaCl and KCl.
+Disks around forming high-mass stars have been resolved only a handful of
+times.  The disk around Orion Source I (\sourcei) has frequently been observed
+\citep{Hirota2014a,Plambeck2016a,Ginsburg2018a}, but most molecular species
+detected trace either an outflow (e.g., SiO) or some combination of the outflow
+and the disk (e.g., \water).  In HH80/81, a $\sim4$ \msun disk around a
+$\sim10-20$ \msun star, several lines of SO$_2$ are associated with the disk
+\citep{Girart2017a}.  Beyond this pair, only disordered structures or
+disk-envelope blends have been observed.
+
+In \citet[][the brine paper]{Ginsburg2018b}, we used lines of \water and one or
+more unknown species to measure the rotation curve of the disk around \sourcei.
+We have now identified these unknown lines as transitions of NaCl and KCl.
 
 \section{Observations}
 The observations presented here are described in \citet{Ginsburg2018b} as part
@@ -51,8 +65,10 @@ in an improvement in the signal-to-noise of about $4\times$.
 
 
 \section{Results}
-We have clearly identified the carrier of the majority [what number?]
-of unidentified lines in the \citet{Ginsburg2018b} spectra.
+We have clearly identified the carrier of the majority 
+of unidentified lines in the \citet{Ginsburg2018b} spectra (only 2-3 lines are
+unidentified in the B6/B7 spectra, though there are several in B3 we have not
+identified).
 The lines have amplitudes in the range 0.5-3 mJy \perbeam, corresponding
 to brightness temperatures 5-20 K.
 
@@ -104,11 +120,24 @@ not Gaussian and may be affected by other lines).
 We additionally include a flag `c' for `confused', which we add to the flag
 string if the line is blended with another brighter line of a different species.
 
-\textbf{\color{red} At the moment, all of the line frequencies are shifted
-to higher frequencies by 17 \kms (KCl) and 3 \kms (NaCl) because of a discrepancy
-between the \citep{Barton2014a} catalog line frequencies and those of CDMS,
-JPL, and SLAIM.  The latter three, catalogued in Splatalogue, agree, and they
-agree better with my measurements.}
+We use the \citet{Barton2014a} catalog to identify lines with vibrational
+states $v>2$ for KCl and $v>4$ for NaCl, since these were not cataloged in any
+of the Splatalogue sources (i.e., CDMS, SLAIM, JPL {\color{red}TODO: cite
+these}).   However, we found a systematic discrepancy in the rest frequencies
+reported by \citet{Barton2014a} and the other catalogs, with the KCl lines
+being offset by typically 15-20 \kms.  The offset is a function of the vibrational
+and rotational energy states, indicating that it resulted from an incorrect rotational
+and distortion constant.  We correct for this error by performing a bilinear fit
+in frequency as a function of $v_u$ and $J_u$.  In the transitions available
+in both catalogs, the resulting offsets are generally $<0.1$ \kms, which is
+good enough to get a reliable match.  We apply these fitted models to the
+higher-$v$ states to get corrected rest frequencies.
+
+% \textbf{\color{red} At the moment, all of the line frequencies are shifted
+% to higher frequencies by 17 \kms (KCl) and 3 \kms (NaCl) because of a discrepancy
+% between the \citep{Barton2014a} catalog line frequencies and those of CDMS,
+% JPL, and SLAIM.  The latter three, catalogued in Splatalogue, agree, and they
+% agree better with my measurements.}
 
 \input{lines_in_band3.tex}
 \input{lines_in_band6.tex}
