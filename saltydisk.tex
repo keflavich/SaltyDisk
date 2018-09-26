@@ -49,7 +49,7 @@ In \citet[][the brine paper]{Ginsburg2018b}, we used lines of \water and one or
 more unknown species to measure the rotation curve of the disk around \sourcei.
 We have now identified these unknown lines as transitions of NaCl and KCl.
 
-\section{Observations}
+\section{Observations and Analysis}
 The observations presented here are described in \citet{Ginsburg2018b} as part
 of ALMA project 2016.1.00165.S.  We use the robust 0.5 weighted spectral cubes
 from all three bands (B3 3 mm, B6 1 mm, B7 0.85 mm) for the spectral analysis
@@ -62,14 +62,16 @@ a measured velocity, we shifted the spectrum to 0 \kms, then averaged those
 spectra.  The averaging area is approximately the extent of the continuum
 disk, 0.03 square arcseconds, or about 20 beam areas at band 6, resulting
 in an improvement in the signal-to-noise of about $4\times$.
+This stacked spectrum, shown in Figures \ref{fig:spectrab3}-\ref{fig:spectrab7},
+is the average spectrum across the disk identified in \citet{Ginsburg2018b}:
+it traces material just above and below the optically thick continuum disk, and
+for the lines discussed here, includes no emission associated with the outflow.
 
 
-\section{Results}
-We have clearly identified the carrier of the majority 
-of unidentified lines in the \citet{Ginsburg2018b} spectra (only 2-3 lines are
-unidentified in the B6/B7 spectra, though there are several in B3 we have not
-identified).
-The lines have amplitudes in the range 0.5-3 mJy \perbeam, corresponding
+We have clearly identified the carrier of the majority of unidentified lines in
+the \citet{Ginsburg2018b} spectra (only 2-3 lines are unidentified in the B6/B7
+spectra, though there are several in B3 we have not identified).  The lines
+have amplitudes in the range 0.5-3 mJy \perbeam, corresponding
 to brightness temperatures 5-20 K.
 
 In the appendix of \citet{Ginsburg2018b}, we reported that ``there is no
@@ -78,7 +80,7 @@ more than a few of the observed lines.''  This statement was incorrect, as
 there are obvious carriers for the majority of the unidentified lines that we
 had simply overlooked: NaCl, KCl, and their isotopologues.
 
-Figures 1-3 shows the spectra with lines labeled.  We have labeled all of the
+Figures \ref{fig:spectrab3}-\ref{fig:spectrab7} shows the spectra with lines labeled.  We have labeled all of the
 detections and marginal detections of salt lines.  We also labeled the most
 prominent outflow (e.g., SiO and H$_2$O) lines.
 %We additionally labeled
@@ -158,59 +160,81 @@ evolved star envelopes of VY Canis Majoris and IK Tauri \citep{Milam2007a}.
 \sourcei is only the 5th astronomical source in which KCl and NaCl have been
 detected.
 However, there were no detections of vibrationally excited NaCl or KCl in any
-of the previous observations \citep[][presented the most systematic study of salt
-lines, which only included detections of v=0 rotational transitions]{Agundez2012a},
-while \sourcei has clear detections at least up to v=6, likely up to v=8, in both
-NaCl and KCl.
+of the previous observations (\citealt{Agundez2012a} presented the most
+systematic study of salt lines, which only included detections of v=0
+rotational transitions),
+while \sourcei exhibits clear emission up to v=6 in both NaCl and KCl.
 
 In these evolved stars, v=0 rotational transitions of NaCl were observed
-with rotational temperatures $T_{rot}\sim70-100$ K (IK Tau, VY CMa), inferred
-local temperatures of $\sim200$ K in shocks (CRL 2688), .
+with rotational temperatures ${T_{rot}\sim70-100}$ K (IK Tau, VY CMa), inferred
+local temperatures of $\sim200$ K in shocks (CRL 2688) and $T\approx700$ K  in
+an expanding shell (IRC+10216).
 % Carbon star envelope IRC +10216, d ~ 170 pc
 % CRL2688 post-AGB * \citep{Highberger2003a} ~ 1 kpc
 % IK Tauri, VY Canis Majoris \citep{Milam2007a}
 
-These lines trace a rare physical phenomenon.  They are therefore an excellent tracer
-of this phenomenon, assuming they are detected
+In \sourcei, the emission comes from the surface layers of the disk.
+\citet{Ginsburg2018a} showed that these species come only from the disk's
+immediate surroundings, unlike SiO and \water, which exhibit high vertical
+extents consistent with outflow.  They modeled the NaCl emission profile
+as a truncated Keplerian disk, finding an inner cutoff $\approx$35-40 AU
+and an outer cutoff $\approx55-60$ AU, indicating that the salt-emitting
+region is a narrow portion of the disk.
 
-Sodium and potassium are rarely observed in the dense molecular interstellar medium.
-They are usually assumed to be rapidly incorporated into dust grains [cite?  Milam
-says this, but there's a better original source.  Lodders \& Fegley 1999?].  Since we clearly observe NaCl
-and KCl in the atmosphere of the disk, it is clear that there is a zone where either
-dust has not yet formed or where dust is destroyed and returned to the gas phase.
-{\color{red} What can we say about the dust destruction/sublimation zone?  I need
-to do some disk research; there must be a dust sublimation zone at the surfaces
-of disks in addition to the radial one.}
+% ((constants.sigma_sb * 4 * np.pi * (35*u.au)**2 / (1e4*u.L_sun))**(-1/4)).decompose()
+% <Quantity 665.33595877 K>
+% ((constants.sigma_sb * 4 * np.pi * (60*u.au)**2 / (1e4*u.L_sun))**(-1/4)).decompose()
+% <Quantity 508.15873227 K>
+The equilibrium temperature in this range can be computed assuming the central
+source has a luminosity $L=10^4 \lsun = 4 \pi r^2 \sigma_{SB} T^4 $, where we
+solve for temperature with $r$ at the inner and outer radius, giving $T_{eq} =
+508-665$ K for $r=35-60$ AU, assuming the disk intercepts all of the starlight 
+at this radius.  More realistically, providing the opposite limiting case,
+for a flat disk, $T_{eq}=120-185$ K \citep{Chiang1997a}.  We discuss
+these temperatures below.
+% This estimate provides the expected temperature of
+% gas at the surface of a passive disk in this radius range. {\color{red}We could
+% obtain more realistic temperature estimates using the \citet{Chiang1997a}
+% approximations for a flat or flared disk.}
 
 \subsection{Excitation}
-We detect highly excited transitions of NaCl and KCl, many with Einstein A coefficients
-in the range $\sim0.01-0.1$ s$^{-1}$.  These high excitation lines are unlikely
-to be excited by collisions, since the gas would have to be hot enough to excite
-molecules into states with $E_U > 2000$ K and would therefore likely be hot enough
-to dissociate the molecules {\color{red} It would be nice to back this up with numbers}.  Alternately,
-at high densities and more moderate temperatures, the salts would likely be absorbed
-into dust grains.
+% We detect highly excited transitions of NaCl and KCl, many with Einstein A
+% coefficients in the range $\sim0.01-0.1$ s$^{-1}$, suggesting they are
+% radiatively rather than collisionally excited.
 
-We calculate the level population as
-\begin{equation}
-    N_u = \frac{8 \pi \nu k_B}{g_u c^2 h A_{ul}} \int T_A d\nu
-%    nline = 8 * np.pi * freq * constants.k_B / constants.h / Aul / constants.c**2
-%    # term2 = np.exp(-constants.h*freq/(constants.k_B*Tex)) -1
-%    # term2 -> kt / hnu
-%    # kelvin-hertz
-%    Khz = (kkms * (freq/constants.c)).to(u.K * u.MHz)
-%    return (nline * Khz / degeneracies).to(u.cm**-2)
-\end{equation}
-{\color{red} (this is mostly a sanity check)}
+% These high excitation lines
+% are unlikely to be excited by collisions, since the gas would have to be hot
+% enough to excite molecules into states with $E_U > 2000$ K and would therefore
+% likely be hot enough to dissociate the molecules {\color{red} It would be nice
+% to back this up with numbers}.  Alternately, at high densities and more
+% moderate temperatures, the salts would likely be absorbed into dust grains.
 
-Within each vibrational state for which we have several transitions, we can
-measure a rotational temperature.  For the KCl v=0 state, in which we have
+% We calculate the level population as
+% \begin{equation}
+%     N_u = \frac{8 \pi \nu k_B}{g_u c^2 h A_{ul}} \int T_A d\nu
+% %    nline = 8 * np.pi * freq * constants.k_B / constants.h / Aul / constants.c**2
+% %    # term2 = np.exp(-constants.h*freq/(constants.k_B*Tex)) -1
+% %    # term2 -> kt / hnu
+% %    # kelvin-hertz
+% %    Khz = (kkms * (freq/constants.c)).to(u.K * u.MHz)
+% %    return (nline * Khz / degeneracies).to(u.cm**-2)
+% \end{equation}
+% {\color{red} (this is mostly a sanity check)}
+
+Within each vibrational state for which we have several transitions, we attempt
+to measure a rotational temperature.  For the KCl v=0 state, in which we have
 detected 4 rotational transitions from $30 < E_U < 400$ K, the best fit
 rotational temperature is $T_{rot}\sim105$ K (Figure
 \ref{fig:rotationdiagrams}).  At such a low temperature, the populations of the
 vibrationally excited states should be effectively zero.  These observations
 combined suggest that there is a radiative mechanism exciting the vibrational
 states.
+
+The rotational temperatures are reasonably consistent with the lower bound
+disk temperatures at this radius, hinting that the salt emission lines are
+coming from somewhere below the surface of the disk.  If this is the case,
+there are likely to be few optical photons reaching the salt molecules,
+since those are readily absorbed by the small grains in the upper layers.
 
 
 % Since the highest clearly detected energy state detected has $E_U\sim3000$ K
@@ -222,41 +246,48 @@ states.
 % However, it is also possible that the higher-excitation lines are simply too faint
 % to be detected at our $\sim0.4$ mJy/\kms RMS limit.
 
-{\color{red} This is a note to be incorporated somewhere:}
+%{\color{red} This is a note to be incorporated somewhere:}
 The $\delta v=1$ rovibrational transitions of KCl are all around 36.1-38 \um,
 while the NaCl transitions are in the range 27.6-30 \um.
 More interesting for constraining the exciting source, though, are the v=0 to
-v=1 through v=8 lines.
+v=1 through v=6 lines.
 For example, the KCl v=6-0 J=1-0 line is at 6.13 \um and the NaCl v=7-0 J=1-0
 line is at 4.07 \um.  Assuming the population of these lines are created
-from excitation from the ground state, they require a blackbody radiation field
-of $T\approx500-750$ K ($T\approx b / \lambda$, where $b\approx2900$ \um K is
-Wien's displacement constant).
+from excitation from the ground state, they require a radiation field with
+significant emission in the 4-6 \um range.
+A blackbody with f $T\approx500-750$ K
+% ($T\approx b / \lambda$, where $b\approx2900$ \um K is Wien's displacement constant)
+peaks in this range.
 
 
 A plausible scenario is that the hot radiation field from the central star,
 with $T_*\sim4000$ K \citep{Testi2010a}, excites molecules to high vibrational
 excitation states, from which they cascade through rovibrational transitions
 down to the v=0 state, providing a relatively uniform level population
-from $E_U=0$ to $E_U\approx T_*$ instead of a thermal level population.
+across the excited vibrational states instead of a thermal level population.
 However, a 4000 K blackbody should produce most of its flux around 1 \um,
-which should result in much higher excitation than we observe.  Either
-the higher-excitation lines are too faint {\color{red} do we expect this?}
-or the salt emission is coming from a region of the disk that is shielded
-behind an extinction layer.   Since the salts would likely be incorporated into
-grains {\color{red}can we back this?} if a large population of grains
-were present, it is not clear that such a layer can exist.
+which should result in much higher excitation than we observe, suggesting
+that the starlight is extincted before reaching the salts.
+
+The densities required to produce equilibrium populations within the individual
+vibrationally excited states are very high.  The Einstein A coefficients of the
+$\delta v=1$ transitions are of order $\sim1$ \pers.  If we assume the
+collision rates for the salts are similar to SiS, the most similar-mass
+two-atom molecule available from
+\url{http://home.strw.leidenuniv.nl/~moldata/datafiles}, with values
+$\sim10^{-12}-10^{-10}$ cm$^{3}$ \pers, densities exceeding $n>10^{10}$ \percc
+(possibly $n>10^{12}$ \percc, depending on which collisional coefficients are
+used) are required to have collisions dominate over radiation. 
 
 
-\subsection{Future prospects}
-The detection of these refractory species in the gas phase in the atmosphere
-of \sourcei's disk hints that other refractory molecules may be present, 
-enabling their first detection in the ISM (e.g., such rare species as FeO and FeS),
-and may enable direct measurments of the metallicity in star-forming gas.
-It remains unclear whether \sourcei is a unique source or is representative
-of the class of high-mass protostars with disks; if the latter, these lines
-and potentially many others can be used to probe the radiation environment of 
-extremely embedded high-mass protostars.
+% Either
+% the higher-excitation lines are too faint {\color{red} do we expect this?}
+% or the salt emission is coming from a region of the disk that is shielded
+% behind an extinction layer.   Since the salts would likely be incorporated into
+% grains {\color{red}can we back this?} if a large population of grains
+% were present, it is not clear that such a layer can exist.
+
+
 
 % We plot and fit rotational diagrams to measure the abundance and temperature of
 % these molecules.  However, the results are ambiguous: for each vibrational
@@ -277,6 +308,36 @@ extremely embedded high-mass protostars.
 % range.}
 
 
+
+\subsection{Why are the salts present?}
+
+Sodium and potassium are rarely observed in the dense molecular interstellar
+medium.  They are usually assumed to be rapidly incorporated into dust grains
+after being ejected from dying stars \citep[e.g.][]{Milam2007a}.  Since we
+clearly observe NaCl and KCl in the atmosphere of the disk, it is clear that
+there is a zone where either dust has not yet formed or
+where dust is destroyed and returned to the gas phase.
+
+% If we assume the column density for the v=0 state represents the total
+% column of KCl - which is a fairly bad assumption - we can infer the relative abundance.
+% We assume the disk has a column density
+
+% {\color{red} What can
+% we say about the dust destruction/sublimation zone?  I need to do some disk
+% research; there must be a dust sublimation zone at the surfaces of disks in
+% addition to the radial one.}
+
+\subsection{Future prospects}
+The detection of these refractory species in the gas phase in the atmosphere
+of \sourcei's disk hints that other refractory molecules may be present, 
+which would enable their first detection in the ISM (e.g., such rare species as
+FeO and FeS), and may enable direct measurments of the metallicity in
+star-forming gas.
+It remains unclear whether \sourcei is a unique source or is representative
+of the class of high-mass protostars with disks; if the latter, these lines
+and potentially many others can be used to probe the radiation environment of 
+extremely embedded high-mass protostars.
+
 \begin{figure*}[!htp]
 \includegraphics[scale=1,width=3.5in]{figures/KCl_rotational_diagrams.pdf}
 \includegraphics[scale=1,width=3.5in]{figures/NaCl_rotational_diagrams.pdf}
@@ -294,8 +355,25 @@ distribution between vibrational excitation states cannot.}
 \input{41KCl_line_parameters.tex}
 \input{41K37Cl_line_parameters.tex}
 
+\section{Conclusions}
+
+%These lines trace a rare physical phenomenon.  They are therefore an excellent tracer
+%of this phenomenon, assuming they are detected
+
 \acknowledgements
-The National Radio Astronomy Observatory is a facility of the National Science Foundation operated under cooperative agreement by Associated Universities, Inc. The Green Bank Observatory is a facility of the National Science Foundation operated under cooperative agreement by Associated Universities, Inc. Support for B.A.M. was provided by NASA through Hubble Fellowship grant \#HST-HF2-51396 awarded by the Space Telescope Science Institute, which is operated by the Association of Universities for Research in Astronomy, Inc., for NASA, under contract NAS5-26555. 
+The National Radio Astronomy Observatory is a facility of the National Science
+Foundation operated under cooperative agreement by Associated Universities,
+Inc. The Green Bank Observatory is a facility of the National Science
+Foundation operated under cooperative agreement by Associated Universities,
+Inc. Support for B.A.M. was provided by NASA through Hubble Fellowship grant
+\#HST-HF2-51396 awarded by the Space Telescope Science Institute, which is
+operated by the Association of Universities for Research in Astronomy, Inc.,
+for NASA, under contract NAS5-26555. 
+This paper makes use of the following ALMA data: ADS/JAO.ALMA\#2016.1.00165.S
+ALMA is a partnership of ESO (representing its member states), NSF (USA) and
+NINS (Japan), together with NRC (Canada), MOST and ASIAA (Taiwan), and KASI
+(Republic of Korea), in cooperation with the Republic of Chile. The Joint ALMA
+Observatory is operated by ESO, AUI/NRAO and NAOJ.
 
 \input{solobib}
 
