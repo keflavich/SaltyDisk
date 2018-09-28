@@ -1,13 +1,20 @@
+import os
+import ads
+import bibtexparser
+
 def update_bibentries():
-    import os
-    import ads
-    import bibtexparser
+
+    parser = bibtexparser.bparser.BibTexParser(common_strings=True)
+    for key, val in list(parser.bib_database.strings.items()):
+        parser.bib_database.strings[val] = val
+        parser.bib_database.strings[val.lower()] = val
 
     with open('extracted.bib', 'r') as fh:
-        bib_database = bibtexparser.load(fh)
+        bib_database = bibtexparser.load(fh, parser=parser)
 
+    # this doesn't work, too many oddball cases for the broken parser to handle
     with open('bibdesk.bib', 'r') as fh:
-        full_bib_database = bibtexparser.load(fh)
+        full_bib_database = bibtexparser.load(fh, parser=parser)
 
     arxivs = []
 
@@ -28,5 +35,5 @@ def update_bibentries():
     print(" ".join(arxivs))
 
 if __name__ == "__main__":
-    assert os.system('bibexport -o extracted.bib sgrb2_cores.aux') == 0
+    assert os.system('bibexport -o extracted.bib saltydisk.aux') == 0
     update_bibentries()

@@ -69,11 +69,11 @@ def do_everything():
         assert os.system('bibexport -o extracted.bib {papername}.aux'.format(papername=name)) == 0
         print("bibexport created extracted.bib")
 
-        try:
-            update_bibentries.update_bibentries()
-            print("Successfully updated bibentries")
-        except ImportError:
-            print("Could not update bibliography entries because of import error")
+        #try:
+        #    update_bibentries.update_bibentries()
+        #    print("Successfully updated bibentries")
+        #except ImportError:
+        #    print("Could not update bibliography entries because of import error")
 
     with open('solobib.tex','w') as fh:
         fh.write("\\bibliographystyle{aasjournal}\n")

@@ -17,7 +17,7 @@ parser.add_argument("--bibit",default=True)
 args = parser.parse_args()
 print("ARGS: ",args)
 
-ppath='/Users/adam/work/orion/alma_lb/paper_saltydisk'
+ppath='/Users/adam/work/orion/alma_lb/paper_salts'
 paper_name = 'saltydisk'
 file = open(os.path.join(ppath,paper_name+'.tex'),'r')
 figlistfile = open(os.path.join(ppath, 'figure_list.txt'), 'w')
