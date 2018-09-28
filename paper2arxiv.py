@@ -36,7 +36,7 @@ if not os.path.exists(join(ppath,outdir)):
 shutil.copy('apjmacros.tex', outdir)
 shutil.copy('macros.tex', outdir)
 #shutil.copy('emulateapj.cls', outdir)
-shutil.copy('aastex61.cls', outdir)
+shutil.copy('aastex62.cls', outdir)
 shutil.copy('aasjournal.bst', outdir)
 
 outfn = join(ppath,outtype+'form_temp.tex')
