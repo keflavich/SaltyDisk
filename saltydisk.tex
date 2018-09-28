@@ -271,6 +271,96 @@ populations are not well characterized by a temperature at all.
 % However, it is also possible that the higher-excitation lines are simply too faint
 % to be detected at our $\sim0.4$ mJy/\kms RMS limit.
 
+\subsubsection{Line Excitation Models}
+We explore several explanations for the observed line excitation:
+
+\par{\textbf{Ultraviolet Excitation:}}
+In this model, collisions and infrared radiation have no effect and can be
+ignored completely.  Instead, higher-energy photons are responsible for the
+excitation.  We need at least 5 micron or shorter-wavelength photons, since
+excitation must be directly into the highly vibrationally excited states
+
+A model in which the excitation is driven by the radiation field at 4-10 microns,
+i.e., directly exciting the v=0 to the v=3-6 excitation states for NaCl,
+can be ruled out on the basis of the low interaction cross-sections of these
+transitions: they are highly forbidden.
+
+Ultraviolet excitation into higher electronic states could explain the observed
+vibrationally excited emission.  Assuming that electronic states deexcite into
+random vibrational states, then trigger a subsequent cascade into the ground
+rotational and vibrational states, each UV photon would be responsible for emission
+spanning the full energy range.
+
+There are several problems with this model.  First is that we do not detect lines
+in higher vibrational states, with weak or ambiguous detections in the v=7 and v=8 
+states of NaCl, and nondetections in higher vibrational states.  Unless there is
+some selection effect in the electronic de-excitation disfavoring higher vibrational
+states, it is difficult to explain these missing lines.  
+
+Second, the binding energy of NaCl and KCl are only a few eV.  They may therefore
+be dissociated rather than excited by UV photons.
+
+Third, there may not be any UV radiation in the outer disk where these lines
+are detected.  \sourcei has no associated free-free emission
+\citep{Plambeck2013a}, so a strong sub-912 \aa UV field is ruled out.  While UV
+emission may be produced in shocks in the outflow, it is unclear whether that
+field could be strong enough or could penentrate to the parts of the disk where
+the salt emission comes from.  Even a light haze of dust in the upper layers of
+the disk would likely shield the molecules from such illumination.
+
+\par{\textbf{Collisional excitation sets the rotational temperatures, radiation sets the vibration:}}
+\ag{This text copied from the e-mail}
+The rotational temperatures tell us that, to the extent that they represent an
+equilibrium state, the density must be $>10^8$, approximately.  The collisional
+constants are $\sim10^{-10}$--$10^{-14}$ \percc \pers, the A-values are $\sim10^{-2}$ -- $10^{-1}$ for the
+rotational transitions we're looking at, so the densities must be $>10^8$,
+assuming LTE.  These densities imply that the salt emission is coming from
+somewhere in the disk - that's good, since it's where we see them.  A
+possibility we can't rule out with the rotational transitions in hand is that
+these levels are sub-thermally populated, though.
+
+Again assuming LTE, the rotational temperatures are $\sim$50-150 K, which is below
+the surface equilibrium temperature for an unobscured line-of-sight to a $10^4$
+\lsun source, even if we adopt a thin-disk approximation.  This suggests that
+the salt emission is coming from a layer below the surface that is somewhat
+shielded from direct stellar radiation.  The rotational temperatures are maybe
+a little lower than, or consistent with, the continuum brightness temperatures
+seen at 3mm and 1mm in Paper I.
+
+The vibrational excitation implies the presence of a significant radiation
+field at 25-45 microns.  If we assume that all of the vibrational states are
+populated by delta-V=1 transitions (a good first approximation), there must be
+enough radiation to keep a large constant population in the v=1, 2, 3, 4, 5
+states such that some fraction of photons are able to excite to the higher
+states.   The vibrational emission lines therefore imply an *upper* limit on
+the density, since if the collision rate were faster than the spontaneous
+emission rate, we would not see the lines.  If we assume the excitation is
+happening by delta-V=1 transitions, that means some (most?) molecules in the
+v=1-4 state must interact with photons more often than other particles, which
+is something of a self-consistency failure.
+
+\textbf{(Scenario 3) The rovibrational transitions are optically thick up to v$\sim$6, while the rotational transitions remain optically thin.}
+
+The salt molecules are all in an 'atmosphere' above the disk that is optically
+thick in the 25-45 micron continuum, such that they are not strictly in
+equilibrium with the radiation field.  However, the lowest v and j states are
+optically thick and therefore do reach equilibrium with the local radiation
+field.  The population in the optically thick states is high, while that in the
+thin states is low.  
+
+This scenario would give us interesting limits on the column density (there
+needs to be enough column in each v=x, J=0 line to get to $\tau>1$).  It might
+also imply that, if this is the excitation mechanism, other vibrationally
+excited species - e.g., CS, CO - should be similarly excited.
+
+This scenario sounds enticing, but I'm not sure it will pass numerical checks.
+It may be that the columns required to get the rovibrational states to be
+optically thick would also drive the rotational states to be, which would be
+inconsistent with the observations.
+
+
+\textbf{Text from earlier}
+
 %{\color{red} This is a note to be incorporated somewhere:}
 The $\Delta v=1$ rovibrational transitions of KCl are all around 36.1-38 \um,
 while the NaCl transitions are in the range 27.6-30 \um.  If there is a strong
@@ -360,8 +450,8 @@ there is a zone where either dust has not yet formed or
 where dust is destroyed and returned to the gas phase.
 
 % I really hope someone takes this too seriously...
-Most likely, the lack of salt in the outflow is because it's dissolved into
-the \water.  The outflow is a beach.
+%Most likely, the lack of salt in the outflow is because it's dissolved into
+%the \water.  The outflow is a beach.
 
 
 The HCl+ ion has several transitions in our band 3, but none are detected.
