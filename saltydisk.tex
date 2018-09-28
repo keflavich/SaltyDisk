@@ -210,6 +210,12 @@ these temperatures below.
 % approximations for a flat or flared disk.}
 
 \subsection{Excitation}
+The detection of vibrationally excited transitions from v=0 to v=6 at similar brightness
+suggests that the excitation temperature $T_{ex}$ of the molecules is very high.  However,
+we see sharply decreasing populations at the higher rotational levels, indicating a much
+lower $T_{ex}$.  Since the molecules are not characterized by a single $T_{ex}$, they
+are most likely excited by some non-thermal mechanism.
+
 % We detect highly excited transitions of NaCl and KCl, many with Einstein A
 % coefficients in the range $\sim0.01-0.1$ s$^{-1}$, suggesting they are
 % radiatively rather than collisionally excited.
@@ -238,15 +244,22 @@ to measure a rotational temperature.  For the KCl v=0 state, in which we have
 detected 4 rotational transitions from $30 < E_U < 400$ K, the best fit
 rotational temperature is $T_{rot}\sim105$ K (Figure
 \ref{fig:rotationdiagrams}).  At such a low temperature, the populations of the
-vibrationally excited states should be effectively zero.  These observations
-combined suggest that there is a radiative mechanism exciting the vibrational
-states.
+vibrationally excited states should be effectively zero.  
 
-The rotational temperatures are reasonably consistent with the lower bound
-disk temperatures at this radius, hinting that the salt emission lines are
-coming from somewhere below the surface of the disk.  If this is the case,
-there are likely to be few optical photons reaching the salt molecules,
-since those are readily absorbed by the small grains in the upper layers.
+Within each rotational state for which we have multiple vibrational line
+measurements, we measure a vibrational temperature.  We find temperatures
+ranging from 1000-5000 K, though these measurements are subject to very large
+uncertainties; the fits are consistent with any temperature within this range
+(and, statistically but not physically, they are consistent with arbitrarily
+large excitation temperatures).  There are also statistically significant
+outliers from the single-temperature model, suggesting that the level
+populations are not well characterized by a temperature at all.
+
+% The rotational temperatures are reasonably consistent with the lower bound
+% disk temperatures at this radius, hinting that the salt emission lines are
+% coming from somewhere below the surface of the disk.  If this is the case,
+% there are likely to be few optical photons reaching the salt molecules,
+% since those are readily absorbed by the small grains in the upper layers.
 
 
 % Since the highest clearly detected energy state detected has $E_U\sim3000$ K
@@ -260,23 +273,26 @@ since those are readily absorbed by the small grains in the upper layers.
 
 %{\color{red} This is a note to be incorporated somewhere:}
 The $\Delta v=1$ rovibrational transitions of KCl are all around 36.1-38 \um,
-while the NaCl transitions are in the range 27.6-30 \um.
-More interesting for constraining the exciting source, though, are the v=0 to
-v=1 through v=6 lines.
-For example, the KCl v=6-0 J=1-0 line is at 6.13 \um and the NaCl v=7-0 J=1-0
-line is at 4.07 \um.  \bam{These would be wickedly forbidden transitions.
-Allowed vibrational transitions have $\Delta$V = $\pm$1.  Are there better
-candidates that would follow that?  Say a v$_6$ - v$_5$ or something?}
-\ag{Right, these are too forbidden to be plausible: this paragraph will be
-removed; we need to find another way to excite the molecules up to these states.}
-Assuming
-the population of these lines are created
-from excitation from the ground state, they require a radiation field with
-significant emission in the 4-6 \um range.
-A blackbody with f $T\approx500-750$ K
-% ($T\approx b / \lambda$, where $b\approx2900$ \um K is Wien's displacement constant)
-peaks in this range.
-[MCHW : consistent with Tb observed in the high resolution images]
+while the NaCl transitions are in the range 27.6-30 \um.  If there is a strong
+radiation field at these wavelengths, it may pump the lines into progressively
+higher vibrational states.
+
+% More interesting for constraining the exciting source, though, are the v=0 to
+% v=1 through v=6 lines.
+% For example, the KCl v=6-0 J=1-0 line is at 6.13 \um and the NaCl v=7-0 J=1-0
+% line is at 4.07 \um.  \bam{These would be wickedly forbidden transitions.
+% Allowed vibrational transitions have $\Delta$V = $\pm$1.  Are there better
+% candidates that would follow that?  Say a v$_6$ - v$_5$ or something?}
+% \ag{Right, these are too forbidden to be plausible: this paragraph will be
+% removed; we need to find another way to excite the molecules up to these states.}
+% Assuming
+% the population of these lines are created
+% from excitation from the ground state, they require a radiation field with
+% significant emission in the 4-6 \um range.
+% A blackbody with f $T\approx500-750$ K
+% % ($T\approx b / \lambda$, where $b\approx2900$ \um K is Wien's displacement constant)
+% peaks in this range.
+% [MCHW : consistent with Tb observed in the high resolution images]
 
 A plausible scenario is that the hot radiation field from the central star,
 with $T_*\sim4000$ K \citep{Testi2010a}, excites molecules to high vibrational
@@ -346,6 +362,15 @@ where dust is destroyed and returned to the gas phase.
 % I really hope someone takes this too seriously...
 Most likely, the lack of salt in the outflow is because it's dissolved into
 the \water.  The outflow is a beach.
+
+
+The HCl+ ion has several transitions in our band 3, but none are detected.
+This could be an excitation issue, as these lines have upper state energies
+in the range 1200-1400 K, but since similar excitation lines of NaCl are
+seen, it is likely that HCl+ has a lower abundance...
+Is this in any way useful or constraining?
+The real question is, why don't we detect any hydrogen-containing molecules
+in the disk?
 
 % If we assume the column density for the v=0 state represents the total
 % column of KCl - which is a fairly bad assumption - we can infer the relative abundance.
