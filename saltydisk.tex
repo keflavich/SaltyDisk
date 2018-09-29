@@ -185,25 +185,30 @@ an expanding shell (IRC+10216).
 % CRL2688 post-AGB * \citep{Highberger2003a} ~ 1 kpc
 % IK Tauri, VY Canis Majoris \citep{Milam2007a}
 
+\subsubsection{Where is the emission coming from?}
 In \sourcei, the emission comes from the surface layers of the disk.
 \citet{Ginsburg2018b} showed that these species come only from the disk's
 immediate surroundings, unlike SiO and \water, which exhibit high vertical
-extents consistent with outflow.  They modeled the NaCl emission profile
-as a truncated Keplerian disk, finding an inner cutoff $\approx$35-40 AU
-and an outer cutoff $\approx55-60$ AU, indicating that the salt-emitting
-region is a narrow portion of the disk.
+extents consistent with outflow.  No emission in the salt lines is observed
+toward the optically thick continuum in the disk midplane.
+\citet{Ginsburg2018b} modeled the salt line emission as a truncated Keplerian
+disk, finding that the radial distribution of the emission has an inner cutoff
+$\approx$35-40 AU and an outer cutoff $\approx55-60$ AU.
 
 % ((constants.sigma_sb * 4 * np.pi * (35*u.au)**2 / (1e4*u.L_sun))**(-1/4)).decompose()
 % <Quantity 665.33595877 K>
 % ((constants.sigma_sb * 4 * np.pi * (60*u.au)**2 / (1e4*u.L_sun))**(-1/4)).decompose()
 % <Quantity 508.15873227 K>
-The equilibrium temperature in this range can be computed assuming the central
+The equilibrium temperature in this radius range can be computed assuming the central
 source has a luminosity $L=10^4 \lsun = 4 \pi r^2 \sigma_{SB} T^4 $, where we
 solve for temperature with $r$ at the inner and outer radius, giving $T_{eq} =
 508-665$ K for $r=35-60$ AU, assuming the disk intercepts all of the starlight 
 at this radius.  More realistically, providing the opposite limiting case,
-for a flat disk, $T_{eq}=120-185$ K \citep{Chiang1997a}.  We discuss
-these temperatures below.
+for a flat disk, $T_{eq}=120-185$ K \citep{Chiang1997a}.  These cooler temperatures
+are consistent with the observed continuum brightness temperatures in the outer
+part of the continuum disk, though temperatures in the inner portion of that
+disk reach $\sim500$ K.
+
 % This estimate provides the expected temperature of
 % gas at the surface of a passive disk in this radius range. {\color{red}We could
 % obtain more realistic temperature estimates using the \citet{Chiang1997a}
