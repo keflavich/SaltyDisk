@@ -78,16 +78,22 @@ Appendix D of that paper describes the spectral extraction method,
 which we summarize here.  We used the U232.511 line (which we identify here as
 NaCl v=1 J=18-17) to create a velocity centroid map.  For each spectrum in the
 line data cube with
-a measured velocity, we shifted the spectrum to 0 \kms, then averaged those
-spectra.  The averaging area is approximately the extent of the continuum
-disk, 0.03 square arcseconds, or about 4, 20, and 40  beam areas, resulting
+a measured velocity in this line, we shift the spectrum to 0 \kms, 
+creating a cube in which all spectra have the same centroid velocity but retain
+their original spectral profiles.  We then then averaged those
+spectra over the region with significant emission in the bright NaCl line.  The
+averaging area is approximately the extent of the continuum disk, 0.03 square
+arcseconds, or about 4, 20, and 40  beam areas, resulting
 in an improvement in the signal-to-noise of about $2\times$, $4\times$, and $6\times$
 respectively in Band 3, 6, and 7.
 This stacked spectrum, shown in Figures \ref{fig:spectrab3}-\ref{fig:spectrab7},
 is the average spectrum across the disk identified in \citet{Ginsburg2018b}:
 it traces material just above and below the optically thick continuum disk
 (Figure \ref{fig:spatial}), and for the lines discussed here, includes no
-emission associated with the outflow.
+emission associated with the outflow.  Note that because it averages spectra
+at the disk ends, where the line is broadened by the line-of-sight motion,
+and spectra toward the disk center, where they are narrow, the line widths
+in the stacked spectra are somewhat broader than the intrinsic line width.
 
 
 We have clearly identified the carrier of the majority of unidentified lines in
