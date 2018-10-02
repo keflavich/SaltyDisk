@@ -22,19 +22,26 @@
 \end{abstract}
 
 \section{Introduction}
-Molecules consisting of alkali metals and halogens have been detected
-toward evolved stars including the carbon star IRC +10216 \citep{Cernicharo1987a},
-oxygen-rich evolved stars IK Tauri and VY Canis Majoris \citep{Milam2007a},
-the post-AGB star envelope CRL 2688 \citep{Highberger2003a},
-and the AGB star wind around OH 231+4.2 \citep{Sanchez-Contreras2018a}.
-The limited environments in which these molecules have been detected
-suggests that they only exist in the gas phase for a brief period
-when being ejected from dying stars before being incorporated into
-dust grains.
+Molecules consisting of alkali metals and halogens have only rarely been
+detected in space.  Because of their rarity, their use as a diagnostic
+tool to measure metallicity and local physical conditions has been limited.
+However, some of these molecules, such as KCl and NaCl, have a rich spectrum
+with dozens of lines observable in a single observing band with modern
+instrumentation, so they have great potential when they are detected.
+
+They were observed toward evolved stars including the carbon star IRC
++10216 \citep{Cernicharo1987a}, oxygen-rich evolved stars IK Tauri and VY Canis
+Majoris \citep{Milam2007a}, the post-AGB star envelope CRL 2688
+\citep{Highberger2003a}, and the AGB star wind around OH 231+4.2
+\citep{Sanchez-Contreras2018a}.  In these sources, they exist only in a limited
+range of radii.  The limited environments in which these molecules have been
+detected suggests that they only exist in the gas phase for a brief period when
+being ejected from dying stars before being incorporated into dust grains.
 
 The lines of NaCl and KCl have been catalogued by \citet{Caris2004a} and more
 comprehensively by \citet{Barton2014a}.  The latter includes over 10$^5$
-transitions for each species with levels up to $E_U\sim5\ee{4}$ K.  Prior to
+transitions for each molecular species and isotopologue with levels up to
+$E_U\sim5\ee{4}$ K.  Prior to
 this work, no astronomical detections of vibrationally excited transitions of
 any of these species have been reported \citep[e.g., see the review
 by][]{McGuire2018a}. \bam{Did we check w/ Holger here to see where he thought
@@ -63,20 +70,22 @@ We have now identified these unknown lines as transitions of NaCl and KCl.
 \section{Observations and Analysis}
 The observations presented here are described in \citet{Ginsburg2018b} as part
 of ALMA project 2016.1.00165.S.  We use the robust 0.5 weighted spectral cubes
-from all three bands (B3 3 mm, B6 1 mm, B7 0.85 mm) for the spectral analysis
-presented here.
+from all three bands (B3 3 mm, B6 1 mm, B7 0.85 mm) for our spectroscopic analysis.
 
 Appendix D of that paper describes the spectral extraction method,
 which we summarize here.  We used the U232.511 line (which we identify here as
-NaCl v=1 J=18-17) to create a velocity centroid map.  For each spectrum with
+NaCl v=1 J=18-17) to create a velocity centroid map.  For each spectrum in the
+line data cube with
 a measured velocity, we shifted the spectrum to 0 \kms, then averaged those
 spectra.  The averaging area is approximately the extent of the continuum
-disk, 0.03 square arcseconds, or about 20 beam areas at band 6, resulting
-in an improvement in the signal-to-noise of about $4\times$.
+disk, 0.03 square arcseconds, or about 4, 20, and 40  beam areas, resulting
+in an improvement in the signal-to-noise of about $2\times$, $4\times$, and $6\times$
+respectively in Band 3, 6, and 7.
 This stacked spectrum, shown in Figures \ref{fig:spectrab3}-\ref{fig:spectrab7},
 is the average spectrum across the disk identified in \citet{Ginsburg2018b}:
-it traces material just above and below the optically thick continuum disk, and
-for the lines discussed here, includes no emission associated with the outflow.
+it traces material just above and below the optically thick continuum disk
+(Figure \ref{fig:spatial}), and for the lines discussed here, includes no
+emission associated with the outflow.
 
 
 We have clearly identified the carrier of the majority of unidentified lines in
@@ -125,10 +134,10 @@ prominent outflow (e.g., SiO and H$_2$O) lines.
 
 
 In Tables \ref{tab:all_detections_B3}-\ref{tab:all_detections_B7}, we report
-all of the lines that are in our observable band and whether or not they were
+all of the salt lines that are in our observable band and whether or not they were
 detected.  We employ the following
 flag scheme:
-`d' for detection `n' for nondetection, `q' for questionable (e.g., low
+`d' for detection, `n' for nondetection, `q' for questionable (e.g., low
 signal-to-noise, but possibly detected, or in regions where the noise is
 not Gaussian and may be affected by other lines).
 We additionally include a flag `c' for `confused', which we add to the flag
@@ -180,20 +189,21 @@ while \sourcei exhibits clear emission up to v=6 in both NaCl and KCl.
 In these evolved stars, v=0 rotational transitions of NaCl were observed
 with rotational temperatures ${T_{rot}\sim70-100}$ K (IK Tau, VY CMa), inferred
 local temperatures of $\sim200$ K in shocks (CRL 2688) and $T\approx700$ K  in
-an expanding shell (IRC+10216).
+an expanding shell (IRC+10216).  Below, we attempt to determine the physical
+conditions in the \sourcei salt emission regions.
 % Carbon star envelope IRC +10216, d ~ 170 pc
 % CRL2688 post-AGB * \citep{Highberger2003a} ~ 1 kpc
 % IK Tauri, VY Canis Majoris \citep{Milam2007a}
 
-\subsubsection{Where is the emission coming from?}
+\subsection{Where is the emission coming from?}
 In \sourcei, the emission comes from the surface layers of the disk.
 \citet{Ginsburg2018b} showed that these species come only from the disk's
 immediate surroundings, unlike SiO and \water, which exhibit high vertical
 extents consistent with outflow.  No emission in the salt lines is observed
-toward the optically thick continuum in the disk midplane.
+toward the optically thick continuum in the disk midplane (Figure \ref{fig:spatial}).
 \citet{Ginsburg2018b} modeled the salt line emission as a truncated Keplerian
 disk, finding that the radial distribution of the emission has an inner cutoff
-$\approx$35-40 AU and an outer cutoff $\approx55-60$ AU.
+$\approx35-40$ AU and an outer cutoff $\approx55-60$ AU.
 
 % ((constants.sigma_sb * 4 * np.pi * (35*u.au)**2 / (1e4*u.L_sun))**(-1/4)).decompose()
 % <Quantity 665.33595877 K>
@@ -206,8 +216,9 @@ solve for temperature with $r$ at the inner and outer radius, giving $T_{eq} =
 at this radius.  More realistically, providing the opposite limiting case,
 for a flat disk, $T_{eq}=120-185$ K \citep{Chiang1997a}.  These cooler temperatures
 are consistent with the observed continuum brightness temperatures in the outer
-part of the continuum disk, though temperatures in the inner portion of that
-disk reach $\sim500$ K.
+part of the continuum disk (in Figure \ref{fig:spatial}, the NaCl emission
+begins just beyond the $T=300$ K contour), though temperature in the inner
+portion of the disk reaches $\gtrsim500$ K.
 
 \begin{figure*}[!htp]
 \includegraphics[scale=1,width=2.25in]{figures/OrionSourceI_NaClv=3_7-6_robust0.5.maskedclarkclean10000_medsub_K_peak_offset_contours.pdf}
@@ -225,8 +236,27 @@ $0.10 \arcsec \times 0.08 \arcsec$, PA $40.6 \degrees$,
 $0.043 \arcsec \times 0.034 \arcsec$, PA $-87.4 \degrees$, and
 $0.029 \arcsec \times 0.022 \arcsec$, PA $-54.6 \degrees$, respectively.
 }
-\label{fig:}
+\label{fig:spatial}
 \end{figure*}
+
+We also compare the salt emission locations to the SiO emission regions.
+Figure \ref{fig:sioonnacl} shows the \mbox{SiO v=0 J=8-7} line, which is thermally
+excited (it shows no sign of masing at any velocity) and traces the outflow.
+The \mbox{SiO v=5 J=8-7} line, with an upper state energy level of 8747 K, 
+is also shown.  It clearly traces a smaller radius than the NaCl line, but
+a similar height in the disk.  By contrast, the \mbox{SiO v=0 J=8-7} emission starts
+above the vertical centroid of the NaCl line.
+
+
+\begin{figure*}[!htp]
+\includegraphics[scale=1,width=4in]{figures/SiO_8-7_on_NaClv=2_26-25.pdf}
+\caption{Peak intensity map of SiO v=0 J=8-7 with contours of NaCl v=2 J=26-25
+(red; 200 K) and {SiO v=5 J=8-7} (blue; 300, 400, 500, and 600 K).  The blue
+contours in the upper-left come from a blend with a different line.
+}
+\label{fig:sioonnacl}
+\end{figure*}
+
 
 % This estimate provides the expected temperature of
 % gas at the surface of a passive disk in this radius range. {\color{red}We could
@@ -235,10 +265,11 @@ $0.029 \arcsec \times 0.022 \arcsec$, PA $-54.6 \degrees$, respectively.
 
 \subsection{Excitation}
 The detection of vibrationally excited transitions from v=0 to v=6 at similar brightness
-suggests that the excitation temperature $T_{ex}$ of the molecules is very high.  However,
-we see sharply decreasing populations at the higher rotational levels, indicating a much
-lower $T_{ex}$.  Since the molecules are not characterized by a single $T_{ex}$, they
-are most likely excited by some non-thermal mechanism.
+suggests that the vibrational excitation temperature $T_{ex,vib}$ of the molecules
+is very high.  However, we see sharply decreasing populations at the higher
+rotational levels, indicating a much lower $T_{ex,rot}$.  Since the molecules are
+not characterized by a single $T_{ex}$, they may be excited by some
+non-thermal mechanism.
 
 % We detect highly excited transitions of NaCl and KCl, many with Einstein A
 % coefficients in the range $\sim0.01-0.1$ s$^{-1}$, suggesting they are
@@ -301,13 +332,14 @@ We explore several explanations for the observed line excitation:
 \par{\textbf{Ultraviolet Excitation:}}
 In this model, collisions and infrared radiation have no effect and can be
 ignored completely.  Instead, higher-energy photons are responsible for the
-excitation.  We need at least 5 micron or shorter-wavelength photons, since
-excitation must be directly into the highly vibrationally excited states
+excitation.  In order to directly excite the higher observed vibrationally
+excited states ($v\geq6$), 5 micron or shorter-wavelength photons are required.
 
 A model in which the excitation is driven by the radiation field at 4-10 microns,
 i.e., directly exciting the v=0 to the v=3-6 excitation states for NaCl,
 can be ruled out on the basis of the low interaction cross-sections of these
-transitions: they are highly forbidden.
+transitions: they are highly forbidden, with transition probabilities $\sim10$
+orders of magnitude lower than the $\Delta v=1$ transitions.
 
 Ultraviolet excitation into higher electronic states could explain the observed
 vibrationally excited emission.  Assuming that electronic states deexcite into
@@ -326,70 +358,93 @@ be dissociated rather than excited by UV photons.
 
 Third, there may not be any UV radiation in the outer disk where these lines
 are detected.  \sourcei has no associated free-free emission
-\citep{Plambeck2013a}, so a strong sub-912 \aa UV field is ruled out.  While UV
-emission may be produced in shocks in the outflow, it is unclear whether that
-field could be strong enough or could penentrate to the parts of the disk where
+\citep{Plambeck2013a}, so a strong $\lambda<912$ \aa\ UV field is ruled out.  While UV
+emission may be produced in shocks in the outflow, it is unclear whether enough
+UV radiation would be produced or could penentrate to the parts of the disk where
 the salt emission comes from.  Even a light haze of dust in the upper layers of
 the disk would likely shield the molecules from such illumination.
 
-\par{\textbf{Collisional excitation sets the rotational temperatures, radiation sets the vibration:}}
-\ag{This text copied from the e-mail}
-The rotational temperatures tell us that, to the extent that they represent an
-equilibrium state, the density must be $>10^8$, approximately.  The collisional
-constants are $\sim10^{-10}$--$10^{-14}$ \percc \pers, the A-values are $\sim10^{-2}$ -- $10^{-1}$ for the
-rotational transitions we're looking at, so the densities must be $>10^8$,
-assuming LTE.  These densities imply that the salt emission is coming from
-somewhere in the disk - that's good, since it's where we see them.  A
-possibility we can't rule out with the rotational transitions in hand is that
-these levels are sub-thermally populated, though.
+\par{\textbf{Collisional excitation sets the rotational temperatures, radiation
+sets the vibration:}}
+In Figure \ref{fig:rotationdiagrams}, we show that it is possible to acquire
+reasonable fits to the rotational transitions within a single vibrational state,
+obtaining $T_{ex,rot}\approx100-150$ K.  If we assume that the apparent consistency
+with a rotational temperature similar to the dust continuum temperature implies
+the rotational transitions are in local thermodynamic equilibirum with gas at 
+that temperature, we can infer a lower limit on the local density.
 
-Again assuming LTE, the rotational temperatures are $\sim$50-150 K, which is below
-the surface equilibrium temperature for an unobscured line-of-sight to a $10^4$
-\lsun source, even if we adopt a thin-disk approximation.  This suggests that
-the salt emission is coming from a layer below the surface that is somewhat
-shielded from direct stellar radiation.  The rotational temperatures are maybe
-a little lower than, or consistent with, the continuum brightness temperatures
-seen at 3mm and 1mm in Paper I.
+We assume the collisional constants for NaCl are the same as those for SiS,
+which has a similar molecular weight, meaning the collisional constants are
+$C\sim10^{-10}$--$10^{-14}$ cm$^{-3}$ \pers \citep{Dayou2006a}.
+The Einstein A-values for the rotational transitions we observe are in the range $A\sim10^{-2}$ -- $10^{-1}$ \pers
+Dividing these implies the density must be $n\sim A/C \gtrsim10^8$ \percc.
+These high densities imply that the salt emission is coming from
+somewhere in the disk, as we see in the peak intensity images. 
 
-The vibrational excitation implies the presence of a significant radiation
-field at 25-45 microns.  If we assume that all of the vibrational states are
-populated by delta-V=1 transitions (a good first approximation), there must be
-enough radiation to keep a large constant population in the v=1, 2, 3, 4, 5
-states such that some fraction of photons are able to excite to the higher
-states.   The vibrational emission lines therefore imply an *upper* limit on
-the density, since if the collision rate were faster than the spontaneous
-emission rate, we would not see the lines.  If we assume the excitation is
-happening by delta-V=1 transitions, that means some (most?) molecules in the
-v=1-4 state must interact with photons more often than other particles, which
-is something of a self-consistency failure.
+With only $\leq4$ rotational transitions fitted in each vibrational
+state, we cannot rule out the alternative possibility that the rotational
+states are sub-thermally populated.  In this case, the measured rotational
+temperature would be an upper limit and the implied density would be
+$n<10^{10}$ \percc (where we use the higher end of the range above to obtain a
+more conservative upper limit). 
+% However, Figure \ref{fig:sioonnacl} hints
+% that the disk emission region is indeed at a very high density: SiO v=0 is
+% seen at high elevations above the disk, while SiO v=5 is seen only at elevations
+% similar to NaCl; the difference
 
-\textbf{(Scenario 3) The rovibrational transitions are optically thick up to v$\sim$6, while the rotational transitions remain optically thin.}
 
-The salt molecules are all in an 'atmosphere' above the disk that is optically
-thick in the 25-45 micron continuum, such that they are not strictly in
-equilibrium with the radiation field.  However, the lowest v and j states are
+The observed emission from vibrationally excited states implies the presence of
+a significant radiation field at 25-45 \um, which covers the range of
+$\Delta v=1$ rovibrational transitions with $v\leq6$ (for NaCl, the range is
+25-35 \um, for KCl, it is 35-45\um).  If we assume that all of the vibrational
+states are populated by $\Delta v=1$ transitions (which is a good first
+approximation, since the Einstein A-values for these transitions are $A\sim1$
+\pers, which is $\sim100\times$ greater than the $\Delta v=2$ transitions),
+there must be enough radiation to keep a large constant population in the $v=1,
+2, 3, 4, 5$ states such that some fraction of photons are able to excite
+molecules to still higher states.   The vibrational emission lines therefore
+imply an \emph{upper} limit on the density $n<A/C\sim10^{10}$ \percc, since if
+the collision rate were faster than the spontaneous emission rate, the higher
+excited states would be collisionally deexcited without emitting photons.
+
+
+This scenario is plausible, but it raises a question: if the radiation field is
+strong enough to produce similar intensities across the v=0 to v=6 vibrational
+states, why have the rotational states not reached equilibrium with the radiation
+field?
+
+\textbf{(Scenario 3) The rovibrational transitions are optically thick up to
+v$\sim$6, while the rotational transitions remain optically thin.}
+
+In this scenario, we assume that the salt molecules are all in an `atmosphere'
+above the disk.  While the disk is optically thick in the 25-45\um continuum,
+this `atmosphere' is optically thin, such that the lines are not strictly in
+equilibrium with the radiation field.  However, the lowest $v$ and $J$ states are
 optically thick and therefore do reach equilibrium with the local radiation
-field.  The population in the optically thick states is high, while that in the
+field.  The level population in the optically thick states is high, while that in the
 thin states is low.  
 
-This scenario would give us interesting limits on the column density (there
-needs to be enough column in each v=x, J=0 line to get to $\tau>1$).  It might
-also imply that, if this is the excitation mechanism, other vibrationally
-excited species - e.g., CS, CO - should be similarly excited.
+This scenario would provide limits on the column density, since there
+needs to be enough column in each $v=x$, $J=0$ line to get to $\tau>1$. 
+It would also possibly imply that any other molecules in the disk atmosphere,
+such as CS or CO if they are present, would have large populations in their
+vibrationally excited states.
 
-This scenario sounds enticing, but I'm not sure it will pass numerical checks.
-It may be that the columns required to get the rovibrational states to be
-optically thick would also drive the rotational states to be, which would be
-inconsistent with the observations.
+{\color{red} todo: compute the column density needed to achieve $\tau=1$ in the
+v=1-0 J=10-9 transition, or similar}
+%This scenario sounds enticing, but I'm not sure it will pass numerical checks.
+%It may be that the columns required to get the rovibrational states to be
+%optically thick would also drive the rotational states to be, which would be
+%inconsistent with the observations.
 
 
-\textbf{Text from earlier}
-
-%{\color{red} This is a note to be incorporated somewhere:}
-The $\Delta v=1$ rovibrational transitions of KCl are all around 36.1-38 \um,
-while the NaCl transitions are in the range 27.6-30 \um.  If there is a strong
-radiation field at these wavelengths, it may pump the lines into progressively
-higher vibrational states.
+%\textbf{Text from earlier}
+%
+%%{\color{red} This is a note to be incorporated somewhere:}
+%The $\Delta v=1$ rovibrational transitions of KCl are all around 36.1-38 \um,
+%while the NaCl transitions are in the range 27.6-30 \um.  If there is a strong
+%radiation field at these wavelengths, it may pump the lines into progressively
+%higher vibrational states.
 
 % More interesting for constraining the exciting source, though, are the v=0 to
 % v=1 through v=6 lines.
@@ -408,31 +463,31 @@ higher vibrational states.
 % peaks in this range.
 % [MCHW : consistent with Tb observed in the high resolution images]
 
-A plausible scenario is that the hot radiation field from the central star,
-with $T_*\sim4000$ K \citep{Testi2010a}, excites molecules to high vibrational
-excitation states, from which they cascade through rovibrational transitions
-down to the v=0 state, providing a relatively uniform level population
-across the excited vibrational states instead of a thermal level population.
-However, a 4000 K blackbody should produce most of its flux around 1 \um,
-which should result in much higher excitation than we observe, suggesting
-that the starlight is extincted before reaching the salts.
-
-The densities required to produce equilibrium populations within the individual
-vibrationally excited states are very high.  The Einstein A coefficients of the
-$\Delta v=1$ transitions are of order $\sim1$ \pers.  If we assume the
-collision rates for the salts are similar to SiS, the most similar-mass
-two-atom molecule available from
-\url{http://home.strw.leidenuniv.nl/~moldata/datafiles}, with values
-$\sim10^{-12}-10^{-10}$ cm$^{3}$ \pers, densities exceeding $n>10^{10}$ \percc
-(possibly $n>10^{12}$ \percc, depending on which collisional coefficients are
-used) are required to have collisions dominate over radiation. 
-
-\ag{However, I think there's a problem with the above logic: if the densities
-really are that high, i.e., high enough that there are typically several collisions
-per spontaneous emission, then we should not expect to see any spontaneous emission.
-So instead, we're left with an upper limit density of $n<10^{10}-10^{12}$ \percc,
-but no clear explanation for the apparent consistent rotational temperatures.
-}
+% A plausible scenario is that the hot radiation field from the central star,
+% with $T_*\sim4000$ K \citep{Testi2010a}, excites molecules to high vibrational
+% excitation states, from which they cascade through rovibrational transitions
+% down to the v=0 state, providing a relatively uniform level population
+% across the excited vibrational states instead of a thermal level population.
+% However, a 4000 K blackbody should produce most of its flux around 1 \um,
+% which should result in much higher excitation than we observe, suggesting
+% that the starlight is extincted before reaching the salts.
+% 
+% The densities required to produce equilibrium populations within the individual
+% vibrationally excited states are very high.  The Einstein A coefficients of the
+% $\Delta v=1$ transitions are of order $\sim1$ \pers.  If we assume the
+% collision rates for the salts are similar to SiS, the most similar-mass
+% two-atom molecule available from
+% \url{http://home.strw.leidenuniv.nl/~moldata/datafiles}, with values
+% $\sim10^{-12}-10^{-10}$ cm$^{3}$ \pers, densities exceeding $n>10^{10}$ \percc
+% (possibly $n>10^{12}$ \percc, depending on which collisional coefficients are
+% used) are required to have collisions dominate over radiation. 
+% 
+% \ag{However, I think there's a problem with the above logic: if the densities
+% really are that high, i.e., high enough that there are typically several collisions
+% per spontaneous emission, then we should not expect to see any spontaneous emission.
+% So instead, we're left with an upper limit density of $n<10^{10}-10^{12}$ \percc,
+% but no clear explanation for the apparent consistent rotational temperatures.
+% }
 
 
 % Either
@@ -468,23 +523,26 @@ but no clear explanation for the apparent consistent rotational temperatures.
 
 Sodium and potassium are rarely observed in the dense molecular interstellar
 medium.  They are usually assumed to be rapidly incorporated into dust grains
-after being ejected from dying stars \citep[e.g.][]{Milam2007a}.  Since we
-clearly observe NaCl and KCl in the atmosphere of the disk, it is clear that
-there is a zone where either dust has not yet formed or
-where dust is destroyed and returned to the gas phase.
+after being ejected from dying stars \citep[e.g.,][]{Milam2007a}.  Since we
+observe NaCl and KCl in the atmosphere of the disk, it is clear that
+there is a zone where either dust has not (yet?) formed or
+where dust is destroyed and returned to the gas phase.  We argue that
+the dust must be destroyed almost immediately as it is launched into the outflow.
+% As above, we evaluate several possibilities to explain the presence of
+% these molecules.
 
 % I really hope someone takes this too seriously...
 %Most likely, the lack of salt in the outflow is because it's dissolved into
 %the \water.  The outflow is a beach.
 
 
-The HCl+ ion has several transitions in our band 3, but none are detected.
-This could be an excitation issue, as these lines have upper state energies
-in the range 1200-1400 K, but since similar excitation lines of NaCl are
-seen, it is likely that HCl+ has a lower abundance...
-Is this in any way useful or constraining?
-The real question is, why don't we detect any hydrogen-containing molecules
-in the disk?
+% The HCl+ ion has several transitions in our band 3, but none are detected.
+% This could be an excitation issue, as these lines have upper state energies
+% In the range 1200-1400 K, but since similar excitation lines of NaCl are
+% Seen, it is likely that HCl+ has a lower abundance...
+% Is this in any way useful or constraining?
+% The real question is, why don't we detect any hydrogen-containing molecules
+% In the disk?
 
 % If we assume the column density for the v=0 state represents the total
 % column of KCl - which is a fairly bad assumption - we can infer the relative abundance.
@@ -495,41 +553,67 @@ in the disk?
 % research; there must be a dust sublimation zone at the surfaces of disks in
 % addition to the radial one.}
 
-\subsubsection{Highly Speculative discussion}
-Why are there salts?  Some possibilities that relate to the formation of the system:
 
-(1) the dust is totally vaporized, so the salts are in the gas phase.  This is
-pretty implausible, since it presumably requires temperatures >1000 K,
-and the highest excitation line can be excited by 4 \um photons.
-Also, if we trust the rotational temperatures, there has to be dust
-shielding to keep the salt-emitting layer cool.  If we trust those temperatures,
-it is hard to understand why the molecules haven't condensed into grains
-already, unless the dust chemical equilibrium timescale is long.  But, because
-RCB stars exist, I think the dust formation timescale is very tiny, more like
-months or years?
+In this scenario,  NaCl and KCl molecules are sputtered from the grains by
+high-energy gas particles.  The most plausible means to achieve the energies
+required to sputted grains is with strong shocks.  In \sourci, it seems
+unlikely that there would be very strong shocks in the disk, but there are
+high-velocity shocks throughout the outflow.  The inner portion of the outflow
+(i.e., within $<100$ AU of \sourcei) is primarily observed in SiO emission,
+suggesting that grains are efficiently destroyed there.
 
-(2) the salts are just forming now as they’re released from the star.  This
-doesn’t work at all if the star is accreting, BUT if the collision hypothesis
-is correct, we might see tons of stellar interior products mixed into the
-disk’s atmosphere.  This scenario requires the adsorption timescale for the
-salts to be $>500$ yr, which again seems to contradict the existence of RCB
-stars that rapidly form dust at probably comparable or lower densities.
-Also, I believe Na, K, and Cl are supernova products, not stellar nucleosynthesis
-products, but I am not sure of that!
+Since the salts are detected close to but above the disk midplane, the
+grains must be sputtered very rapidly after being launched from the disk surface.
+The lack of salt and SiO emission in the disk midplane may be because these
+molecules are not in the gas phase at all in the midplane, though radiative
+transfer can also easily explain their nondetection (i.e., the continuum
+background is the same intensity as the emission lines).
 
-\bam{(3) Stupid idea: the salts are ejected from the star, do condense out, and
-then are being ejected again in the outer edges of the disk as there is some
-sort of turbulent mixing there grinding the dust back up?  If that's the case
-though, wouldn't we expect to see SiO there as well? hm...}
-\ag{Since these metals are SN products, both in this case and in case (2),
-we're just talking about putting gas-phase materials out that already
-had the same metallicity as the star.  So I think (3) is best simplified
-as just: ``the dust is naturally `ground up' in the disk''.}
+
+In this model, the different morphology of the SiO and NaCl lines in the disk
+and outflow must be driven entirely by excitation, since they should both be
+entirely in the gas phase.  This hypothesis is somewhat plausible, since the
+SiO v=0 J=8-7 transition shown in Figure \ref{fig:sioonnacl} has $A_{8,7} =
+2.2030\ee{-3}$ \pers, while the NaCl v=2 J=26-25 transition has $A_{26,25} =
+1.8242\ee{-2}$ \pers, and their collision rates are (assuming SiS and NaCl have
+identical collision rates, as above, and that vibrational excitation does not
+change the rates) nearly the same, implying that the critical density of the
+NaCl transition is $\sim10\times$ higher.
+
+
+%(1) the dust is totally vaporized, so the salts are in the gas phase.  This is
+%pretty implausible, since it presumably requires temperatures >1000 K,
+%and the highest excitation line can be excited by 4 \um photons.
+%Also, if we trust the rotational temperatures, there has to be dust
+%shielding to keep the salt-emitting layer cool.  If we trust those temperatures,
+%it is hard to understand why the molecules haven't condensed into grains
+%already, unless the dust chemical equilibrium timescale is long.  But, because
+%RCB stars exist, I think the dust formation timescale is very tiny, more like
+%months or years?
+
+%\subsubsection{Alternative 1: The salts are just now beginning to fr
+%(2) the salts are just forming now as they’re released from the star.  This
+%doesn’t work at all if the star is accreting, BUT if the collision hypothesis
+%is correct, we might see tons of stellar interior products mixed into the
+%disk’s atmosphere.  This scenario requires the adsorption timescale for the
+%salts to be $>500$ yr, which again seems to contradict the existence of RCB
+%stars that rapidly form dust at probably comparable or lower densities.
+%Also, I believe Na, K, and Cl are supernova products, not stellar nucleosynthesis
+%products, but I am not sure of that!
+%
+%\bam{(3) Stupid idea: the salts are ejected from the star, do condense out, and
+%then are being ejected again in the outer edges of the disk as there is some
+%sort of turbulent mixing there grinding the dust back up?  If that's the case
+%though, wouldn't we expect to see SiO there as well? hm...}
+%\ag{Since these metals are SN products, both in this case and in case (2),
+%we're just talking about putting gas-phase materials out that already
+%had the same metallicity as the star.  So I think (3) is best simplified
+%as just: ``the dust is naturally `ground up' in the disk''.}
 
 \subsection{Future prospects}
 The detection of these refractory species in the gas phase in the atmosphere
 of \sourcei's disk hints that other refractory molecules may be present, 
-which would enable their first detection in the ISM (e.g., such rare species as
+which could enable their first detection in the ISM (e.g., such rare species as
 FeO and FeS), and may enable direct measurments of the metallicity in
 star-forming gas.
 It remains unclear whether \sourcei is a unique source or is representative
@@ -556,6 +640,19 @@ distribution between vibrational excitation states cannot.}
 
 
 \section{Conclusions}
+We have identified many transitions of NaCl, KCl, and their isotopologues in
+the disk of \sourcei.  These lines trace material very near the surface of the
+disk, providing a uniquely powerful probe of the disk kinematics and physical
+conditions.
+
+Despite the wide range of transitions observed, the excitation mechanism and
+conditions remain uncertain.  Further observations of lower-energy vibrational
+and rotational states of these molecules will readily distinguish between
+radiative and collisional excitation scenarios.
+
+The narrow vertical extent of the salt emission indicates that dust is sputtered
+nearly immediately after being raised from the surface of the disk.  This hints
+that sputtering is an integral part of the outflow driving process.
 
 %These lines trace a rare physical phenomenon.  They are therefore an excellent tracer
 %of this phenomenon, assuming they are detected
