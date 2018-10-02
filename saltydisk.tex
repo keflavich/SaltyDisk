@@ -5,6 +5,7 @@
 \newcommand{\sourcen}{SrcN\xspace}
 \newcommand{\sourcex}{SrcX\xspace}
 \newcommand{\bam}[1]{\textcolor{green!65!black}{\textbf{[BAM: #1]}}}
+\newcommand{\rlp}[1]{\textcolor{blue!65!black}{\textbf{[RLP: #1]}}}
 \newcommand{\ag}[1]{\textcolor{red!65!black}{\textbf{[AG: #1]}}}
 \begin{document}
 \input{authors}
@@ -109,29 +110,36 @@ from all three bands (B3 3 mm, B6 1 mm, B7 0.85 mm) for our spectroscopic analys
 Appendix D of that paper describes the spectral extraction method,
 which we summarize here.  We used the U232.511 line (which we now identify as
 NaCl v=1 J=18-17) to find the velocity centroid for each (spatial) pixel
-across the \sourcei disk.  We then shift the spectrum associated with
-this pixel to 0 \kms.  We then average the spectra over the region with
-significant emission oin the NaCl line.  
-create a velocity centroid map across the \sourcei disk.
-We shift the spectrum associated with each spatial pixel 
-For each spectrum in the
-line data cube with
-a measured velocity in this line, we shift the spectrum to 0 \kms, 
-creating a cube in which all spectra have the same centroid velocity but retain
-their original spectral profiles.  We then then averaged those
-spectra over the region with significant emission in the bright NaCl line.  The
+across the \sourcei disk.  We shifted the spectrum along
+this pixel to 0 \kms, then averaged these shifted spectra over the region with
+significant emission in the NaCl line.  
+% create a velocity centroid map across the \sourcei disk.
+% We shift the spectrum associated with each spatial pixel 
+% For each spectrum in the line data cube with
+% a measured velocity in this line, we shift the spectrum to 0 \kms, 
+% creating a cube in which all spectra have the same centroid velocity but retain
+% their original spectral profiles.  
+% We then then averaged those
+% spectra over the region with significant emission in the bright NaCl line.  
+The
 averaging area is approximately the extent of the continuum disk, 0.03 square
 arcseconds, or about 4, 20, and 40  beam areas, resulting
 in an improvement in the signal-to-noise of about $2\times$, $4\times$, and $6\times$
 respectively in Band 3, 6, and 7.
 This stacked spectrum, shown in Figures \ref{fig:spectrab3}-\ref{fig:spectrab7},
-is the average spectrum across the disk identified in \citet{Ginsburg2018b}:
-it traces material just above and below the optically thick continuum disk
+% is the average spectrum across the disk identified in \citet{Ginsburg2018b}: it
+traces material just above and below the optically thick continuum disk
 (Figure \ref{fig:spatial}), and for the lines discussed here, includes no
 emission associated with the outflow.  Note that because it averages spectra
 at the disk ends, where the line is broadened by the line-of-sight motion,
 and spectra toward the disk center, where they are narrow, the line widths
 in the stacked spectra are somewhat broader than the intrinsic line width.
+\rlp{Gee, I would have thought that shifting everything to v=0 would make
+the lines narrower, not wider.}
+% this is what I'd prefer to say, perhaps in the figure caption:
+% Effectively, the spectrum shown in Fig 1 is the output of a matched filter;
+% the line profiles are narrower than one would obtain with a straight
+% average across the disk.
 
 
 We have clearly identified the carrier of the majority of unidentified lines in
@@ -615,8 +623,9 @@ In this scenario,  NaCl and KCl molecules are sputtered from the grains by
 high-energy gas particles.  The most plausible means to achieve the energies
 required to sputtered grains is with strong shocks.  In \sourcei, it seems
 unlikely that there would be very strong shocks in the disk, but there are
-high-velocity shocks throughout the outflow.  The inner portion of the outflow
-(i.e., within $<100$ AU of \sourcei) is primarily observed in SiO emission,
+high-velocity shocks throughout the outflow. Strong SiO emission is observed in
+the inner part of the outflow
+(i.e., within $<100$ AU of \sourcei),
 suggesting that grains are efficiently destroyed there.
 
 Since the salts are detected close to but above the disk midplane, the
@@ -629,12 +638,13 @@ background is the same intensity as the emission lines).
 
 In this model, the different morphology of the SiO and NaCl lines in the disk
 and outflow must be driven entirely by excitation, since they should both be
-entirely in the gas phase.  This hypothesis is somewhat plausible, since the
+entirely in the gas phase.  This hypothesis is plausible, since the
 SiO v=0 J=8-7 transition shown in Figure \ref{fig:sioonnacl} has $A_{8,7} =
 2.2030\ee{-3}$ \pers, while the NaCl v=2 J=26-25 transition has $A_{26,25} =
-1.8242\ee{-2}$ \pers, and their collision rates are (assuming SiS and NaCl have
+1.8242\ee{-2}$ \pers, and their collision rates are nearly the same (
+assuming SiS and NaCl have
 identical collision rates, as above, and that vibrational excitation does not
-change the rates) nearly the same, implying that the critical density of the
+change the rates), implying that the critical density of the
 NaCl transition is $\sim10\times$ higher.
 
 
