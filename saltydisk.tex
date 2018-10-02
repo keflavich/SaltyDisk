@@ -34,28 +34,22 @@ species associated with these lines.  We now identify them as NaCl and KCl
 and their isotopologues.
 
 Molecules consisting of alkali metals and halogens have only rarely been
-detected in space.  Because of their rarity, their use as a diagnostic
+detected in space  \citep[e.g., see the review
+by][]{XXX} \bam{This reference in the list points to another 2018 paper at the moment, not the review, which is 'in press.'}.   Because of their rarity, their use as a diagnostic
 tool to measure metallicity and local physical conditions has been limited.
 However, some of these molecules, such as KCl and NaCl, have a rich spectrum
-with dozens of lines observable in a single observing band with modern
+with dozens of lines arising in a single observing band with modern
 instrumentation, so they have great potential when they are detected.
 
-They were observed toward evolved stars including the carbon star IRC
+They \bam{What is they? KCl and NaCl or all metal-halides?  Depending on the answer, I would start this sentence as either 'KCl and NaCl ...' or 'Metal-halides...'} have so far been observed toward evolved stars including the carbon star IRC
 +10216 \citep{Cernicharo1987a}, oxygen-rich evolved stars IK Tauri and VY Canis
 Majoris \citep{Milam2007a}, the post-AGB star envelope CRL 2688
 \citep{Highberger2003a}, and the AGB star wind around OH 231+4.2
 \citep{Sanchez-Contreras2018a}.  In these sources, they exist only in a limited
-range of radii.  The limited environments in which these molecules have been
+range of radii from the central star.  The limited environments in which these molecules have been
 detected suggests that they only exist in the gas phase for a brief period when
 being ejected from dying stars before being incorporated into dust grains.
 
-The lines of NaCl and KCl have been catalogued by \citet{Caris2004a} and more
-comprehensively by \citet{Barton2014a}.  The latter includes over 10$^5$
-transitions for each molecular species and isotopologue with levels up to
-$E_U\sim5\ee{4}$ K.  Prior to
-this work, no astronomical detections of vibrationally excited transitions of
-any of these species have been reported \citep[e.g., see the review
-by][]{McGuire2018a}.
 % \bam{Did we check w/ Holger here to see where he thought
 % the v=1 for NaCl was seen?  I still can't find a paper w/ it.  It's also
 % probably not correct to cite my paper here - I haven't (yet) compiled
@@ -63,8 +57,11 @@ by][]{McGuire2018a}.
 % I was just citing your paper since the information came from your brain...
 % we ought to cite you somewhere, if not here}
 
+
+The environments around forming stars, however, are also known to harbor
+molecules that are often rapidly depleted from the gas-phase after ejection.
 Disks around forming high-mass stars have been resolved only a handful of
-times.  The disk around \sourcei has frequently been observed
+times.  The disk around Orion Source I (\sourcei) has frequently been observed
 \citep{Hirota2014a,Plambeck2016a,Ginsburg2018b}, but most molecular species
 detected trace either an outflow (e.g., SiO) or some combination of the outflow
 and the disk (e.g., \water).  In HH80/81, a $\sim4$ \msun disk around a
@@ -76,11 +73,16 @@ disk-envelope blends have been observed.
 % \ag{AFAIK, except for the HH80/81 and \sourcei disks, all disks around massive
 % stars are ambiguous / not strictly disks.}
 
-In \citet[][the brine paper]{Ginsburg2018b}, we used lines of \water and one or
+In \citet{Ginsburg2018b}, we used lines of \water and one or
 more unknown species to measure the rotation curve of the disk around \sourcei.
 We have now identified these unknown lines as transitions of NaCl and KCl.
 
 \section{Observations and Analysis}
+
+The pure-rotational spectra of KCl and its rare isotopologues was reported by \citet{Caris2004a} up to 930~GHz.  Most isotopologues were measured up to the seventh excited vibrational state.  \citet{Caris2004a} also refine predictions for NaCl based on prior laboratory work (again to 930~GHz) reported by \citet{Caris2002a}.  The results of these works were then subsequently used by \citet{Barton2014a} to generate high-temperature line lists, primarily for use in exoplanet atmospheres, and includes over 10$^5$ transitions for each molecular species and isotopologue with levels up to $E_U\sim5\ee{4}$ K. The primary result for the purposes of this work is the prediction of frequencies in vibrational states higher than those measured in the laboratory. To our knowledge, prior to this work, no astronomical detections of vibrationally excited transitions of either of these species, or their isotopologues, have been reported.
+
+\bam{I can't follow your bibtex commands all that well, so I'm not sure where to put the new reference.  It is Caris et al. 2002 Z Naturforsch. 57a, 663.}
+
 The observations presented here are described in \citet{Ginsburg2018b} as part
 of ALMA project 2016.1.00165.S.  We use the robust 0.5 weighted spectral cubes
 from all three bands (B3 3 mm, B6 1 mm, B7 0.85 mm) for our spectroscopic analysis.
@@ -109,14 +111,9 @@ in the stacked spectra are somewhat broader than the intrinsic line width.
 
 We have clearly identified the carrier of the majority of unidentified lines in
 the \citet{Ginsburg2018b} spectra (only 2-3 lines are unidentified in the B6/B7
-spectra, though there are several in B3 we have not identified). \bam{Can you
-pass those along?  Might be worth taking another look just in case.} \ag{I haven't measured these yet,
-but I have started looking at other states of SiO, SiS as possibilities.  Only 1 line appears to be from SiS.
-We should keep investigating, there is interesting physics in this chemistry (different layers of the outflow?).} The
+spectra, though there are several in B3 we have not identified).  The
 detected lines have amplitudes in the range 0.5-3 mJy \perbeam, corresponding
-to brightness temperatures 5-20 K.
-
-In the appendix of \citet{Ginsburg2018b}, we reported that ``there is no
+to brightness temperatures 5-20 K.  In the appendix of \citet{Ginsburg2018b}, we reported that ``there is no
 consistent pattern to the detected lines and no individual species can explain
 more than a few of the observed lines.''  This statement was incorrect, as
 there are obvious carriers for the majority of the unidentified lines that we
@@ -164,18 +161,14 @@ not Gaussian and may be affected by other lines).
 We additionally include a flag `c' for `confused', which we add to the flag
 string if the line is blended with another brighter line of a different species.
 
-We use the \citet{Barton2014a} catalog to identify lines with vibrational
-states $v>2$ for KCl and $v>4$ for NaCl, since these were not cataloged in any
-of the Splatalogue sources (i.e., CDMS, SLAIM, JPL {\color{red}TODO: cite
-these}).   However, we found a systematic discrepancy in the rest frequencies
-reported by \citet{Barton2014a} and the other catalogs, with the KCl lines
-being offset by typically 15-20 \kms.  The offset is a function of the vibrational
+Although transitions in higher vibrational states were measured, and some reported, in \citet{Caris2004a} and \citet{Caris2002a}, these did not provide the complete catalogs needed for this analysis, nor to our knowledge are these catalogues available in any of the standard online databases (i.e., CDMS, SLAIM, JPL {\color{red}TODO: cite
+these}). We therefore used the predictions from the \citet{Barton2014a} catalog to identify lines with vibrational states $v>2$ for KCl and $v>4$ for NaCl.  In doing so, we found a systematic discrepancy in the rest frequencies
+reported by \citet{Barton2014a} and those of \citet{Caris2004a} and \citet{Caris2002a}, and the  catalogs generated from them: the KCl lines appear to be systematically offset by $\sim$15-20 \kms.  The offset is a function of the vibrational
 and rotational energy states, indicating that it resulted from an incorrect rotational
-and distortion constant.  We correct for this error by performing a bilinear fit
+and/or distortion constant.  We correct for this error by performing a bilinear fit
 in frequency as a function of $v_u$ and $J_u$.  In the transitions available
-in both catalogs, the resulting offsets are generally $<0.1$ \kms, which is
-good enough to get a reliable match.  We apply these fitted models to the
-higher-$v$ states to get corrected rest frequencies.
+in both catalogs, the resulting offsets are generally $<0.1$ \kms, which is more than 
+sufficient for a reliable match to our observational spectra.  We then applied these fitted models to the higher-$v$ states to get corrected rest frequencies.  A more detailed re-fitting and prediction of the frequencies is beyond the scope of this \emph{Letter}, but is certainly warranted for follow-up efforts.
 
 % \textbf{\color{red} At the moment, all of the line frequencies are shifted
 % to higher frequencies by 17 \kms (KCl) and 3 \kms (NaCl) because of a discrepancy
@@ -194,22 +187,22 @@ higher-$v$ states to get corrected rest frequencies.
 
 
 \section{Discussion}
-The lines we have reported have only been seen in a small handful of other sources,
+NaCl and KCl have only been seen in a small handful of other sources,
 all of which were moderately high-mass evolved stars blowing off their envelopes.
-The known detections include the carbon star envelope IRC +10216 \citep{Cernicharo1987a},
+The known detections include the carbon star envelope IRC +10216 \citep{Cernicharo1987a,Agundez2012a},
 the post-AGB star envelope CRL 2688 \citep{Highberger2003a}, and the oxygen-rich
-evolved star envelopes of VY Canis Majoris and IK Tauri \citep{Milam2007a}.
+evolved star envelopes of VY Canis Majoris and IK Tauri \citep{Milam2007a}. To our knowledge, 
 \sourcei is only the 5th astronomical source in which KCl and NaCl have been
 detected.
 However, there were no detections of vibrationally excited NaCl or KCl in any
-of the previous observations (\citealt{Agundez2012a} presented the most
-systematic study of salt lines, which only included detections of v=0
-rotational transitions),
+of the previous observations,
+% (\citealt{Agundez2012a} presented the most systematic study of salt lines, 
+%which only included detections of v=0 rotational transitions),
 while \sourcei exhibits clear emission up to v=6 in both NaCl and KCl.
 
 In these evolved stars, v=0 rotational transitions of NaCl were observed
 with rotational temperatures ${T_{rot}\sim70-100}$ K (IK Tau, VY CMa), inferred
-local temperatures of $\sim200$ K in shocks (CRL 2688) and $T\approx700$ K  in
+local temperatures of $\sim200$ K in shocks (CRL 2688), and $T\approx700$ K  in
 an expanding shell (IRC+10216).  Below, we attempt to determine the physical
 conditions in the \sourcei salt emission regions.
 % Carbon star envelope IRC +10216, d ~ 170 pc
@@ -217,10 +210,11 @@ conditions in the \sourcei salt emission regions.
 % IK Tauri, VY Canis Majoris \citep{Milam2007a}
 
 \subsection{Where is the emission coming from?}
-In \sourcei, the emission comes from the surface layers of the disk.
-\citet{Ginsburg2018b} showed that these species come only from the disk's
-immediate surroundings, unlike SiO and \water, which exhibit high vertical
-extents consistent with outflow.  No emission in the salt lines is observed
+In \sourcei, the salt lines originate from the surface layers of the disk,
+% \citet{Ginsburg2018b} showed that these species come only from the disk's
+% immediate surroundings, 
+unlike SiO and \water that both exhibit high vertical
+extents consistent with outflow \citep{Ginsburg2018b}.  No emission in the salt lines is observed
 toward the optically thick continuum in the disk midplane (Figure \ref{fig:spatial}).
 \citet{Ginsburg2018b} modeled the salt line emission as a truncated Keplerian
 disk, finding that the radial distribution of the emission has an inner cutoff
@@ -235,17 +229,17 @@ source has a luminosity $L=10^4 \lsun = 4 \pi r^2 \sigma_{SB} T^4 $, where we
 solve for temperature with $r$ at the inner and outer radius, giving $T_{eq} =
 508-665$ K for $r=35-60$ AU, assuming the disk intercepts all of the starlight 
 at this radius.  More realistically, providing the opposite limiting case,
-for a flat disk, $T_{eq}=120-185$ K \citep{Chiang1997a}.  These cooler temperatures
-are consistent with the observed continuum brightness temperatures in the outer
+$T_{eq}=120-185$ K for a flat disk \citep{Chiang1997a}.  These cooler temperatures
+are consistent with the observed brightness temperatures in the outer
 part of the continuum disk (in Figure \ref{fig:spatial}, the NaCl emission
-begins just beyond the $T=300$ K contour), though temperature in the inner
+begins just beyond the $T=300$ K contour), although temperature in the inner
 portion of the disk reaches $\gtrsim500$ K.
 
 \begin{figure*}[!htp]
 \includegraphics[scale=1,width=2.25in]{figures/OrionSourceI_NaClv=3_7-6_robust0.5.maskedclarkclean10000_medsub_K_peak_offset_contours.pdf}
 \includegraphics[scale=1,width=2.25in]{figures/OrionSourceI_NaClv=1_18-17_robust0.5.maskedclarkclean10000_medsub_K_peak_offset_contours.pdf}
 \includegraphics[scale=1,width=2.25in]{figures/OrionSourceI_NaClv=2_26-25_robust0.5.maskedclarkclean10000_medsub_K_peak_offset_contours.pdf}
-\caption{Peak intensity images of NaCl lines in each band to show the spatial
+\caption{Peak intensity images of NaCl lines in each band showing the spatial
 distribution of the emission.  From left to right, the lines are: 87.26 GHz
 NaCl v=3 J=7-6, 232.51 GHz NaCl v=1 J=18-17, and 333.01 GHz NaCl v=2 J=26-25.
 These are the brightest uncontaminated lines in each of their observing bands.
@@ -271,8 +265,8 @@ above the vertical centroid of the NaCl line.
 
 \begin{figure*}[!htp]
 \includegraphics[scale=1,width=4in]{figures/SiO_8-7_on_NaClv=2_26-25.pdf}
-\caption{Peak intensity map of SiO v=0 J=8-7 with contours of NaCl v=2 J=26-25
-(red; 200 K) and {SiO v=5 J=8-7} (blue; 300, 400, 500, and 600 K).  The blue
+\caption{Peak intensity map of SiO v=0 J=8-7 (gray scale), NaCl v=2 J=26-25
+(red contour; 200 K) and {SiO v=5 J=8-7} (blue contours; 300, 400, 500, and 600 K).  The blue
 contours in the upper-left come from a blend with a different line.
 }
 \label{fig:sioonnacl}
@@ -287,7 +281,7 @@ contours in the upper-left come from a blend with a different line.
 \subsection{Excitation}
 The detection of vibrationally excited transitions from v=0 to v=6 at similar brightness
 suggests that the vibrational excitation temperature $T_{ex,vib}$ of the molecules
-is very high.  However, we see sharply decreasing populations at the higher
+is very high.  However, we see sharply decreasing populations in the higher
 rotational levels, indicating a much lower $T_{ex,rot}$.  Since the molecules are
 not characterized by a single $T_{ex}$, they may be excited by some
 non-thermal mechanism.
@@ -324,7 +318,7 @@ vibrationally excited states should be effectively zero.
 
 Within each rotational state for which we have multiple vibrational line
 measurements, we measure a vibrational temperature.  We find temperatures
-ranging from 1000-5000 K, though these measurements are subject to very large
+ranging from 1000-5000 K, although these measurements are subject to very large
 uncertainties; the fits are consistent with any temperature within this range
 (and, statistically but not physically, they are consistent with arbitrarily
 large excitation temperatures).  There are also statistically significant
@@ -379,7 +373,7 @@ be dissociated rather than excited by UV photons.
 
 Third, there may not be any UV radiation in the outer disk where these lines
 are detected.  \sourcei has no associated free-free emission
-\citep{Plambeck2013a}, so a strong $\lambda<912$ \aa\ UV field is ruled out.  While UV
+\citep{Plambeck2013a}, so a strong $\lambda<912$ \AA\ UV field is ruled out.  While UV
 emission may be produced in shocks in the outflow, it is unclear whether enough
 UV radiation would be produced or could penentrate to the parts of the disk where
 the salt emission comes from.  Even a light haze of dust in the upper layers of
@@ -396,7 +390,7 @@ that temperature, we can infer a lower limit on the local density.
 
 We assume the collisional constants for NaCl are the same as those for SiS,
 which has a similar molecular weight, meaning the collisional constants are
-$C\sim10^{-10}$--$10^{-14}$ cm$^{-3}$ \pers \citep{Dayou2006a}.
+$C\sim10^{-10}$--$10^{-14}$ cm$^{-3}$ \pers \citep{Dayou2006a}. 
 The Einstein A-values for the rotational transitions we observe are in the range $A\sim10^{-2}$ -- $10^{-1}$ \pers
 Dividing these implies the density must be $n\sim A/C \gtrsim10^8$ \percc.
 These high densities imply that the salt emission is coming from
@@ -577,7 +571,7 @@ the dust must be destroyed almost immediately as it is launched into the outflow
 
 In this scenario,  NaCl and KCl molecules are sputtered from the grains by
 high-energy gas particles.  The most plausible means to achieve the energies
-required to sputted grains is with strong shocks.  In \sourci, it seems
+required to sputtered grains is with strong shocks.  In \sourcei, it seems
 unlikely that there would be very strong shocks in the disk, but there are
 high-velocity shocks throughout the outflow.  The inner portion of the outflow
 (i.e., within $<100$ AU of \sourcei) is primarily observed in SiO emission,
@@ -586,8 +580,8 @@ suggesting that grains are efficiently destroyed there.
 Since the salts are detected close to but above the disk midplane, the
 grains must be sputtered very rapidly after being launched from the disk surface.
 The lack of salt and SiO emission in the disk midplane may be because these
-molecules are not in the gas phase at all in the midplane, though radiative
-transfer can also easily explain their nondetection (i.e., the continuum
+molecules are not in the gas phase at all in the midplane, although radiative
+transfer can also easily explain their non-detection (i.e., the continuum
 background is the same intensity as the emission lines).
 
 
