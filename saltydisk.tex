@@ -44,9 +44,12 @@ Molecules consisting of alkali metals and halogens have only rarely been
 detected in space  \citep[e.g., see the review
 by][]{XXX} \bam{This reference in the list points to another 2018 paper at the moment, not the review, which is 'in press.'}.   Because of their rarity, their use as a diagnostic
 tool to measure metallicity and local physical conditions has been limited.
+\rlp{I would consider adding a sentence about how we will use these lines
+to study conditions in Source I, and move the rest of this material to the discussion.}
 However, some of these molecules, such as KCl and NaCl, have a rich spectrum
 with dozens of lines arising in a single observing band with modern
 instrumentation, so they have great potential when they are detected.
+
 
 KCl and NaCl have so far been observed toward evolved stars including the carbon star IRC
 +10216 \citep{Cernicharo1987a}, oxygen-rich evolved stars IK Tauri and VY Canis
@@ -88,19 +91,20 @@ being ejected from dying stars before being incorporated into dust grains.
 
 \section{Observations and Analysis}
 
-The pure-rotational spectra of KCl and its rare isotopologues was reported by
-\citet{Caris2004a} up to 930~GHz.  Most isotopologues were measured up to the
-seventh excited vibrational state.  \citet{Caris2004a} also refine predictions
-for NaCl based on prior laboratory work (again to 930~GHz) reported by
-\citet{Caris2002a}.  The results of these works were then subsequently used by
-\citet{Barton2014a} to generate high-temperature line lists, primarily for use
-in exoplanet atmospheres, and includes over 10$^5$ transitions for each
-molecular species and isotopologue with levels up to $E_U\sim5\ee{4}$ K. The
-primary result for the purposes of this work is the prediction of frequencies
-in vibrational states higher than those measured in the laboratory. To our
-knowledge, prior to this work, no astronomical detections of vibrationally
-excited transitions of either of these species, or their isotopologues, have
-been reported.
+% rlp: I have moved pieces of this paragraph - but not all of it - to later in this section
+% The pure-rotational spectra of KCl and its rare isotopologues was reported by
+% \citet{Caris2004a} up to 930~GHz.  Most isotopologues were measured up to the
+% seventh excited vibrational state.  \citet{Caris2004a} also refine predictions
+% for NaCl based on prior laboratory work (again to 930~GHz) reported by
+% \citet{Caris2002a}.  The results of these works were then subsequently used by
+% \citet{Barton2014a} to generate high-temperature line lists, primarily for use
+% in exoplanet atmospheres, and includes over 10$^5$ transitions for each
+% molecular species and isotopologue with levels up to $E_U\sim5\ee{4}$ K. The
+% primary result for the purposes of this work is the prediction of frequencies
+% in vibrational states higher than those measured in the laboratory. To our
+% knowledge, prior to this work, no astronomical detections of vibrationally
+% excited transitions of either of these species, or their isotopologues, have
+% been reported.
 
 
 The observations presented here are described in \citet{Ginsburg2018b} as part
@@ -111,7 +115,7 @@ Appendix D of that paper describes the spectral extraction method,
 which we summarize here.  We used the U232.511 line (which we now identify as
 NaCl v=1 J=18-17) to find the velocity centroid for each (spatial) pixel
 across the \sourcei disk.  We shifted the spectrum along
-this pixel to 0 \kms, then averaged these shifted spectra over the region with
+each such pixel to 0 \kms, then averaged the shifted spectra over the region with
 significant emission in the NaCl line.  
 % create a velocity centroid map across the \sourcei disk.
 % We shift the spectrum associated with each spatial pixel 
@@ -142,19 +146,24 @@ the lines narrower, not wider.}
 % average across the disk.
 
 
-We have clearly identified the carrier of the majority of unidentified lines in
-the \citet{Ginsburg2018b} spectra (only 2-3 lines are unidentified in the B6/B7
-spectra, though there are several in B3 we have not identified).  The
-detected lines have amplitudes in the range 0.5-3 mJy \perbeam, corresponding
-to brightness temperatures 5-20 K.  In the appendix of \citet{Ginsburg2018b}, we reported that ``there is no
+% We have clearly identified the carrier of the majority of unidentified lines in
+% the \citet{Ginsburg2018b} spectra (only 2-3 lines are unidentified in the B6/B7
+% spectra, though there are several in B3 we have not identified).
+
+In the appendix of \citet{Ginsburg2018b}, we listed over 20 unidentified 
+lines in the B6 ALMA spectra, and commented that ``there is no
 consistent pattern to the detected lines and no individual species can explain
 more than a few of the observed lines.''  This statement was incorrect, as
 there are obvious carriers for the majority of the unidentified lines that we
-had simply overlooked: NaCl, KCl, and their isotopologues.
+had simply overlooked: NaCl, KCl, and their isotopologues.  The
+detected lines have amplitudes in the range 0.5-3 mJy \perbeam, corresponding
+to brightness temperatures 5-20 K.  
 
-Figures \ref{fig:spectrab3}-\ref{fig:spectrab7} shows the spectra with lines labeled.  We have labeled all of the
-detections and marginal detections of salt lines.  We also labeled the most
-prominent outflow (e.g., SiO and H$_2$O) lines.
+In Figures \ref{fig:spectrab3}-\ref{fig:spectrab7}, we have labeled all of the
+detections and marginal detections of salt lines, as well as the most
+prominent outflow (e.g., SiO and H$_2$O) lines.  Only 2-3 lines are now
+unidentified in the B6 and B7 spectra, though there are several in B3 that
+we cannot identify.
 %We additionally labeled
 %\emph{some} of the lines that were not detected because of severe confusion
 
@@ -184,8 +193,9 @@ prominent outflow (e.g., SiO and H$_2$O) lines.
 \end{figure*}
 
 
-In Tables \ref{tab:all_detections_B3}-\ref{tab:all_detections_B7}, we report
-all of the salt lines that are in our observable band and whether or not they were
+In Tables \ref{tab:all_detections_B3}-\ref{tab:all_detections_B7}, we list
+all of the salt lines in vibrational energy levels up to v=10 that lie within our observed bands
+and whether or not they were
 detected.  We employ the following
 flag scheme:
 `d' for detection, `n' for nondetection, `q' for questionable (e.g., low
@@ -193,25 +203,46 @@ signal-to-noise, but possibly detected, or in regions where the noise is
 not Gaussian and may be affected by other lines).
 We additionally include a flag `c' for `confused', which we add to the flag
 string if the line is blended with another brighter line of a different species.
+There are robust detections of about 60 lines, up to the v=6 vibrational level.
 
+The majority of the NaCl and KCl lines that we detected are in excited vibrational states.
 Although transitions in higher vibrational states were measured, and some
-reported, in \citet{Caris2004a} and \citet{Caris2002a}, these did not provide
+reported, in \citet{Caris2004a}, these did not provide
 the complete catalogs needed for this analysis, nor to our knowledge are these
 catalogues available in any of the standard online databases (i.e., CDMS,
-SLAIM, JPL {\color{red}TODO: cite
-these}). We therefore used the predictions from the \citet{Barton2014a} catalog
-to identify lines with vibrational states $v>2$ for KCl and $v>4$ for NaCl.  In
-doing so, we found a systematic discrepancy in the rest frequencies
-reported by \citet{Barton2014a} and those of \citet{Caris2004a} and
-\citet{Caris2002a}, and the  catalogs generated from them: the KCl lines appear
-to be systematically offset by $\sim$15-20 \kms.  The offset is a function of
+SLAIM, JPL {\color{red}TODO: cite these}). 
+We obtained the frequencies for these lines from the catalog of \citet{Barton2014a},
+which was designed primarily for use in exoplanet
+atmospheres, and which includes over 10$^5$ transitions for each
+molecular species and isotopologue with levels up to $E_U\sim5\ee{4}$ K. The
+primary result for the purposes of this work is the prediction of frequencies
+in vibrational states higher than those measured in the laboratory. 
+
+
+% The results of these works were then subsequently used by
+% \citet{Barton2014a} to generate high-temperature line lists, primarily for use
+% in exoplanet atmospheres, and includes over 10$^5$ transitions for each
+% molecular species and isotopologue with levels up to $E_U\sim5\ee{4}$ K. The
+% primary result for the purposes of this work is the prediction of frequencies
+% in vibrational states higher than those measured in the laboratory. 
+
+% We therefore used the predictions from the \citet{Barton2014a} catalog
+% to identify lines with vibrational states $v>2$ for KCl and $v>4$ for NaCl.  
+
+In using these catalogs,
+we found a systematic discrepancy %in 
+between the rest frequencies
+reported by \citet{Barton2014a}, and those given by \citet{Caris2004a} and
+\citet{Caris2002a} and the catalogs generated from them: the KCl lines appear
+to be systematically offset by $\sim$15-20 \kms \rlp{in the Barton paper?}. The offset is a function of
 the vibrational
 and rotational energy states, indicating that it resulted from an incorrect rotational
 and/or distortion constant.  We correct for this error by performing a bilinear fit
 in frequency as a function of $v_u$ and $J_u$.  In the transitions available
-in both catalogs, the resulting offsets are generally $<0.1$ \kms, which is more than 
+in both catalogs
+the resulting offsets \rlp{frequency differences?} are generally $<0.1$ \kms, which is more than 
 sufficient for a reliable match to our observational spectra.  We then applied
-these fitted models to the higher-$v$ states to get corrected rest frequencies.
+these fitted models to the higher-$v$ states \rlp{tabulated by Barton?} to get corrected rest frequencies.
 We note that the values printed in \citet{Barton2014a} differ from those in the digital
 catalogs hosted on \url{exomol.com}, so we suspect the error was merely a transcription
 error of some sort.
