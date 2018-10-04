@@ -41,14 +41,17 @@ We now identify them as transitions of NaCl and KCl
 and their isotopologues, many in excited vibrational levels.
 
 Molecules consisting of alkali metals and halogens have only rarely been
-detected in space  \citep[e.g., see the review
-by][]{XXX} \bam{This reference should be `McGuire 2018 ApJs in press' for now.}.   Because of their rarity, their use as a diagnostic
+detected in space (McGuire 2018, ApJS, in press).
+%\citep[e.g., see the review
+%by][]{XXX} \bam{This reference should be `McGuire 2018 ApJs in press' for now.}.
+Because of their rarity, their use as a diagnostic
 tool to measure metallicity and local physical conditions has been limited.
-\rlp{I would consider adding a sentence about how we will use these lines
-to study conditions in Source I, and move the rest of this material to the discussion.}
+%\rlp{I would consider adding a sentence about how we will use these lines
+%to study conditions in Source I, and move the rest of this material to the discussion.}
 However, some of these molecules, such as KCl and NaCl, have a rich spectrum
 with dozens of lines arising in a single observing band with modern
-instrumentation, so they have great potential when they are detected.
+instrumentation, so they have great potential to probe either local gas properties
+or the radiation field when they are detected.
 
 
 KCl and NaCl have so far been observed toward evolved stars including the carbon star IRC
@@ -138,7 +141,9 @@ emission associated with the outflow.  Note that because it averages spectra
 at the disk ends, where the line is broadened by the line-of-sight motion,
 and spectra toward the disk center, where they are narrow, the line widths
 in the stacked spectra are broader than the line width one would observe
-with an infinitesimal beam.  \ag{This sentence is probably one too many:} The stacked spectrum is equivalent to that
+with an infinitesimal beam. 
+%\ag{This sentence is probably one too many:}
+The stacked spectrum is equivalent to that
 obtained with a matched filter using a narrow (delta-function) filter at each
 position tuned to the appropriate centroid velocity.
 % this is what I'd prefer to say, perhaps in the figure caption:
@@ -194,30 +199,29 @@ we cannot identify.
 \end{figure*}
 
 
-In Tables \ref{tab:all_detections_B3}-\ref{tab:all_detections_B7}, we list
-all of the salt lines in vibrational energy levels up to v=10 that lie within our observed bands
-and whether or not they were
-detected.  We employ the following
-flag scheme:
-`d' for detection, `n' for nondetection, `q' for questionable (e.g., low
-signal-to-noise, but possibly detected, or in regions where the noise is
-not Gaussian and may be affected by other lines).
-We additionally include a flag `c' for `confused', which we add to the flag
-string if the line is blended with another brighter line of a different species.
-There are robust detections of about 60 lines, up to the v=6 vibrational level.
+In Tables \ref{tab:all_detections_B3}-\ref{tab:all_detections_B7}, we list all
+of the salt lines in vibrational energy levels up to v=8 that lie within our
+observed bands and whether or not they were detected.  We employ the following
+flag scheme: `d' for detection, `n' for nondetection, `q' for questionable
+(e.g., low signal-to-noise, but possibly detected, or in regions where the
+noise is not Gaussian and may be affected by other lines).  We additionally
+include a flag `c' for `confused', which we add to the flag string if the line
+is blended with another brighter line of a different species.  There are robust
+detections of about 60 lines, up to the v=6 vibrational level.
 
-The majority of the NaCl and KCl lines that we detected are in excited vibrational states.
-Although transitions in higher vibrational states were measured, and some
-reported, in \citet{Caris2004a}, these did not provide
-the complete catalogs needed for this analysis, nor to our knowledge are these
-catalogues available in any of the standard online databases (i.e., CDMS,
-SLAIM, JPL {\color{red}TODO: cite these}). 
-We obtained the frequencies for these lines from the catalog of \citet{Barton2014a},
-which was designed primarily for use in exoplanet
-atmospheres, and which includes over 10$^5$ transitions for each
-molecular species and isotopologue with levels up to $E_U\sim5\ee{4}$ K. The
-primary result for the purposes of this work is the prediction of frequencies
-in vibrational states higher than those measured in the laboratory. 
+The majority of the NaCl and KCl lines that we detected are in excited
+vibrational states.  Although transitions in higher vibrational states were
+measured, and some reported, in \citet{Caris2004a}, these did not provide the
+complete catalogs needed for this analysis, nor to our knowledge are these
+catalogues available in any of the standard online databases \citep[i.e., CDMS,
+SLAIM, JPL;][]{Muller2005a,Lovas2005a,Pickett1998a}.  We obtained the
+frequencies for these lines from the catalogs of \citet{Barton2014a}, which was
+designed primarily for use in exoplanet atmospheres and includes over 10$^5$
+transitions for each molecular species and isotopologue with levels up to
+$E_U\sim5\ee{4}$ K, and \citet{Cabezas2016a}, which provided more accurate
+potential energy and dipole moment functions. The primary result of these
+catalogs for the purposes of this work is the prediction of frequencies in
+vibrational states higher than those measured in the laboratory. 
 
 
 % The results of these works were then subsequently used by
@@ -229,17 +233,17 @@ in vibrational states higher than those measured in the laboratory.
 
 % We therefore used the predictions from the \citet{Barton2014a} catalog
 % to identify lines with vibrational states $v>2$ for KCl and $v>4$ for NaCl.  
-\rlp{There's a paper by Cabezas et al, ApJ 2016 that claims to derive highly
-accurate frequencies, A coefficients, etc for NaCl up to J=150 and v=8; how
-does that fit into this story??}
-\ag{Added a reference.  Mostly, they fit the CDMS/SLAIM catalogs.  I've also switched
-to using the Cabezas values in the tables for NaCl.}
+% \rlp{There's a paper by Cabezas et al, ApJ 2016 that claims to derive highly
+% accurate frequencies, A coefficients, etc for NaCl up to J=150 and v=8; how
+% does that fit into this story??}
+% \ag{Added a reference.  Mostly, they fit the CDMS/SLAIM catalogs.  I've also switched
+% to using the Cabezas values in the tables for NaCl.}
 
 In using these catalogs, we found a systematic discrepancy between the rest
 frequencies reported by \citet{Barton2014a}, and those given by
 \citet{Caris2004a} and \citet{Caris2002a} and the catalogs generated from them:
 the KCl lines appear to be systematically offset by $\sim$15-20 \kms in the
-Barton paper.  The Barton data are also discrepant with the more recent
+Barton catalog.  The Barton data are also discrepant with the more recent
 \citet{Cabezas2016a} work that cataloged only NaCl lines. The offset is a
 function of the vibrational and rotational energy states, indicating that it
 resulted from an incorrect rotational and/or distortion constant.  We correct
@@ -268,6 +272,13 @@ error was merely a transcription error of some sort.
 %The low observed brightness temperatures suggest that the emission from
 %these lines is optically thin.
 
+We have fit Gaussian line profiles to each of the transitions we flagged as
+`detected' in Tables \ref{tab:all_detections_B3}-\ref{tab:all_detections_B7}.
+The fits are reported in Tables
+\ref{tab:NaCl_salt_lines}-\ref{tab:41K37Cl_salt_lines}.  Some of these
+measurements (e.g., the ?????? K37 v=0 45-44 line) are discrepantly[wc]
+high, suggesting that they are blends with other species as denoted in 
+Tables \ref{tab:all_detections_B3}-\ref{tab:all_detections_B7}.
 
 
 
@@ -317,7 +328,7 @@ at this radius.  More realistically, providing the opposite limiting case,
 $T_{eq}=120-185$ K for a flat disk \citep{Chiang1997a}.  These cooler temperatures
 are consistent with the observed brightness temperatures in the outer
 part of the continuum disk (in Figure \ref{fig:spatial}, the NaCl emission
-begins just beyond the $T=300$ K contour), although temperature in the inner
+begins just beyond the $T=300$ K contour), although the temperature in the inner
 portion of the disk reaches $\gtrsim500$ K.
 
 \begin{figure*}[!htp]
@@ -368,9 +379,10 @@ line.
 The detection of vibrationally excited transitions from v=0 to v=6 at similar
 brightness suggests that the vibrational excitation temperature $T_{ex,vib}$ of
 the molecules is very high.  However, we see sharply decreasing populations in
-the higher rotational levels, indicating a much lower $T_{ex,rot}$.  Since the
-molecules are not characterized by a single $T_{ex}$, they may be excited by
-some non-thermal mechanism.
+the higher rotational levels, indicating a much lower $T_{ex,rot}$.
+% Since the
+% molecules are not characterized by a single $T_{ex}$, they may be excited by
+% some non-thermal mechanism.
 
 % We detect highly excited transitions of NaCl and KCl, many with Einstein A
 % coefficients in the range $\sim0.01-0.1$ s$^{-1}$, suggesting they are
@@ -431,10 +443,10 @@ populations are not well characterized by a temperature at all.
 We explore several explanations for the observed line excitation:
 
 \par{\textbf{(1) Ultraviolet Excitation:}}
-In this model, collisions and infrared radiation have no effect and can be
-ignored completely.  Instead, higher-energy photons are responsible for the
-excitation.  In order to directly excite the higher observed vibrationally
-excited states ($v\geq6$), 5 micron or shorter-wavelength photons are required.
+In this model, collisions and infrared radiation can be ignored.  Instead,
+higher-energy photons are responsible for the excitation.  In order to directly
+excite the higher observed vibrationally excited states ($v\geq6$), 5 micron or
+shorter-wavelength photons are required.
 
 A model in which the excitation is driven by the radiation field at 4-10 microns,
 i.e., directly exciting the v=0 to the v=3-6 excitation states for NaCl,
@@ -462,7 +474,7 @@ are detected.  \sourcei has no associated free-free emission
 \citep{Plambeck2013a}, so a strong $\lambda<912$ \AA\ UV field is ruled out.  While UV
 emission may be produced in shocks in the outflow, it is unclear whether enough
 UV radiation would be produced or could penentrate to the parts of the disk where
-the salt emission comes from.  Even a light haze of dust in the upper layers of
+the salt emission is observed.  Even a light haze of dust in the upper layers of
 the disk would likely shield the molecules from such illumination.
 
 \par{\textbf{(2) Collisional excitation sets the rotational temperatures, radiation
@@ -479,11 +491,11 @@ provided a fortran code to produce those rates.  We have created a
 RADEX-compatible molecular data file, which we distribute with this paper, and
 used RADEX to examine the excitation.  For T=100 K, $\delta v=1$ \kms \perpc, $X_{NaCl}=10^{-10}$, the
 `effective density' at which the lines become detectable is $n\sim10^{6} + 
-10^{2v}$ \percc, where v is the vibrational state quantum number.  In other words,
+10^{2v}$ \percc, where $v$ is the vibrational state quantum number.  In other words,
 the critical density is two orders of magnitude higher for each progressively
 higher vibrational state.  While our collision coefficients do not extend
-to v=6, if we extrapolate,  densities
-$n\gtrsim10^{18}$ \percc are requried to collisionally excite the v=6 lines.
+to $v=6$, if we extrapolate,  densities
+$n\gtrsim10^{18}$ \percc are required to collisionally excite the $v=6$ lines.
 The declining brightness with rising rotational quantum number rules out
 collisional excitation for the vibrational states, as any density high enough
 to excite vibrational states would thermalize the rotational levels.
@@ -510,10 +522,10 @@ to excite vibrational states would thermalize the rotational levels.
 % similar to NaCl; the difference
 
 
-The observed emission from vibrationally excited states implies the presence of
-a significant radiation field at 25-45 \um, which covers the range of
-$\Delta v=1$ rovibrational transitions with $v\leq6$ (for NaCl, the range is
-25-35 \um, for KCl, it is 35-45\um).  If we assume that all of the vibrational
+The observed emission from vibrationally excited states therefore implies the
+presence of a significant radiation field at 25-45 \um, which covers the range
+of $\Delta v=1$ rovibrational transitions with $v\leq6$ (for NaCl, the range is
+25-35 \um, for KCl, it is 35-45 \um).  If we assume that all of the vibrational
 states are populated by $\Delta v=1$ transitions (which is a good first
 approximation, since the Einstein A-values for these transitions are $A\sim1$
 \pers, which is $\sim100\times$ greater than the $\Delta v=2$ transitions),
@@ -526,6 +538,7 @@ molecules to still higher states.
 % excited states would be collisionally deexcited without emitting photons.
 
 
+
 This scenario is plausible, but it raises a question: if the radiation field is
 strong enough to produce similar intensities across the v=0 to v=6 vibrational
 states, why have the rotational states not reached equilibrium with the radiation
@@ -535,21 +548,29 @@ field?
 v$\sim$6, while the rotational transitions remain optically thin.}
 
 In this scenario, we assume that the salt molecules are all in an `atmosphere'
-above the disk.  While the disk is optically thick in the 25-45\um continuum,
+above the disk.  While the disk is optically thick in the 25-45 \um continuum,
 this `atmosphere' is optically thin, such that the lines are not strictly in
-equilibrium with the radiation field.  However, the lowest $v$ and $J$ states are
-optically thick and therefore do reach equilibrium with the local radiation
-field.  The level population in the optically thick states is high, while that in the
-thin states is low.  
+equilibrium with the radiation field.  However, the lowest rovibrational
+transitions are optically thick and therefore do reach equilibrium with the
+local radiation field set primarily by the disk.  The millimeter lines remain
+optically thin, so they remain collisionally rather than radiatively excited.
+The higher rovibrational transitions are also optically thin, so the $v>6$
+states remain thin.  
 
-This scenario would provide limits on the column density, since there
-needs to be enough column in each $v=x$, $J=0$ line to get to $\tau>1$. 
-It would also possibly imply that any other molecules in the disk atmosphere,
+This scenario could imply that any other molecules in the disk atmosphere,
 such as CS or CO if they are present, would have large populations in their
 vibrationally excited states.
 
-{\color{red} todo: compute the column density needed to achieve $\tau=1$ in the
-v=1-0 J=10-9 transition, or similar}
+It is not clear whether this model can explain the observed lines.  Modeling
+of the radiation field with realistic geometry for the disk (which provides
+an undiluted 100-500 K background) and the central source (which supplies a highly
+diluted $\sim4000$ K illumination) is needed.  Without including a background
+radiation field, this scenario does not appear to work, as the rotational
+transitions tend to be optically thicker than the vibrational if only collisional
+processes are active.
+
+% {\color{red} todo: compute the column density needed to achieve $\tau=1$ in the
+% v=1-0 J=10-9 transition, or similar}
 %This scenario sounds enticing, but I'm not sure it will pass numerical checks.
 %It may be that the columns required to get the rovibrational states to be
 %optically thick would also drive the rotational states to be, which would be
@@ -560,29 +581,31 @@ Collisions with electrons are much more efficient than collisions with \hh.
 Using the approximations from \citet{Dickinson1975a}, we find that collision
 rates between both NaCl and KCl and electrons in the J=5-50 v=0 states are
 $C\approx10^{-5}$ cm$^{3}$ \pers.  These rates imply a critical electron
-abundance $X_e = C(\hh)/C(e^-) \approx 10^{-5}$, where we again assume
-$C(\hh)\approx10^{-10}$ cm$^3$ \pers.  In other words, electrons are
+abundance $X_e = C(\hh)/C(e^-) \approx 10^{-5}$, where we  assume
+$C(\hh)\approx10^{-10}$ cm$^3$ \pers, close to the typical value for
+the low-lying rotational transitions.  In other words, electrons are
 $10^5\times$ more efficient at exciting these molecules than \hh.
 
-The electron abundance may be higher than the critical value.
-In typical low-mass disks, electron abundances $X_e \geq 10^4$ 
-occur in the upper layers of the disk, where some UV radiation
-is able to ionize H and C to H+ and C+ \citep{Bergin2007a}.
-However, deeper into these disks, only X-rays and cosmic rays
-can penetrate to ionize neutrals, resulting in abundances too
-small to be relevant ($X_e < 10^{-6}$).  
-The importance of this scenario is critically sensitive to the ionization rate
-in the salt-bearing portion of the disk, which is uncertain.
+The electron abundance may be higher than the critical value.  In typical
+low-mass disks, electron abundances $X_e \geq 10^4$ occur in the upper layers
+of the disk, where some UV radiation is able to ionize H and C to H+ and C+
+\citep{Bergin2007a}.  However, deeper into these disks, only X-rays and cosmic
+rays can penetrate to ionize neutrals, resulting in abundances too small to be
+relevant ($X_e < 10^{-6}$).  The importance of this scenario is critically
+sensitive to the ionization rate in the salt-bearing portion of the disk, which
+is uncertain.
 
-\ag{Two questions:
-(1) Is the electron temperature going to be different from the
-gas temperature?  I assume so, probably much higher!
-(2) What do electrons do in terms of vibrational excitation?
-The \citet{Dickinson1975a} work is focused entirely on vibrational
-excitation.
-}
-
-\bam{At least in laboratory plasmas, the vibrational temperature of many molecules is directly coupled to the electron temperature.  Different density environments, though...}
+% \ag{Two questions:
+% (1) Is the electron temperature going to be different from the
+% gas temperature?  I assume so, probably much higher!
+% (2) What do electrons do in terms of vibrational excitation?
+% The \citet{Dickinson1975a} work is focused entirely on rotational
+% excitation.
+% }
+% 
+% \bam{At least in laboratory plasmas, the vibrational temperature of many
+% molecules is directly coupled to the electron temperature.  Different density
+% environments, though...}
 
 
 %\textbf{Text from earlier}
@@ -720,13 +743,14 @@ background is the same intensity as the emission lines).
 
 In this model, the different morphology of the SiO and NaCl lines in the disk
 and outflow must be driven entirely by excitation, since they should both be
-entirely in the gas phase.  This hypothesis is plausible, since the
-SiO v=0 J=8-7 transition shown in Figure \ref{fig:sioonnacl} has $A_{8,7} =
-2.2030\ee{-3}$ \pers, while the NaCl v=2 J=26-25 transition has $A_{26,25} =
-1.8242\ee{-2}$ \pers, and their collision rates are nearly the same (assuming SiS and NaCl have
-identical collision rates, as above, and that vibrational excitation does not
-change the rates), implying that the critical density of the
-NaCl transition is $\sim10\times$ higher.
+entirely in the gas phase.  
+% This hypothesis is plausible, since the
+% SiO v=0 J=8-7 transition shown in Figure \ref{fig:sioonnacl} has $A_{8,7} =
+% 2.2030\ee{-3}$ \pers, while the NaCl v=2 J=26-25 transition has $A_{26,25} =
+% 1.8242\ee{-2}$ \pers, and their collision rates are nearly the same (assuming SiS and NaCl have
+% identical collision rates, as above, and that vibrational excitation does not
+% change the rates), implying that the critical density of the
+% NaCl transition is $\sim10\times$ higher.
 
 
 %(1) the dust is totally vaporized, so the salts are in the gas phase.  This is
@@ -767,7 +791,11 @@ star-forming gas.
 It remains unclear whether \sourcei is a unique source or is representative
 of the class of high-mass protostars with disks; if the latter, these lines
 and potentially many others can be used to probe the radiation environment of 
-extremely embedded high-mass protostars.
+extremely embedded high-mass protostars.  
+
+The detection of highly excited vibrational states highlights the need for
+laboratory work to measure highly excited transitions of known astronomical
+molecular species.  \ag{Brett, want to add something here?}
 
 \begin{figure*}[!htp]
 \includegraphics[scale=1,width=3.5in]{figures/KCl_rotational_diagrams.pdf}
@@ -795,12 +823,15 @@ conditions.
 
 Despite the wide range of transitions observed, the excitation mechanism and
 conditions remain uncertain.  Further observations of lower-energy vibrational
-and rotational states of these molecules will readily distinguish between
-radiative and collisional excitation scenarios.
+and rotational states of these molecules will help distinguish between
+radiative and collisional excitation scenarios and will either provide
+direct measurements of the density or the radiation field in the 30-60 AU
+region around \sourcei.
 
-The narrow vertical extent of the salt emission indicates that dust is sputtered
-nearly immediately after being raised from the surface of the disk.  This hints
-that sputtering is an integral part of the outflow driving process.
+The narrow vertical extent of the salt emission indicates that dust is
+destroyed nearly immediately after being raised from the surface of the disk.
+This hints that immediate dust destruction is an integral part of the outflow
+driving process.
 
 %These lines trace a rare physical phenomenon.  They are therefore an excellent tracer
 %of this phenomenon, assuming they are detected
