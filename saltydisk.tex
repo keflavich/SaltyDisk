@@ -471,26 +471,39 @@ In Figure \ref{fig:rotationdiagrams}, we show that it is possible to acquire
 reasonable fits to the rotational transitions within a single vibrational state,
 obtaining $T_{ex,rot}\approx100-150$ K.  If we assume that the apparent consistency
 with a rotational temperature similar to the dust continuum temperature implies
-the rotational transitions are in local thermodynamic equilibirum with gas at 
+the rotational transitions are in local thermodynamic equilibrium with gas at 
 that temperature, we can infer a lower limit on the local density.
 
-\ag{TODO: use collision rates from \citet{Quintana-Lacaci2016a}}
-We assume the collisional constants for NaCl are the same as those for SiS,
-which has a similar molecular weight, meaning the collisional constants are
-$C\sim10^{-10}$--$10^{-14}$ cm$^{-3}$ \pers \citep{Dayou2006a}. 
-The Einstein A-values for the rotational transitions we observe are in the
-range $A\sim10^{-2}$ -- $10^{-1}$ \pers \rlp{some of the A-coefficients are smaller;
-for example, 3e-4 for the NaCl line at 89.149 GHZ}
-Dividing these implies the density must be $n\sim A/C \gtrsim10^8$ \percc.
-These high densities imply that the salt emission is coming from
-somewhere in the disk, as we see in the peak intensity images. 
+\citet{Quintana-Lacaci2016a} calculated collision rates for NaCl with He and
+provided a fortran code to produce those rates.  We have created a
+RADEX-compatible molecular data file, which we distribute with this paper, and
+used RADEX to examine the excitation.  For T=100 K, $\delta v=1$ \kms \perpc, $X_{NaCl}=10^{-10}$, the
+`effective density' at which the lines become detectable is $n\sim10^{6} + 
+10^{2v}$ \percc, where v is the vibrational state quantum number.  In other words,
+the critical density is two orders of magnitude higher for each progressively
+higher vibrational state.  While our collision coefficients do not extend
+to v=6, if we extrapolate,  densities
+$n\gtrsim10^{18}$ \percc are requried to collisionally excite the v=6 lines.
+The declining brightness with rising rotational quantum number rules out
+collisional excitation for the vibrational states, as any density high enough
+to excite vibrational states would thermalize the rotational levels.
 
-With only $\leq4$ rotational transitions fitted in each vibrational
-state, we cannot rule out the alternative possibility that the rotational
-states are sub-thermally populated.  In this case, the measured rotational
-temperature would be an upper limit and the implied density would be
-$n<10^{10}$ \percc (where we use the higher end of the range above to obtain a
-more conservative upper limit). 
+% We assume the collisional constants for NaCl are the same as those for SiS,
+% which has a similar molecular weight, meaning the collisional constants are
+% $C\sim10^{-10}$--$10^{-14}$ cm$^{-3}$ \pers \citep{Dayou2006a}. 
+% The Einstein A-values for the rotational transitions we observe are in the
+% range $A\sim10^{-2}$ -- $10^{-1}$ \pers \rlp{some of the A-coefficients are smaller;
+% for example, 3e-4 for the NaCl line at 89.149 GHZ}
+% Dividing these implies the density must be $n\sim A/C \gtrsim10^8$ \percc.
+% These high densities imply that the salt emission is coming from
+% somewhere in the disk, as we see in the peak intensity images. 
+
+% With only $\leq4$ rotational transitions fitted in each vibrational
+% state, we cannot rule out the alternative possibility that the rotational
+% states are sub-thermally populated.  In this case, the measured rotational
+% temperature would be an upper limit and the implied density would be
+% $n<10^{10}$ \percc (where we use the higher end of the range above to obtain a
+% more conservative upper limit). 
 % However, Figure \ref{fig:sioonnacl} hints
 % that the disk emission region is indeed at a very high density: SiO v=0 is
 % seen at high elevations above the disk, while SiO v=5 is seen only at elevations
@@ -506,10 +519,11 @@ approximation, since the Einstein A-values for these transitions are $A\sim1$
 \pers, which is $\sim100\times$ greater than the $\Delta v=2$ transitions),
 there must be enough radiation to keep a large constant population in the $v=1,
 2, 3, 4, 5$ states such that some fraction of photons are able to excite
-molecules to still higher states.   The vibrational emission lines therefore
-imply an \emph{upper} limit on the density $n<A/C\sim10^{10}$ \percc, since if
-the collision rate were faster than the spontaneous emission rate, the higher
-excited states would be collisionally deexcited without emitting photons.
+molecules to still higher states.
+% The vibrational emission lines therefore
+% imply an \emph{upper} limit on the density $n<A/C\sim10^{10}$ \percc, since if
+% the collision rate were faster than the spontaneous emission rate, the higher
+% excited states would be collisionally deexcited without emitting photons.
 
 
 This scenario is plausible, but it raises a question: if the radiation field is
