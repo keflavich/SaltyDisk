@@ -125,14 +125,6 @@ NaCl v=1 J=18-17) to find the velocity centroid for each (spatial) pixel
 across the \sourcei disk.  We shifted the spectrum along
 each such pixel to 0 \kms, then averaged the shifted spectra over the region with
 significant emission in the NaCl line.  
-% create a velocity centroid map across the \sourcei disk.
-% We shift the spectrum associated with each spatial pixel 
-% For each spectrum in the line data cube with
-% a measured velocity in this line, we shift the spectrum to 0 \kms, 
-% creating a cube in which all spectra have the same centroid velocity but retain
-% their original spectral profiles.  
-% We then then averaged those
-% spectra over the region with significant emission in the bright NaCl line.  
 The
 averaging area is approximately the extent of the continuum disk, 0.03 square
 arcseconds, or about 4, 20, and 40  beam areas, resulting
@@ -143,21 +135,17 @@ This stacked spectrum, shown in Figures \ref{fig:spectrab3}-\ref{fig:spectrab7},
 traces material just above and below the optically thick continuum disk
 (Figure \ref{fig:spatial}), and for the lines discussed here, includes no
 emission associated with the outflow.  
-%
-% Note that because it averages spectra
-% at the disk ends, where the line is broadened by the line-of-sight motion,
-% and spectra toward the disk center, where they are narrow, the line widths
-% in the stacked spectra are broader than the line width one would observe
-% with an infinitesimal beam. 
-%\ag{This sentence is probably one too many:}
-%
 % OK, I'm putting my preferred sentence here for now. It could be moved
 % to a footnote or the figure caption if desired. - Dick
+% AG: I don't like this because it sounds like the lines are narrower than we
+% observe, which isn't right: they are narrower than what you get by averaging
+% over the observations, but they are wider than you get by pointing a single
+% beam at the disk as is.
 Because this procedure removes the rotational velocity field of the disk,
 lines in the stacked spectrum are narrower than one would observe in
-an unshifted, high signal-to-noise spectrum; one may think of the stacked
-spectrum as the output of a matched filter that is optimized for detection
-of disk emission.
+a lower spatial resolution observation of the disk.  One may think of the
+stacked spectrum as the output of a matched filter that is optimized for
+detection of disk emission.
 
 % The stacked spectrum is equivalent to that
 % obtained with a matched filter using a narrow (delta-function) filter at each
@@ -177,11 +165,10 @@ detected lines have amplitudes in the range 0.5-3 mJy \perbeam, corresponding
 to brightness temperatures 5-20 K.  
 
 In Figures \ref{fig:spectrab3}-\ref{fig:spectrab7}, we have labeled all of the
-detections and marginal detections of salt lines, as well as the most
-prominent outflow (e.g., SiO and H$_2$O) lines.  Only 2-3 emission lines are now
-unidentified in the B6 and B7 spectra, though there are % several
-over a dozen in B3 that
-we cannot identify. 
+detections and marginal detections of salt lines, as well as the most prominent
+outflow (e.g., SiO and H$_2$O) lines.  Only 2-3 emission lines are now
+unidentified in the B6 and B7 spectra, though there are over a dozen in B3 that
+we have not identified. 
 % I count 15 unidentified emission lines in B3; I added "emission" above 
 % because there are lots of unidentified absorption lines from foreground gas. - Dick
 %
@@ -229,16 +216,17 @@ vibrational states.  Although transitions in higher vibrational states were
 measured, and some reported, in \citet{Caris2004a}, these did not provide the
 complete catalogs needed for this analysis, nor to our knowledge are these
 catalogues available in any of the standard online databases \citep[i.e., CDMS,
-SLAIM, JPL;][]{Muller2005a,Lovas2005a,Pickett1998a}.  We obtained the
+SLAIM, JPL;][]{Muller2005a,Lovas2005a,Pickett1998a}.  We obtained the KCl
 frequencies for these lines from the catalogs of \citet{Barton2014a}, which was
 designed primarily for use in exoplanet atmospheres and includes over 10$^5$
 transitions for each molecular species and isotopologue with levels up to
-$E_U\sim5\ee{4}$ K, and \citet{Cabezas2016a}, which provided more accurate
-potential energy and dipole moment functions. The primary result of these
-catalogs for the purposes of this work is the prediction of frequencies in
-vibrational states higher than those measured in the laboratory. 
-\rlp{Would it be fair just to say that we used Cabezas for the NaCl
-frequencies and Barton for the KCl frequencies?}
+$E_U\sim5\ee{4}$ K, and the NaCl frequencies from \citet{Cabezas2016a}, who
+provided more accurate potential energy and dipole moment functions. The
+primary result of these catalogs for the purposes of this work is the
+prediction of frequencies in vibrational states higher than those measured in
+the laboratory. 
+% \rlp{Would it be fair just to say that we used Cabezas for the NaCl
+% frequencies and Barton for the KCl frequencies?}
 
 % The results of these works were then subsequently used by
 % \citet{Barton2014a} to generate high-temperature line lists, primarily for use
