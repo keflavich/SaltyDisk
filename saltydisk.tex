@@ -841,6 +841,28 @@ driving process.
 %These lines trace a rare physical phenomenon.  They are therefore an excellent tracer
 %of this phenomenon, assuming they are detected
 
+\software{
+The software used to make this version of the paper is available from github at
+\url{https://github.com/keflavich/Orion_ALMA_2016.1.00165.S}
+(\dataset[doi:10.5281/zenodo.1213350]{https://doi.org/10.5281/zenodo.1213350}) 
+with hash \githash
+(\gitdate).  The tools used include \texttt{spectral-cube}
+\citep[][and \url{https://github.com/radio-astro-tools/spectral-cube}]{Ginsburg2018SpectralCube}
+and
+\texttt{radio-beam} 
+\citep[][and \url{https://github.com/radio-astro-tools/radio-beam}]{Ginsburg2018RadioBeam}
+from the
+\texttt{radio-astro-tools} package
+(\url{radio-astro-tools.github.io}), \texttt{astropy}
+\citep{Astropy-Collaboration2013a}, \texttt{astroquery}
+\citep[][and~\url{astroquery.readthedocs.io}]{Ginsburg2018Astroquery}
+and \texttt{CASA} \citep{McMullin2007a}.
+A script to produce the collision rate table file using the fortran code
+provided by \citet{Quintana-Lacaci2016a} is available at
+\url{https://github.com/keflavich/Orion_ALMA_2016.1.00165.S/blob/master/analysis/collision_rates_nacl.py}.
+}
+
+
 \acknowledgements
 The National Radio Astronomy Observatory is a facility of the National Science
 Foundation operated under cooperative agreement by Associated Universities,
