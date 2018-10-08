@@ -103,7 +103,9 @@ gas.  Because previous authors have ruled out the presence of any recombination
 lines and therefore demonstrated that there is no ionized gas around Source I
 \citep{Plambeck2016a,Baez-Rubio2018a}, we reject the atomic formation route.
 The salts must be produced by dust destruction, most likely via sputtering
-by high-energy particles \citep{Schilke1997a}.
+by high-energy particles \citep{Schilke1997a}.  The small scale height
+of the observed salt emission therefore implies that grain destruction
+is an efficient and rapid process in disk-launched winds.
 
 
 We have not yet obtained a complete understanding of the physical and chemical
