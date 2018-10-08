@@ -53,8 +53,9 @@ at millimeter wavelengths and is deeply embedded within a hot core \citep{};
 it is not directly detected in the mid-infrared \citep[e.g.,][]{Robberto2005a}.
 It is a system consisting of a $\sim10^4$ \lsun central object with a photospheric
 temperature $\approx4000$ K \citep{Testi2010a} surrounded by a $\sim0.1$ \msun
-disk \citep{Plambeck2016a}.  The central source mass has been debated,
-with estimates ranging from 7-20 \msun \citep{Matthews2010a,other}, but the
+disk, which we observe nearly edge-on \citep{Plambeck2016a}.  The central
+source mass has been debated, with estimates ranging from 7-20 \msun
+\citep{Matthews2010a,other}, but the
 highest-resolution data imply a central source mass $M\approx15$ \msun from
 fitting a Keplerian orbital model to \water and NaCl emission profiles
 \citep{Ginsburg2018b}.
@@ -82,4 +83,32 @@ species, finding additional matches \citep{Barton2014a,Cabezas2016a}.
 Though the detection of salts lines in a protostellar disk was surprising, 
 the detection of highly vibrationally excited transitions of these species
 is even more so.  The detected transitions have upper-state energy levels
-up to
+up to $\sim3000$ K, implying the presence of extremely hot gas or a strong
+radiation field.
+
+
+The emission from these lines comes from a narrow range in both position
+and velocity.  By fitting thin Keplerian disk models to the position-velocity
+diagrams of the lines, we constrain the emission region to be 30-60 AU from 
+the central source.  The observed emission peaks at $\pm13$ AU above and below
+the midplane of the continuum disk, which may be either a physical height
+or an effect of obscuration by the optically thick continuum.  The emission
+does not extend beyond this height, indicating that, unlike SiO and \water, the
+salts do not trace the outflow.
+
+However, we expect salts to rapidly deplete from the gas phase into dust
+grains \citep{Cherncheff2012a}.  Since we observe them in emission, they must
+be released into the gas phase by grain destruction or produced from atomic
+gas.  Because previous authors have ruled out the presence of any recombination
+lines and therefore demonstrated that there is no ionized gas around Source I
+\citep{Plambeck2016a,Baez-Rubio2018a}, we reject the atomic formation route.
+The salts must be produced by dust destruction, most likely via sputtering
+by high-energy particles \citep{Schilke1997a}.
+
+
+We have not yet obtained a complete understanding of the physical and chemical
+conditions surrounding these lines.  Nevertheless, we obtain several important
+conclusions from these detections.  First and foremost, these molecular lines
+uniquely trace the disk around a massive protostar, suggesting they may be the
+first unambiguous and universal tracer of high-mass protostellar disks.
+
