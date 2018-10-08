@@ -17,4 +17,69 @@ of disk properties in the high-mass regime.
 
 
 
+Disks are ubiquitous around forming stars.  They provide the main mechanism
+for mediating accretion.  However, it remains uncertain whether they play
+an important role in high-mass star formation, since the only definitive
+disk detections are around stars that have already acquired most of their
+mass \citep{Girart2017a,Ginsburg2018b}.  The lack of clear disk detections
+is, at least in part, because there were no known spectral lines that trace
+a disk and not the molecule-rich ``hot core'' in the surrounding region
+\citep{Goddi2018a,Cesaroni2017a}.  The central disks may also be obscured
+by dust opacity at wavelengths less than 3 mm.
 
+
+While dozens of species have been detected in the disks around low-mass stars
+\citep{McGuire2018c}, these molecules have all consisted of a few constituents:
+H, C, N, O, and S.  All of the molecules seen in disks are also prevalent
+in the ISM, particularly in the hot cores surrounding high-mass stars
+\citep{some sgr b2 reference}.
+
+More exotic molecules are seen in the atmospheres of dying stars.  Stars along
+the asymptotic giant branch lose substantial mass in slow winds
+\citep{Herwig2005a}, which form molecules with high atomic weight atoms that
+rapidly condense onto dust particles.  In IRC+10216, the expanding gas cloud
+around CW Leonis, NaCl, KCl, AlCl, AlF, NaCN, and several other metal-bearing
+molecules have been detected \citep{Agundez2012a,Zack2011a}.  NaCl and KCl have
+been detected around other AGB and post-AGB stars
+\citep{Milam2007a,Highberger2003a,Sanchez-Contreras2018a}, but never elsewhere
+in space.
+
+We report the serendipitous detection of NaCl, KCl, and their $^{37}Cl$ and
+$^{41}$K isotopologues in the disk around Orion Source I.  This disk was
+previously used to measure the central mass of Source I as 15 \msun, though
+those measurements were performed in ignorance of the carrier molecules
+\citep{Ginsburg2018b}.  Source I is the brightest object in the Orion nebula
+at millimeter wavelengths and is deeply embedded within a hot core \citep{};
+it is not directly detected in the mid-infrared \citep[e.g.,][]{Robberto2005a}.
+It is a system consisting of a $\sim10^4$ \lsun central object with a photospheric
+temperature $\approx4000$ K \citep{Testi2010a} surrounded by a $\sim0.1$ \msun
+disk \citep{Plambeck2016a}.  The central source mass has been debated,
+with estimates ranging from 7-20 \msun \citep{Matthews2010a,other}, but the
+highest-resolution data imply a central source mass $M\approx15$ \msun from
+fitting a Keplerian orbital model to \water and NaCl emission profiles
+\citep{Ginsburg2018b}.
+
+We performed observations with ALMA in three spectral bands at the highest
+available spatial resolution, 0.03 to 0.10 arcseconds from 0.85 to 3 mm.
+The spectral resolution ranged from 1.5-6.5 \kms over the same range. 
+We noted a distinctive morphology in the position-velocity diagrams of several
+lines, showing a clear linear gradient in velocity parallel to the disk.
+To obtain higher signal-to-noise in our extracted spectra, we shifted
+the spectra by their measured centroid velocities and averaged them together,
+obtaining a disk-averaged spectrum.  We use this spectrum to measure and 
+identify lines.
+
+While the most prominent spectral features are the SiO and \water lines that
+have previously been observed \citep{Goddi2013a,Hirota2014a}, there are dozens
+of lines that previously remained unidentified \citep{Ginsburg2018b}.  We
+identified these lines as transitions of NaCl and KCl, noting the excellent
+correspondence between their locations and catalogued frequencies
+\citep{Caris2002a,Caris2004a,Muller2005a,Lovas2005a,Pickett1998a}.   We
+additionally searched databases of higher-excitation transitions of these same
+species, finding additional matches \citep{Barton2014a,Cabezas2016a}.
+
+
+Though the detection of salts lines in a protostellar disk was surprising, 
+the detection of highly vibrationally excited transitions of these species
+is even more so.  The detected transitions have upper-state energy levels
+up to
