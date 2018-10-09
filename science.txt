@@ -2,36 +2,166 @@ This file is a draft document for a Science/Nature-style submission.  If we
 submit to one of these journals and are turned down, this can be a summary we
 pass off to NRAO for a press release.
 
-BAM: I removed the hard line wraps because they make my eyes twitch to look at while working on this.  Feel free to put them back in =).
+BAM: I removed the hard line wraps because they make my eyes twitch to look at
+while working on this.  Feel free to put them back in =).
+AG: You don't do all of your work in VIM?  Huh, weird.
 
 
-Disks around high-mass stars have been difficult to identify and observe, in part because most molecular emission lines do not uniquely trace the disk.  Observing disks around more massive stars is the critical test of whether star formation theories developed on low-mass stars apply at higher masses.  Here, we show that two molecular species, NaCl and KCl, appear to uniquely trace the outer edges of the disk around the massive (15 \msum) protostellar system Orion Source I. These molecules have previously only been detected in the atmospheres of dying stars, and are not found in molecularly rich hot-core regions, so they are rare enough to be unique tracers of the disk alone.  Indeed, the chemical and physical environments in which we have detected these species are so favorable, that we observe an unprecendented level of vibrational excitation in their populations.    Given their apparently unique properties, we suggest that these salts provide the best hope for unambiguous measurements of disk properties in the high-mass regime.
+Disks around high-mass stars have been difficult to identify and observe, in
+part because most molecular emission lines do not uniquely trace the disk.
+Observing disks around more massive stars is the critical test of whether star
+formation theories developed on low-mass stars apply at higher masses.  Here,
+we show that two molecular species, NaCl and KCl, appear to uniquely trace the
+outer edges of the disk around the massive (15 \msun) protostellar system Orion
+Source I. These molecules have previously only been detected in the atmospheres
+of dying stars, and are not found in molecularly rich hot-core regions, so they
+are rare enough to be unique tracers of the disk alone.  Indeed, the chemical
+and physical environments in which we have detected these species are so
+favorable, that we observe an unprecedented level of vibrational excitation in
+their populations.    Given their apparently unique properties, we suggest that
+these salts provide the best hope for unambiguous measurements of disk
+properties in the high-mass regime.
 
-Disks are ubiquitous around forming stars.  They provide the main mechanism for mediating accretion (BAM: , and shedding angular momentum from the system?).  However, it remains uncertain whether they play an important role in high-mass star formation, since the only definitive disk detections are around stars that have already acquired most of their mass \citep{Girart2017a,Ginsburg2018b}.  The lack of clear disk detections is, at least in part, because there were no known spectral lines that trace a disk and not the molecule-rich ``hot core'' in the surrounding region \citep{Goddi2018a,Cesaroni2017a}.  The central disks may also be obscured by dust opacity at wavelengths less than 3 mm.
+Disks are ubiquitous around forming stars.  They provide the main mechanism for
+mediating accretion, and, via outflows, shedding angular momentum from the system.
+However, it remains uncertain whether they play an important role in high-mass
+star formation, since the only definitive disk detections are around stars that
+have already acquired most of their mass \citep{Girart2017a,Ginsburg2018b}.
+The lack of clear disk detections is, at least in part, because there were no
+known spectral lines that trace a disk and not the molecule-rich ``hot core''
+in the surrounding region \citep{Goddi2018a,Cesaroni2017a}.  The central disks
+may also be obscured by dust opacity at wavelengths less than 3 mm.
 
 ++++++++
-BAM: Is there a distinction to be made here between the low-mass sources, where PPDs are routinely detected through spectral lines, and which are no longer embedded (don't have a hot-core), and these high-mass sources?  Do the high-mass sources just not shed their 'hot core' shells at some point so we can see the underlying 'hidden' disk like what happens in low-mass sources?  I am not a star-formation person, so forgive me if it's a stupid question.
+BAM: Is there a distinction to be made here between the low-mass sources, where
+PPDs are routinely detected through spectral lines, and which are no longer
+embedded (don't have a hot-core), and these high-mass sources?  Do the
+high-mass sources just not shed their 'hot core' shells at some point so we can
+see the underlying 'hidden' disk like what happens in low-mass sources?  I am
+not a star-formation person, so forgive me if it's a stupid question.
+AG: There are high-mass stars with low-mass disks and little/no core, like
+HH80/81.  
 ++++++++
 
-While dozens of species have been detected in the disks around low-mass stars \citep{McGuire2018c}, these molecules are comprised solely of a small selection of elements: H, C, N, O, and S.  All of the molecules seen in disks are also prevalent in the ISM, particularly in the hot cores surrounding high-mass stars \citep{some sgr b2 reference}. (BAM: "In high-mass environments, this therefore limits their utility as unique disk tracers in high-mass regions, even in cases where there is evidence of kinematic rotation" ??)
+While dozens of species have been detected in the disks around low-mass stars
+\citep{McGuire2018c}, these molecules are comprised solely of a small selection
+of elements: H, C, N, O, and S.  All of the molecules seen in disks are also
+prevalent in the ISM, particularly in the hot cores surrounding high-mass stars
+\citep{some sgr b2 reference}. In high-mass environments, this therefore
+limits their utility as unique disk tracers in high-mass regions, hiding
+the kinematic signatures of rotation.
 
-At the other extreme of the stellar life cycle, in the atmospheres of dying stars, a wealth of exotic molecules -- those containing rare elements not commonly seen in star-forming regions -- are observed.  Stars along the asymptotic giant branch (AGB) lose substantial mass in slow winds \citep{Herwig2005a} that form molecules with high atomic weight elements that rapidly condense onto dust particles.  The most notable example is that of IRC+10216, the expanding gas cloud around the AGB star CW Leonis.  Here, NaCl, KCl, AlCl, AlF, NaCN, and a number of other metal-bearing molecules have been detected \citep{Agundez2012a,Zack2011a}.  In this instance, we use 'metal' in the chemist's sense of the word.  NaCl and KCl have been detected around other AGB and post-AGB stars \citep{Milam2007a,Highberger2003a,Sanchez-Contreras2018a}, but to our knowledge, no reported detections outside of these environments have been reported until now.
+At the other extreme of the stellar life cycle, in the atmospheres of dying
+stars, a wealth of exotic molecules -- those containing rare elements not
+commonly seen in star-forming regions -- are observed.  Stars along the
+asymptotic giant branch (AGB) lose substantial mass in slow winds
+\citep{Herwig2005a} that form molecules with high atomic weight elements that
+rapidly condense onto dust particles.  The most notable example is that of
+IRC+10216, the expanding gas cloud around the AGB star CW Leonis.  Here, NaCl,
+KCl, AlCl, AlF, NaCN, and a number of other metal-bearing molecules have been
+detected \citep{Agundez2012a,Zack2011a}.  In this instance, we use `metal' in
+the chemist's sense of the word.  NaCl and KCl have been detected around other
+AGB and post-AGB stars
+\citep{Milam2007a,Highberger2003a,Sanchez-Contreras2018a}, but to our
+knowledge, no detections outside of these environments have previously been
+reported.
 
++++++ BAM: Science has a *very* strict policy about not claiming primacy (first
+detections / first discovery / etc.) of anything.  I believe the above sentence
+will pass OK, but the editor may object in the end.
+AG: fair enough, I don't think "FIRST" is super important.  "FIRST USEFUL"
+is....
 +++++
-BAM: Science has a *very* strict policy about not claiming primacy (first detections / first discovery / etc.) of anything.  I believe the above sentence will pass OK, but the editor may object in the end.
-+++++
 
-Here, we report the detection of NaCl, KCl, and their $^{37}Cl$ and $^{41}$K isotopologues in the disk around Orion Source I.  This disk was previously used to measure the central mass of Source I as 15 \msun, although those measurements were performed before the spectral lines belonging to NaCl and KCl were identified \citep{Ginsburg2018b}.  Source I is the brightest object in the Orion nebula at millimeter wavelengths and is deeply embedded within a hot core \citep{}. (BAM: due to the optical depth, ?) it is not directly detected in the mid-infrared \citep[e.g.,][]{Robberto2005a}. It is a system consisting of a $\sim10^4$ \lsun central object with a photospheric temperature $\approx4000$ K \citep{Testi2010a} surrounded by a $\sim0.1$ \msun disk, which we observe nearly edge-on \citep{Plambeck2016a}.  The central source mass has been debated, with estimates ranging from 7-20 \msun \citep{Matthews2010a,other}, but the highest-resolution data imply a central source mass $M\approx15$ \msun from fitting a Keplerian orbital model to \water and line (now identified as NaCl) emission profiles \citep{Ginsburg2018b}.
+Here, we report the detection of NaCl, KCl, and their $^{37}Cl$ and $^{41}$K
+isotopologues in the disk around Orion Source I.  This disk was previously used
+to measure the central mass of Source I as 15 \msun, although those
+measurements were performed before the spectral lines belonging to NaCl and KCl
+were identified \citep{Ginsburg2018b}.  Source I is the brightest object in the
+Orion nebula at millimeter wavelengths and is deeply embedded within a hot core
+\citep{}. Because of the high optical depth of the foreground dust, it is not
+directly detected in the
+mid-infrared \citep[e.g.,][]{Robberto2005a}. It is a system consisting of a
+$\sim10^4$ \lsun central object with a photospheric temperature $\approx4000$ K
+\citep{Testi2010a} surrounded by a $\sim0.1$ \msun disk, which we observe
+nearly edge-on \citep{Plambeck2016a}.  The central source mass has been
+debated, with estimates ranging from 7-20 \msun \citep{Matthews2010a,other},
+but the highest-resolution data imply a central source mass $M\approx15$ \msun
+from fitting a Keplerian orbital model to \water and line (now identified as
+NaCl) emission profiles \citep{Ginsburg2018b}.
 
-We performed observations with ALMA in three spectral bands at the highest available spatial resolution, 0.03 to 0.10 arcseconds from 0.85 to 3 mm. The spectral resolution ranged from 1.5-6.5 \kms over the same range.  We noted a distinctive morphology in the position-velocity diagrams of several lines, showing a clear linear gradient in velocity parallel to the disk. To obtain higher signal-to-noise in our extracted spectra, we shifted the spectra by their measured centroid velocities and averaged them together, obtaining a disk-averaged spectrum.  We use this spectrum to measure and  identify lines (see Methods).
+We performed observations with ALMA in three spectral bands at the highest
+available spatial resolution, 0.03 to 0.10 arcseconds from 0.85 to 3 mm. The
+spectral resolution ranged from 1.5-6.5 \kms over the same range.  We noted a
+distinctive morphology in the position-velocity diagrams of several lines,
+showing a clear linear gradient in velocity parallel to the disk. To obtain
+higher signal-to-noise in our extracted spectra, we shifted the spectra by
+their measured centroid velocities and averaged them together, obtaining a
+disk-averaged spectrum.  We use this spectrum to measure and  identify lines
+(see Methods).
 
-While the most prominent spectral features are the SiO and \water lines that have previously been observed \citep{Goddi2013a,Hirota2014a}, there were dozens of lines that remained unidentified in our initial study \citep{Ginsburg2018b}.  We have now identified these lines as transitions of NaCl and KCl, noting the excellent correspondence between the observed and measured/catalogued frequencies \citep{Caris2002a,Caris2004a,Muller2005a,Lovas2005a,Pickett1998a}.   We additionally searched databases of transitions of these same species with more quanta of vibrational excitation, and found additional matches \citep{Barton2014a,Cabezas2016a}.
+While the most prominent spectral features are the SiO and \water lines that
+have previously been observed \citep{Goddi2013a,Hirota2014a}, there were dozens
+of lines that remained unidentified in our initial study \citep{Ginsburg2018b}.
+We have now identified these lines as transitions of NaCl and KCl, noting the
+excellent correspondence between the observed and measured/catalogued
+frequencies \citep{Caris2002a,Caris2004a,Muller2005a,Lovas2005a,Pickett1998a}.
+We additionally searched databases of transitions of these same species with
+more quanta of vibrational excitation, and found additional matches
+\citep{Barton2014a,Cabezas2016a}.
 
-Although the detection of salts lines in a protostellar disk was surprising, the detection of highly vibrationally excited transitions of these species is even more so.  The detected transitions have upper-state energy levels up to $\sim3000$ K, implying the presence of extremely hot gas or a strong radiation field. The emission from these lines comes from a narrow range in both position and velocity.  By fitting thin Keplerian disk models to the position-velocity diagrams of the lines, we constrain the emission region to be 30-60 AU from  the central source.  The observed emission peaks at $\pm13$ AU above and below the midplane of the continuum disk, which may be either a physical height or an effect of obscuration by the optically thick continuum.  The emission does not extend beyond this height, indicating that, unlike SiO and \water, the salts do not trace the outflow.
+Although the detection of salts lines in a protostellar disk was surprising,
+the detection of highly vibrationally excited transitions of these species is
+even more so.  The detected transitions have upper-state energy levels up to
+$\sim3000$ K, implying the presence of extremely hot gas or a strong radiation
+field. The emission from these lines comes from a narrow range in both position
+and velocity.  By fitting thin Keplerian disk models to the position-velocity
+diagrams of the lines, we constrain the emission region to be 30-60 AU from
+the central source.  The observed emission peaks at $\pm13$ AU above and below
+the midplane of the continuum disk, which may be either a physical height or an
+effect of obscuration by the optically thick continuum.  The emission does not
+extend beyond this height, indicating that, unlike SiO and \water, the salts do
+not trace the outflow.
 
-Once in the gas-phase, however, we expect salts to rapidly deplete back into dust grains \citep{Cherncheff2012a}.  Since we observe them in emission, they must be released into the gas phase by either grain destruction, or produced chemically from simple gas-phase precursors, likely elemental atomic gas (either neutral or ionized Na and K).  Because previous studies have ruled out the presence of any recombination lines in this source, and therefore demonstrated that there is no ionized gas around Source I \citep{Plambeck2016a,Baez-Rubio2018a}, we reject the atomic formation route. The salts must be produced by dust destruction, most likely via sputtering by high-energy particles \citep{Schilke1997a}.  The small scale height of the observed salt emission therefore implies that grain destruction is an efficient and rapid process in disk-launched winds.
+Once in the gas-phase, however, we expect salts to rapidly deplete back into
+dust grains \citep{Cherncheff2012a}.  Since we observe them in emission, they
+must be released into the gas phase by either grain destruction, or produced
+chemically from simple gas-phase precursors, likely elemental atomic gas
+(either neutral or ionized Na and K).  Because previous studies have ruled out
+the presence of any recombination lines in this source, and therefore
+demonstrated that there is no ionized gas around Source I
+\citep{Plambeck2016a,Baez-Rubio2018a}, we reject the atomic formation route.
+The salts must be produced by dust destruction, most likely via sputtering by
+high-energy particles \citep{Schilke1997a}.  The small scale height of the
+observed salt emission therefore implies that grain destruction is an efficient
+and rapid process in disk-launched winds.
 
-The vibrationally excited transitions observed suggest that radiative excitation is important in this environment.  The molecular transitions we observe have high Einstein A values, in the range $\sim10^{-3}-10^0$, and correspondingly high critical densities $n_{cr} \sim10^{6v}$ \percc, where $v$ is the vibrational quantum number.  Collisional excitation alone cannot explain the different vibrational states being observed at a similar brightness level. The rovibrational $\Delta v=1$ transitions of NaCl and KCl occur in the 25-35 \um and 35-45 \um range, respectively.  Since a blackbody with $T\sim100$ K peaks at $\lambda\sim30$ \um, and the observed disk brightness temperature is around 100-300 K at the radii where salts are observed, it is plausible that strong radiation from the disk in the mid-infrared is responsible for exciting the molecules.  However, we have not been able to assemble a self-consistent model explaining both the rotational and vibrational excitation ladders of NaCl or KCl.  In the supplemental material, we describe  and evaluate several other possible excitation mechanisms that are less likely but not ruled out.
+The vibrationally excited transitions observed suggest that radiative
+excitation is important in this environment.  The molecular transitions we
+observe have high Einstein A values, in the range $\sim10^{-3}-10^0$, and
+correspondingly high critical densities $n_{cr} \sim10^{6v}$ \percc, where $v$
+is the vibrational quantum number.  Collisional excitation alone cannot explain
+the different vibrational states being observed at a similar brightness level.
+The rovibrational $\Delta v=1$ transitions of NaCl and KCl occur in the 25-35
+\um and 35-45 \um range, respectively.  Since a blackbody with $T\sim100$ K
+peaks at $\lambda\sim30$ \um, and the observed disk brightness temperature is
+around 100-300 K at the radii where salts are observed, it is plausible that
+strong radiation from the disk in the mid-infrared is responsible for exciting
+the molecules.  However, we have not been able to assemble a self-consistent
+model explaining both the rotational and vibrational excitation ladders of NaCl
+or KCl.  In the supplemental material, we describe  and evaluate several other
+possible excitation mechanisms that are less likely but not ruled out.
 
-The detection of NaCl and KCl in our current dataset was serendipitous.  As a result, the observations were not optimized for unraveling the physical and chemical conditions underlying their presence and excitation, hindering our ability to obtain a full picture of the exact utility of these salts as tracers.  Nevertheless, we obtain several important conclusions from these detections.  First and foremost, these molecular lines uniquely trace the disk around a massive protostar, suggesting they may be an unambiguous and universal tracer of high-mass protostellar disks. Second, since these molecules contain atoms rarely seen in the molecular ISM because they are trapped in dust, they may serve as a tool for directly measuring absolute metallicity in an environment that is typically far too chemically complex and obscured for other methods to work.
+The detection of NaCl and KCl in our current dataset was serendipitous.  As a
+result, the observations were not optimized for unraveling the physical and
+chemical conditions underlying their presence and excitation, hindering our
+ability to obtain a full picture of the exact utility of these salts as
+tracers.  Nevertheless, we obtain several important conclusions from these
+detections.  First and foremost, these molecular lines uniquely trace the disk
+around a massive protostar, suggesting they may be an unambiguous and universal
+tracer of high-mass protostellar disks. Second, since these molecules contain
+atoms rarely seen in the molecular ISM because they are trapped in dust, they
+may serve as a tool for directly measuring absolute metallicity in an
+environment that is typically far too chemically complex and obscured for other
+methods to work.
 
