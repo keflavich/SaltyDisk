@@ -417,22 +417,23 @@ the higher rotational levels, indicating a much lower $T_{ex,rot}$.
 % \end{equation}
 % {\color{red} (this is mostly a sanity check)}
 
-Within each vibrational state for which we have several transitions, we attempt
+Within each vibrational state for which we observed several transitions, we attempt
 to measure a rotational temperature.  For the KCl v=0 state, in which we have
 detected 4 rotational transitions from $30 < E_U < 400$ K, the best fit
-rotational temperature is $T_{rot}\sim105$ K (Figure
+is $T_{rot}\sim105$ K (Figure
 \ref{fig:rotationdiagrams}).  At such a low temperature, the populations of the
 vibrationally excited states should be effectively zero.  
 
-Within each rotational state for which we have multiple vibrational line
-measurements, we measure a vibrational temperature.  We find temperatures
-ranging from 1000-5000 K, although these measurements are subject to very large
-uncertainties; the fits are consistent with any temperature within this range.
+Similarly, for each rotational transition observed from multiple vibrational
+levels, we measure a vibrational temperature.  We find values that range from
+1000-5000 K, although these fits are subject to very large
+uncertainties.
+% the fits are consistent with any temperature within this range.
 % (and, statistically but not physically, they are consistent with arbitrarily
 % large excitation temperatures).  
 There are also statistically significant
 outliers from the single-temperature model, suggesting that the level
-populations may not be well-characterized by a temperature at all.
+populations may not be well-characterized by a single temperature.
 
 % The rotational temperatures are reasonably consistent with the lower bound
 % disk temperatures at this radius, hinting that the salt emission lines are
@@ -468,19 +469,19 @@ Below, we explore several mechanisms for the observed line excitation:
 %
 \citet{Quintana-Lacaci2016a} calculated collision rates for NaCl with He and
 provided a Fortran code to compute those rates.  Typical collision rate coefficients for
-$\Delta$J = 1 or $\Delta$J = 2 transitions are $10^{-10}$~cm$^3$ \pers.  Making the usual
+\hbox{$\Delta$J=1} or \hbox{$\Delta$J=2} transitions are $10^{-10}$~cm$^3$ \pers.  Making the usual
 assumption that the collision rates with \hh are similar to those for He, we used
-RADEX [ref] to examine the excitation [footnote: the RADEX-compatible molecular data
+RADEX \citep{Vandertak2007} to examine the excitation [footnote: the RADEX-compatible molecular data
 file incorporating these coefficients is available from ....?].
 For T=100 K, $\delta v=1$ \kms \perpc, $X_{NaCl}=10^{-10}$ \rlp{presumably,
 the fractional abundance doesn't matter when one is computing critical density;
 giving this value will create confusion; the linewidth also is questionable}, the
 `effective density' at which the lines become detectable is $n\sim10^{6} + 
 10^{2v}$ \percc, where $v$ is the vibrational state quantum number.  The critical
-density is two orders of magnitude higher for each progressively
+density is roughly two orders of magnitude higher for each progressively
 higher vibrational state.  While the collision coefficients do not extend
 to $v=6$, extrapolation indicates that \hh densities
-$n\gtrsim10^{18}$ \percc are required to collisionally excite the $v=6$ lines.
+$n\gtrsim10^{18}$ \percc would be required to collisionally excite the $v=6$ lines.
 
 \par{\textbf{(2) Collisional excitation by electrons.}} 
 Because NaCl and KCl are extremely polar molecules, with dipole moments of
@@ -488,18 +489,23 @@ Because NaCl and KCl are extremely polar molecules, with dipole moments of
 collisions with electrons could also be important.
 Using the approximations from \citet{Dickinson1975a}, we find that collision
 rates between both NaCl and KCl and electrons in the J=5-50 v=0 states are
-$C\approx10^{-5}$ cm$^{3}$ \pers.  Thus, electrons are $10^5\times$ more 
+$C\approx10^{-5}$ cm$^{3}$ \pers.  Thus, electrons are $10^5$ times as
 efficient at exciting these molecules than \hh. In typical
 low-mass disks, ionization fractions $X_e \geq 10^{-4}$ occur in the upper layers
-of the disk, where some UV radiation is able to ionize H and C to H+ and C+
+of the disk, where some UV radiation is able to ionize H and C % to H+ and C+
 \citep{Bergin2007a}.  Collisions with electrons would dominate the excitation of
-the salt lines in such regions.  However, deeper into these disks, only X-rays and cosmic
-rays can penetrate to ionize neutrals, resulting in fractional ionizations $X_e < 10^{-6}$,
-too small to be relevant. 
+the salt lines in such regions.  However, deeper into the disks only X-rays and cosmic
+rays can penetrate, resulting in fractional ionizations $X_e < 10^{-6}$,
+too small for electron collisions to be relevant. 
 
-The declining brightness with rising rotational quantum number rules out both \hh and electron
-collisional excitation for the vibrational states, as any density high enough
-to excite vibrational states would thermalize the rotational levels.
+The low rotational temperatures that we infer seem to rule out both \hh and electron
+collisional excitation of excited vibrational states, since a collision rate high enough
+to excite these vibrational levels would quickly thermalize their rotational ladders 
+at high temperatures.
+
+%The declining brightness with rising rotational quantum number rules out both \hh and electron
+%collisional excitation for the vibrational states, as any density high enough
+%to excite vibrational states would thermalize the rotational levels.
 
 % We assume the collisional constants for NaCl are the same as those for SiS,
 % which has a similar molecular weight, meaning the collisional constants are
@@ -522,7 +528,7 @@ to excite vibrational states would thermalize the rotational levels.
 % seen at high elevations above the disk, while SiO v=5 is seen only at elevations
 % similar to NaCl; the difference
 
-\par{\textbf{(3) Infrared excitation. }} 
+\par{\textbf{(3) Infrared excitation.}} 
 The observed emission from vibrationally excited states suggests the
 presence of a significant radiation field at 25-45 \um, which covers the range
 of $\Delta v=1$ rovibrational transitions with $v\leq6$ (for NaCl, the range is
@@ -560,13 +566,13 @@ state to the same high temperature, which is not observed.
 %
 The high vibrational and low rotational temperatures of the
 salt lines resembles the `sawtooth' pattern observed for the rovibrational
-populations of \hh toward the Orion bar photodissociation region, 
-which is well-explained by ultraviolet excitation into higher electronic states,
+populations of \hh toward the Orion bar photodissociation region.  This
+pattern is explained by ultraviolet excitation into higher electronic states,
 followed by decay back to excited vibrational levels in the ground electronic
-state \citep{Kaplan2017}.  This mechanism avoids the $Delta v=1$ restriction
-for infrared excitation.  \hh rotational populations in the ground vibrational
+state \citep{Kaplan2017}.  \hh rotational populations in the ground vibrational
 state are thermalized by collisions; UV excitation transposes this pattern into
-higher vibrational states.
+higher vibrational states, without the $\Delta v=1$ restriction that applies to
+infrared excitation.
 
 % Ultraviolet excitation into higher electronic states could explain the observed
 % vibrationally excited emission.  Assuming that electronic states deexcite into
@@ -574,20 +580,24 @@ higher vibrational states.
 % rotational and vibrational states, each UV photon would be responsible for emission
 % spanning the full energy range.
 
-There are several problems with this model.  First, we do not detect lines
-in higher vibrational states, with weak or ambiguous detections in the v=7 and v=8 
-states of NaCl, and nondetections in higher vibrational levels.  Unless there is
+Unfortunately, there are several problems applying this model to the salt lines.
+First, we find an abrupt decline in the populations of $v > 6$ vibrational states,
+with weak or ambiguous detections of NaCl in the v=7 and v=8 levels, and
+nondetections for $v > 9$.  Unless there is
 some selection effect in the electronic de-excitation disfavoring higher vibrational
-states, it is difficult to explain these missing lines.  
-Second, the binding energy of NaCl and KCl are only a few eV  \rlp{exact values here?}. 
+states, it is difficult to explain this cutoff.  
+Second, the binding energies of NaCl and KCl are only a few eV  \rlp{exact values here?}. 
 they may therefore be dissociated rather than excited by UV photons.
 Third, there may not be any UV radiation in the outer disk where these lines
-are detected.  \sourcei has no associated electron-proton free-free emission
+are detected.  \sourcei has no electron-proton free-free emission
 \citep{Plambeck2013a}, so a strong $\lambda<912$ \AA\ UV field is ruled out.  While UV
 emission may be produced in shocks in the outflow, it is unclear whether
-it could penentrate to the parts of the disk where
+it could penentrate into the disk where
 the salt emission is observed.  Even a light haze of dust in the upper layers of
 the disk would likely shield the molecules from such illumination.
+
+We conclude that there is no simple model that explains the observed pattern of
+low rotational and high vibrational temperature.
 
 % \textbf{(4) The rovibrational transitions are optically thick up to
 % v$\sim$6, while the rotational transitions remain optically thin.}
