@@ -34,7 +34,7 @@ study, as it is the closest disk around a `high-mass' ($M>8$ \msun) star
 \citep{Hirota2014a,Plambeck2016a,Ginsburg2018b}.  It is also in many ways
 a unique source, being the only known protostellar object with SiO and \water
 masers in an outflow \citep{Goddi2009a,Goddi2010a,Greenhill2013a}.
-In \citet{Ginsburg2018b}, we reported 0.03$\arcsec$ ALMA observations of \sourcei
+In \citet{Ginsburg2018b}, a subset of the authors reported 0.03$\arcsec$ ALMA observations of \sourcei
 that allowed us to measure the outer rotation curve of the
 5(5,0)-6(4,3) \water line in the disk and along the base
 of the outflow; these measurements showed that the interior mass was
@@ -65,8 +65,8 @@ Majoris \citep{Milam2007a}, the post-AGB star envelope CRL 2688
 \citep{Highberger2003a}, and the AGB star wind around OH 231+4.2
 \citep{Sanchez-Contreras2018a}.  In these sources, they exist only in a limited
 range of radii from the central star.  The limited environments in which these molecules have been
-detected suggests that they only exist in the gas phase for a brief period when
-being ejected from dying stars before being incorporated into dust grains.
+detected suggests that they only persist in the gas phase for a brief period when
+being ejected from dying stars before being incorporated into dust grains.  This transient gas-phase abundance is analogous to that which makes SiO an excellent tracer of recent shock events: Si is sputtered from grains into the gas phase where it reacts with oxygen to form SiO.  Further reactions rapidly form SiO$_2$, depleting the gas-phase SiO abundance, and making that molecule an indicator of a recent shock \citep{Schilke1997a}.  Thus, if the production pathways, and role of the physical environment on those pathways, can be constrained for NaCl and KCl, the presence of these molecules has the potential to be a powerful tracer of physical conditions and history in a source. 
 
 % \bam{Did we check w/ Holger here to see where he thought
 % the v=1 for NaCl was seen?  I still can't find a paper w/ it.  It's also
@@ -300,7 +300,7 @@ known detections include the carbon star envelope IRC +10216
 Majoris and IK Tauri \citep{Milam2007a}. To our knowledge, \sourcei is only the
 fifth astronomical source in which KCl and NaCl have been detected.
 The only previous detection of vibrationally excited NaCl was of the v=1
-line in IRAS +10216 \citep{Quintana-Lacaci2016a}, 
+line in IRC+10216 \citep{Quintana-Lacaci2016a}, 
 % (\citealt{Agundez2012a} presented the most systematic study of salt lines, 
 %which only included detections of v=0 rotational transitions),
 while \sourcei exhibits clear emission up to v=6 in both NaCl and KCl.
@@ -322,9 +322,9 @@ lines exhibit NaCl emission peaks at $\pm0.032\arcsec=13$ AU above the disk),
 unlike SiO and \water that both exhibit high vertical extents consistent with
 outflow \citep{Ginsburg2018b}.  No emission in the salt lines is observed
 toward the optically thick continuum in the disk midplane (Figure
-\ref{fig:spatial}).  \citet{Ginsburg2018b} modeled the salt line emission as a
+\ref{fig:spatial}).  Although the carriers of the lines were unassigned at the time, \citet{Ginsburg2018b} modeled the line emission now assigned to these salts as a
 truncated Keplerian disk, finding that the radial distribution of the emission
-has an inner cutoff $\approx35-40$ AU and an outer cutoff $\approx55-60$ AU.
+has an inner cutoff $\approx35-40$ AU and an outer cutoff $\approx55-60$~AU.
 
 % ((constants.sigma_sb * 4 * np.pi * (35*u.au)**2 / (1e4*u.L_sun))**(-1/4)).decompose()
 % <Quantity 665.33595877 K>
@@ -366,7 +366,7 @@ thermally excited (it shows no sign of masing at any velocity) and traces the
 outflow.  The \mbox{SiO v=5 J=8-7} line, with an upper state energy level of
 8747 K, is also shown.  It clearly traces a smaller radius than the NaCl line,
 but a similar height in the disk.  By contrast, the \mbox{SiO v=0 J=8-7}
-emission starts above the vertical centroid of the NaCl line.
+emission starts above the vertical centroid of the NaCl line.  \bam{This reads as a result, not as discussion, as there's no conclusion drawn here.  What does this result tell us?  Seems like we're saying that the production method for SiO and NaCl/KCl probably aren't the same - they aren't co-located, so it's probably not shock/outflow-induced for NaCl/KCl?  This runs contrary to what is said later on in the discussion, however.}
 
 
 \begin{figure*}[!htp]
@@ -566,7 +566,7 @@ Third, there may not be any UV radiation in the outer disk where these lines
 are detected.  \sourcei has no electron-proton free-free emission
 \citep{Plambeck2013a}, so a strong $\lambda<912$ \AA\ UV field is ruled out.  While UV
 emission may be produced in shocks in the outflow, it is unclear whether
-it could penentrate into the disk where
+it could penetrate into the disk where
 the salt emission is observed.  Even a light haze of dust in the upper layers of
 the disk would likely shield the molecules from such illumination.
 
@@ -778,7 +778,7 @@ background is the same intensity as the emission lines).
 
 In this model, the different morphology of the SiO and NaCl lines in the disk
 and outflow must be driven entirely by excitation, since they should both be
-entirely in the gas phase.  
+entirely in the gas phase.   \bam{I can't buy this, actually.  That's a *huge* difference to be due just to excitation.  Perhaps the salts are just depleting out back onto the grains (or reacting away) faster than SiO $\rightarrow$ SiO$_2$?  This is perhaps more probable to me if we work with the oxygen-depleted route, since there's less oxygen to make the SiO$_2$?  This is all just spit-balling, though.}
 % This hypothesis is plausible, since the
 % SiO v=0 J=8-7 transition shown in Figure \ref{fig:sioonnacl} has $A_{8,7} =
 % 2.2030\ee{-3}$ \pers, while the NaCl v=2 J=26-25 transition has $A_{26,25} =
@@ -787,9 +787,9 @@ entirely in the gas phase.
 % change the rates), implying that the critical density of the
 % NaCl transition is $\sim10\times$ higher.
 
-While NaCl and KCl are clearly detected here, there are also several lines of
+While NaCl and KCl are clearly detected here, there are also several transitions of
 AlCl and AlF in our observational bands that were not detected.
-\citet{Cernicharo1987a} detected these lines at a comparable brightness to NaCl
+\citet{Cernicharo1987a} detected these transitions at a comparable brightness to NaCl
 and KCl in IRC+10216.  The lack of AlCl may be because \sourcei's disk is
 oxygen-rich, and aluminum is locked into AlOH, as suggested in the
 \citet{Cherchneff2012a} model.  Indeed, the tentative detection of AlO
@@ -877,9 +877,7 @@ of the class of high-mass protostars with disks; if the latter, these lines
 and potentially many others can be used to probe the radiation environment of 
 extremely embedded high-mass protostars.  
 
-The detection of highly excited vibrational states highlights the need for
-laboratory work to measure highly excited transitions of known astronomical
-molecular species.  \ag{Brett, want to add something here?}
+The detection of these species with substantial population in vibrationally excited states highlights the need for laboratory work to measure such transitions in known astronomical molecular species. Indeed, prior work on vibrational excitation in modeling and assigned vibrationally excited ethyl cyanide in ALMA observations of Orion-KL revealed that even when catalogs for these states are available, they are often incomplete \citep{Fortman2012a}. \bam{The reference is: Fortman et al. 2012 J Mol Spec 280, 11}.
 
 \begin{figure*}[!htp]
 \includegraphics[scale=1,width=3.5in]{figures/KCl_rotational_diagrams.pdf}
