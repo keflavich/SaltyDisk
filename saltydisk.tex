@@ -496,7 +496,7 @@ RADEX \citep{van-der-Tak2007a} to examine the excitation \footnote{The
 RADEX-compatible molecular data
 file incorporating these coefficients is available from
 \url{https://github.com/keflavich/SaltyDisk/blob/\githash/nacl.dat}}.
-For T=100 K, $\delta v=1$ \kms \perpc, $X_{NaCl}=10^{-10}$,
+For T=100 K, $\delta v=1$ \kms \perpc, $N_{NaCl}=10^{12}$ \persc,
 \footnote{\rlp{presumably,
 the fractional abundance doesn't matter when one is computing critical density;
 giving this value will create confusion; the linewidth also is questionable}
@@ -504,13 +504,13 @@ giving this value will create confusion; the linewidth also is questionable}
 and the velocity gradient affects the optical depth.  These are fiducial,
 poorly-justified parameters, but I think they're a good first guess.}
 }
-the `effective density' at which the lines become detectable is $n\sim10^{6} +
-10^{2v}$ \percc, where $v$ is the vibrational state quantum number.  The
-critical density is roughly two orders of magnitude higher for each
-progressively higher vibrational state.  While the collision coefficients do
-not extend to $v=6$, extrapolation indicates that \hh densities
-$n\gtrsim10^{18}$ \percc would be required to collisionally excite the $v=6$
-lines.
+the critical density is $n_{cr}\sim10^8$ \percc for the $v=0$
+states and $n_{cr}\sim10^{12}$ for the $v>=1$ states, where $v$ is the
+vibrational state quantum number.  These high critical densities effectively
+rule out collisional excitation producing vibrationally excited states.
+
+
+
 
 \par{\textbf{(2) Collisional excitation by electrons.}} 
 Because NaCl and KCl are extremely polar molecules, with dipole moments of 9.1

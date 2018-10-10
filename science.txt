@@ -139,7 +139,8 @@ and rapid process in disk-launched winds.
 The vibrationally excited transitions observed suggest that radiative
 excitation is important in this environment.  The molecular transitions we
 observe have high Einstein A values, in the range $\sim10^{-3}-10^0$, and
-correspondingly high critical densities $n_{cr} \sim10^{6v}$ \percc, where $v$
+correspondingly high critical densities $n_{cr} \sim10^{8}$ \percc for v=0
+and $n_{cr} \sim 10^{12}$ for $v>=1$, where $v$
 is the vibrational quantum number.  Collisional excitation alone cannot explain
 the different vibrational states being observed at a similar brightness level.
 The rovibrational $\Delta v=1$ transitions of NaCl and KCl occur in the 25-35
