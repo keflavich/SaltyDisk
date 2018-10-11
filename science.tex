@@ -1,10 +1,62 @@
-This file is a draft document for a Science/Nature-style submission.  If we
-submit to one of these journals and are turned down, this can be a summary we
-pass off to NRAO for a press release.
+% Use only LaTeX2e, calling the article.cls class and 12-point type.
 
-BAM: I removed the hard line wraps because they make my eyes twitch to look at
-while working on this.  Feel free to put them back in =).
-AG: You don't do all of your work in VIM?  Huh, weird.
+\documentclass[12pt]{article}
+
+% Users of the {thebibliography} environment or BibTeX should use the
+% scicite.sty package, downloadable from *Science* at
+% http://www.sciencemag.org/authors/preparing-manuscripts-using-latex 
+% This package should properly format in-text
+% reference calls and reference-list numbers.
+
+\usepackage{scicite}
+
+\usepackage{times}
+
+% The preamble here sets up a lot of new/revised commands and
+% environments.  It's annoying, but please do *not* try to strip these
+% out into a separate .sty file (which could lead to the loss of some
+% information when we convert the file to other formats).  Instead, keep
+% them in the preamble of your main LaTeX source file.
+
+
+% The following parameters seem to provide a reasonable page setup.
+
+\topmargin 0.0cm
+\oddsidemargin 0.2cm
+\textwidth 16cm 
+\textheight 21cm
+\footskip 1.0cm
+
+
+%The next command sets up an environment for the abstract to your paper.
+
+\newenvironment{sciabstract}{%
+\begin{quote} \bf  }
+{\end{quote}}
+
+
+\date{}
+
+\title{Orion \sourcei's disk is salty}
+\begin{document}
+\input{authors}
+\baselineskip24pt
+
+% Make the title.
+
+\maketitle 
+
+\begin{sciabstract}
+    abstract
+\end{sciabstract}
+
+% This file is a draft document for a Science/Nature-style submission.  If we
+% submit to one of these journals and are turned down, this can be a summary we
+% pass off to NRAO for a press release.
+
+% BAM: I removed the hard line wraps because they make my eyes twitch to look at
+% while working on this.  Feel free to put them back in =).
+% AG: You don't do all of your work in VIM?  Huh, weird.
 
 
 Disks around high-mass stars have been difficult to identify and observe, in
@@ -165,4 +217,4 @@ atoms rarely seen in the molecular ISM because they are trapped in dust, they
 may serve as a tool for directly measuring absolute metallicity in an
 environment that is typically far too chemically complex and obscured for other
 methods to work.
-
+\end{document}
