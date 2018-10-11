@@ -9,6 +9,7 @@
 % reference calls and reference-list numbers.
 
 \usepackage{scicite}
+\usepackage{xspace}
 
 \usepackage{times}
 
@@ -37,14 +38,56 @@
 
 \date{}
 
+
+
+\newcommand{\nraojansky}{{\it{Jansky fellow of the National Radio Astronomy Observatory, 1003 Lopezville Rd, Socorro, NM 87801 USA }}}
+\newcommand{\nrao}{{\it{National Radio Astronomy Observatory, 1003 Lopezville Rd, Socorro, NM 87801 USA }}}
+\newcommand{\nraocv}{{\it{National Radio Astronomy Observatory, Charlottesville, VA 22903 USA }}}
+\newcommand{\cfa}{{\it{Harvard-Smithsonian Center for Astrophysics, Cambridge, MA 02138 USA }}}
+\newcommand{\hubble}{{B.A.M. is a Hubble Fellow of the National Radio Astronomy\\ Observatory.}}
+
+
+\newcommand{\radboud}{{\it{Department of Astrophysics/IMAPP, Radboud University Nijmegen, PO Box 9010, 6500 GL Nijmegen, the Netherlands}}}
+\newcommand{\allegro}{{\it{ALLEGRO/Leiden Observatory, Leiden University, PO Box 9513, 2300 RA Leiden, the Netherlands}}}
+\newcommand{\casa}{{\it{CASA, University of Colorado, 389-UCB, Boulder, CO 80309}} }
+
+\newcommand{\berkeley}{{\it{Radio Astronomy Laboratory, University of California, Berkeley, CA 94720}} }
+
+\newcommand{\sourcei}{SrcI\xspace}
+\newcommand{\msun}{\ensuremath{M_{\odot}}\xspace}			%  Msun
+\newcommand{\lsun}{\ensuremath{L_{\odot}}\xspace}			%  Lsun
+\newcommand{\water}{H$_{2}$O\xspace}		%  H2O
+\newcommand{\kms}{\textrm{km~s}\ensuremath{^{-1}}\xspace}	%  km s-1
+\newcommand{\percc}{\ensuremath{\textrm{cm}^{-3}}\xspace}
+\newcommand{\um}{\ensuremath{\mu \textrm{m}}\xspace}    % micron
+
+\author{Adam Ginsburg 
+%\nraojansky
+e-mail: aginsbur@nrao.edu; adam.g.ginsburg@gmail.com
+Brett McGuire
+%\hubble
+%\nraocv
+%\cfa
+John Bally
+%\casa
+Ciriaco Goddi
+%\allegro
+%\radboud
+Richard Plambeck
+%\berkeley
+Melvyn Wright
+%\berkeley
+}
+
+
 \title{Orion \sourcei's disk is salty}
+
 \begin{document}
-\input{authors}
-\baselineskip24pt
+%\baselineskip24pt
 
 % Make the title.
 
-\maketitle 
+\maketitle
 
 \begin{sciabstract}
     abstract
@@ -78,28 +121,28 @@ Disks are ubiquitous around forming stars.  They provide the main mechanism for
 mediating accretion, and, via outflows, shedding angular momentum from the system.
 However, it remains uncertain whether they play an important role in high-mass
 star formation, since the only definitive disk detections are around stars that
-have already acquired most of their mass \citep{Girart2017a,Ginsburg2018b}.
+have already acquired most of their mass \cite{Girart2017a,Ginsburg2018b}.
 The lack of clear disk detections is, at least in part, because there were no
 known spectral lines that trace a disk and not the molecule-rich ``hot core''
-in the surrounding region \citep{Goddi2018a,Cesaroni2017a}.  The central disks
+in the surrounding region \cite{Goddi2018a,Cesaroni2017a}.  The central disks
 may also be obscured by dust opacity at wavelengths less than 3 mm.
 
-++++++++
-BAM: Is there a distinction to be made here between the low-mass sources, where
-PPDs are routinely detected through spectral lines, and which are no longer
-embedded (don't have a hot-core), and these high-mass sources?  Do the
-high-mass sources just not shed their 'hot core' shells at some point so we can
-see the underlying 'hidden' disk like what happens in low-mass sources?  I am
-not a star-formation person, so forgive me if it's a stupid question.
-AG: There are high-mass stars with low-mass disks and little/no core, like
-HH80/81.  
-++++++++
+% ++++++++
+% BAM: Is there a distinction to be made here between the low-mass sources, where
+% PPDs are routinely detected through spectral lines, and which are no longer
+% embedded (don't have a hot-core), and these high-mass sources?  Do the
+% high-mass sources just not shed their 'hot core' shells at some point so we can
+% see the underlying 'hidden' disk like what happens in low-mass sources?  I am
+% not a star-formation person, so forgive me if it's a stupid question.
+% AG: There are high-mass stars with low-mass disks and little/no core, like
+% HH80/81.  
+% ++++++++
 
 While dozens of species have been detected in the disks around low-mass stars
-\citep{McGuire2018c}, these molecules are comprised solely of a small selection
+\cite{McGuire2018c}, these molecules are comprised solely of a small selection
 of elements: H, C, N, O, and S.  All of the molecules seen in disks are also
 prevalent in the ISM, particularly in the hot cores surrounding high-mass stars
-\citep{some sgr b2 reference}. In high-mass environments, this therefore
+\cite{some sgr b2 reference}. In high-mass environments, this therefore
 limits their utility as unique disk tracers in high-mass regions, hiding
 the kinematic signatures of rotation.
 
@@ -107,14 +150,14 @@ At the other extreme of the stellar life cycle, in the atmospheres of dying
 stars, a wealth of exotic molecules -- those containing rare elements not
 commonly seen in star-forming regions -- are observed.  Stars along the
 asymptotic giant branch (AGB) lose substantial mass in slow winds
-\citep{Herwig2005a} that form molecules with high atomic weight elements that
+\cite{Herwig2005a} that form molecules with high atomic weight elements that
 rapidly condense onto dust particles.  The most notable example is that of
 IRC+10216, the expanding gas cloud around the AGB star CW Leonis.  Here, NaCl,
 KCl, AlCl, AlF, NaCN, and a number of other metal-bearing molecules have been
-detected \citep{Agundez2012a,Zack2011a}.  In this instance, we use `metal' in
+detected \cite{Agundez2012a,Zack2011a}.  In this instance, we use `metal' in
 the chemist's sense of the word.  NaCl and KCl have been detected around other
 AGB and post-AGB stars
-\citep{Milam2007a,Highberger2003a,Sanchez-Contreras2018a}, but to our
+\cite{Milam2007a,Highberger2003a,Sanchez-Contreras2018a}, but to our
 knowledge, no detections outside of these environments have previously been
 reported.
 
@@ -129,18 +172,18 @@ Here, we report the detection of NaCl, KCl, and their $^{37}Cl$ and $^{41}$K
 isotopologues in the disk around Orion Source I.  This disk was previously used
 to measure the central mass of Source I as 15 \msun, although those
 measurements were performed before the spectral lines belonging to NaCl and KCl
-were identified \citep{Ginsburg2018b}.  Source I is the brightest object in the
+were identified \cite{Ginsburg2018b}.  Source I is the brightest object in the
 Orion nebula at millimeter wavelengths and is deeply embedded within a hot core
-\citep{}. Because of the high optical depth of the foreground dust, it is not
+\cite{}. Because of the high optical depth of the foreground dust, it is not
 directly detected in the
-mid-infrared \citep[e.g.,][]{Robberto2005a}. It is a system consisting of a
+mid-infrared \cite[e.g.,][]{Robberto2005a}. It is a system consisting of a
 $\sim10^4$ \lsun central object with a photospheric temperature $\approx4000$ K
-\citep{Testi2010a} surrounded by a $\sim0.1$ \msun disk, which we observe
-nearly edge-on \citep{Plambeck2016a}.  The central source mass has been
-debated, with estimates ranging from 7-20 \msun \citep{Matthews2010a,other},
+\cite{Testi2010a} surrounded by a $\sim0.1$ \msun disk, which we observe
+nearly edge-on \cite{Plambeck2016a}.  The central source mass has been
+debated, with estimates ranging from 7-20 \msun \cite{Matthews2010a,other},
 but the highest-resolution data imply a central source mass $M\approx15$ \msun
 from fitting a Keplerian orbital model to \water and line (now identified as
-NaCl) emission profiles \citep{Ginsburg2018b}.
+NaCl) emission profiles \cite{Ginsburg2018b}.
 
 We performed observations with ALMA in three spectral bands at the highest
 available spatial resolution, 0.03 to 0.10 arcseconds from 0.85 to 3 mm. The
@@ -153,14 +196,14 @@ disk-averaged spectrum.  We use this spectrum to measure and  identify lines
 (see Methods).
 
 While the most prominent spectral features are the SiO and \water lines that
-have previously been observed \citep{Goddi2013a,Hirota2014a}, there were dozens
-of lines that remained unidentified in our initial study \citep{Ginsburg2018b}.
+have previously been observed \cite{Goddi2013a,Hirota2014a}, there were dozens
+of lines that remained unidentified in our initial study \cite{Ginsburg2018b}.
 We have now identified these lines as transitions of NaCl and KCl, noting the
 excellent correspondence between the observed and measured/catalogued
-frequencies \citep{Caris2002a,Caris2004a,Muller2005a,Lovas2005a,Pickett1998a}.
+frequencies \cite{Caris2002a,Caris2004a,Muller2005a,Lovas2005a,Pickett1998a}.
 We additionally searched databases of transitions of these same species with
 more quanta of vibrational excitation, and found additional matches
-\citep{Barton2014a,Cabezas2016a}.
+\cite{Barton2014a,Cabezas2016a}.
 
 Although the detection of salts lines in a protostellar disk was surprising,
 the detection of highly vibrationally excited transitions of these species is
@@ -176,15 +219,15 @@ extend beyond this height, indicating that, unlike SiO and \water, the salts do
 not trace the outflow.
 
 Once in the gas-phase, however, we expect salts to rapidly deplete back into
-dust grains \citep{Cherncheff2012a}.  Since we observe them in emission, they
+dust grains \cite{Cherncheff2012a}.  Since we observe them in emission, they
 must be released into the gas phase by either grain destruction, or produced
 chemically from simple gas-phase precursors, likely elemental atomic gas
 (either neutral or ionized Na and K).  Because previous studies have ruled out
 the presence of any recombination lines in this source, and therefore
 demonstrated that there is no ionized gas around Source I
-\citep{Plambeck2016a,Baez-Rubio2018a}, we reject the atomic formation route.
+\cite{Plambeck2016a,Baez-Rubio2018a}, we reject the atomic formation route.
 The salts must be produced by dust destruction, most likely via sputtering by
-high-energy particles \citep{Schilke1997a}.  The small scale height of the
+high-energy particles \cite{Schilke1997a}.  The small scale height of the
 observed salt emission therefore implies that grain destruction is an efficient
 and rapid process in disk-launched winds.
 
