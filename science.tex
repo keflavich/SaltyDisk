@@ -40,18 +40,18 @@
 
 
 
-\newcommand{\nraojansky}{{\it{Jansky fellow of the National Radio Astronomy Observatory, 1003 Lopezville Rd, Socorro, NM 87801 USA }}}
-\newcommand{\nrao}{{\it{National Radio Astronomy Observatory, 1003 Lopezville Rd, Socorro, NM 87801 USA }}}
-\newcommand{\nraocv}{{\it{National Radio Astronomy Observatory, Charlottesville, VA 22903 USA }}}
-\newcommand{\cfa}{{\it{Harvard-Smithsonian Center for Astrophysics, Cambridge, MA 02138 USA }}}
-\newcommand{\hubble}{{B.A.M. is a Hubble Fellow of the National Radio Astronomy\\ Observatory.}}
+\newcommand{\nraojansky}{\footnotesize{\it{Jansky fellow of the National Radio Astronomy Observatory, 1003 Lopezville Rd, Socorro, NM 87801 USA }}}
+\newcommand{\nrao}{\footnotesize{\it{National Radio Astronomy Observatory, 1003 Lopezville Rd, Socorro, NM 87801 USA }}}
+\newcommand{\nraocv}{\footnotesize{\it{National Radio Astronomy Observatory, Charlottesville, VA 22903 USA }}}
+\newcommand{\cfa}{\footnotesize{\it{Harvard-Smithsonian Center for Astrophysics, Cambridge, MA 02138 USA }}}
+\newcommand{\hubble}{\footnotesize{B.A.M. is a Hubble Fellow of the National Radio Astronomy Observatory.}}
 
 
-\newcommand{\radboud}{{\it{Department of Astrophysics/IMAPP, Radboud University Nijmegen, PO Box 9010, 6500 GL Nijmegen, the Netherlands}}}
-\newcommand{\allegro}{{\it{ALLEGRO/Leiden Observatory, Leiden University, PO Box 9513, 2300 RA Leiden, the Netherlands}}}
-\newcommand{\casa}{{\it{CASA, University of Colorado, 389-UCB, Boulder, CO 80309}} }
+\newcommand{\radboud}{\footnotesize{\it{Department of Astrophysics/IMAPP, Radboud University Nijmegen, PO Box 9010, 6500 GL Nijmegen, the Netherlands}}}
+\newcommand{\allegro}{\footnotesize{\it{ALLEGRO/Leiden Observatory, Leiden University, PO Box 9513, 2300 RA Leiden, the Netherlands}}}
+\newcommand{\casa}{\footnotesize{\it{CASA, University of Colorado, 389-UCB, Boulder, CO 80309}} }
 
-\newcommand{\berkeley}{{\it{Radio Astronomy Laboratory, University of California, Berkeley, CA 94720}} }
+\newcommand{\berkeley}{\footnotesize{\it{Radio Astronomy Laboratory, University of California, Berkeley, CA 94720}} }
 
 \newcommand{\sourcei}{SrcI\xspace}
 \newcommand{\msun}{\ensuremath{M_{\odot}}\xspace}			%  Msun
@@ -61,22 +61,29 @@
 \newcommand{\percc}{\ensuremath{\textrm{cm}^{-3}}\xspace}
 \newcommand{\um}{\ensuremath{\mu \textrm{m}}\xspace}    % micron
 
-\author{Adam Ginsburg 
-%\nraojansky
-e-mail: aginsbur@nrao.edu; adam.g.ginsburg@gmail.com
-Brett McGuire
-%\hubble
-%\nraocv
-%\cfa
-John Bally
-%\casa
-Ciriaco Goddi
-%\allegro
-%\radboud
-Richard Plambeck
-%\berkeley
-Melvyn Wright
-%\berkeley
+\newcommand{\apj}{ApJ}
+\newcommand{\aap}{A\&A}
+\newcommand{\apjl}{ApJL}
+\newcommand{\jqsrt}{JQSRT}
+\newcommand{\mnras}{MNRAS}
+
+\author{
+Adam Ginsburg\\
+\nraojansky\\
+e-mail: aginsbur@nrao.edu; adam.g.ginsburg@gmail.com\\
+Brett McGuire\\
+\hubble\\
+\nraocv\\
+\cfa\\
+John Bally\\
+\casa\\
+Ciriaco Goddi\\
+\allegro\\
+\radboud\\
+Richard Plambeck\\
+\berkeley\\
+Melvyn Wright\\
+\berkeley\\
 }
 
 
@@ -176,7 +183,7 @@ were identified \cite{Ginsburg2018b}.  Source I is the brightest object in the
 Orion nebula at millimeter wavelengths and is deeply embedded within a hot core
 \cite{}. Because of the high optical depth of the foreground dust, it is not
 directly detected in the
-mid-infrared \cite[e.g.,][]{Robberto2005a}. It is a system consisting of a
+mid-infrared \cite{Robberto2005a}. It is a system consisting of a
 $\sim10^4$ \lsun central object with a photospheric temperature $\approx4000$ K
 \cite{Testi2010a} surrounded by a $\sim0.1$ \msun disk, which we observe
 nearly edge-on \cite{Plambeck2016a}.  The central source mass has been
@@ -260,4 +267,8 @@ atoms rarely seen in the molecular ISM because they are trapped in dust, they
 may serve as a tool for directly measuring absolute metallicity in an
 environment that is typically far too chemically complex and obscured for other
 methods to work.
+
+\bibliographystyle{Science}
+\bibliography{extracted}
+
 \end{document}
