@@ -40,6 +40,11 @@
 \usepackage{xcolor}
 \newcommand{\bam}[1]{\textcolor{green!65!black}{\textbf{[BAM: #1]}}}
 
+\def\ee#1{\ensuremath{\times10^{#1}}}
+\newcommand{\degrees}{\ensuremath{^{\circ}}}
+\newcommand{\hh}{\ensuremath{\textrm{H}_{2}}\xspace}			%  H2
+\newcommand{\pers}{\ensuremath{\mathrm{s}^{-1}}\xspace}
+\newcommand\arcsec{\mbox{$^{\prime\prime}$}\xspace} 
 
 \date{}
 
@@ -82,6 +87,7 @@
 \newcommand{\apjs}{ApJS}
 \newcommand{\araa}{ARAA}
 \newcommand{\jqsrt}{JQSRT}
+\newcommand{\jcp}{JCP}
 \newcommand{\mnras}{MNRAS}
 
 \author{
@@ -526,7 +532,7 @@ consistent pattern to the detected lines and no individual species can explain
 more than a few of the observed lines.''  This statement was incorrect, as
 there are obvious carriers for the majority of the unidentified lines that we
 had simply overlooked: NaCl, KCl, and their isotopologues.  The
-detected lines have amplitudes in the range 0.5-3 mJy \perbeam, corresponding
+detected lines have amplitudes in the range 0.5-3 mJy beam$^{-1}$, corresponding
 to brightness temperatures 5-20 K.  
 
 In Figures \ref{fig:spectrab3}-\ref{fig:spectrab7}, we have labeled all of the
@@ -546,26 +552,26 @@ spectrum of AlO.
 %\emph{some} of the lines that were not detected because of severe confusion
 
 \begin{figure*}[!htp]
-\includegraphics[scale=1,width=5.5in]{figures/lines_labeled_OrionSourceI_B3_spw0_robust0.5.pdf}
-\includegraphics[scale=1,width=5.5in]{figures/lines_labeled_OrionSourceI_B3_spw1_robust0.5.pdf}
-\includegraphics[scale=1,width=5.5in]{figures/lines_labeled_OrionSourceI_B3_spw2_robust0.5.pdf}
-\includegraphics[scale=1,width=5.5in]{figures/lines_labeled_OrionSourceI_B3_spw3_robust0.5.pdf}
+\includegraphics[scale=1,width=5.5in]{{figures/lines_labeled_OrionSourceI_B3_spw0_robust0.5}.pdf}
+\includegraphics[scale=1,width=5.5in]{{figures/lines_labeled_OrionSourceI_B3_spw1_robust0.5}.pdf}
+\includegraphics[scale=1,width=5.5in]{{figures/lines_labeled_OrionSourceI_B3_spw2_robust0.5}.pdf}
+\includegraphics[scale=1,width=5.5in]{{figures/lines_labeled_OrionSourceI_B3_spw3_robust0.5}.pdf}
 \caption{Stacked spectra  B3}
 \label{fig:spectrab3}
 \end{figure*}
 \begin{figure*}[!htp]
-\includegraphics[scale=1,width=5.5in]{figures/lines_labeled_OrionSourceI_B6_spw0_robust0.5.pdf}
-\includegraphics[scale=1,width=5.5in]{figures/lines_labeled_OrionSourceI_B6_spw1_robust0.5.pdf}
-\includegraphics[scale=1,width=5.5in]{figures/lines_labeled_OrionSourceI_B6_spw2_robust0.5.pdf}
-\includegraphics[scale=1,width=5.5in]{figures/lines_labeled_OrionSourceI_B6_spw3_robust0.5.pdf}
+    \includegraphics[scale=1,width=5.5in]{{figures/lines_labeled_OrionSourceI_B6_spw0_robust0.5}.pdf}
+    \includegraphics[scale=1,width=5.5in]{{figures/lines_labeled_OrionSourceI_B6_spw1_robust0.5}.pdf}
+    \includegraphics[scale=1,width=5.5in]{{figures/lines_labeled_OrionSourceI_B6_spw2_robust0.5}.pdf}
+    \includegraphics[scale=1,width=5.5in]{{figures/lines_labeled_OrionSourceI_B6_spw3_robust0.5}.pdf}
 \caption{Stacked spectra B6}
 \label{fig:spectrab6}
 \end{figure*}
 \begin{figure*}[!htp]
-\includegraphics[scale=1,width=5.5in]{figures/lines_labeled_OrionSourceI_B7.lb_spw0_robust0.5.pdf}
-\includegraphics[scale=1,width=5.5in]{figures/lines_labeled_OrionSourceI_B7.lb_spw1_robust0.5.pdf}
-\includegraphics[scale=1,width=5.5in]{figures/lines_labeled_OrionSourceI_B7.lb_spw2_robust0.5.pdf}
-\includegraphics[scale=1,width=5.5in]{figures/lines_labeled_OrionSourceI_B7.lb_spw3_robust0.5.pdf}
+\includegraphics[scale=1,width=5.5in]{{figures/lines_labeled_OrionSourceI_B7.lb_spw0_robust0.5}.pdf}
+\includegraphics[scale=1,width=5.5in]{{figures/lines_labeled_OrionSourceI_B7.lb_spw1_robust0.5}.pdf}
+\includegraphics[scale=1,width=5.5in]{{figures/lines_labeled_OrionSourceI_B7.lb_spw2_robust0.5}.pdf}
+\includegraphics[scale=1,width=5.5in]{{figures/lines_labeled_OrionSourceI_B7.lb_spw3_robust0.5}.pdf}
 \caption{Stacked spectra B7}
 \label{fig:spectrab7}
 \end{figure*}
@@ -628,7 +634,7 @@ for a reliable match to our observational spectra.  We then applied these
 fitted models to the higher-$v$ states tabulated by Barton to get corrected
 rest frequencies for KCl, while for NaCl we used the \cite{Cabezas2016a}
 values.  We note that the values printed in \cite{Barton2014a} differ from
-those in the digital catalogs hosted on \url{exomol.com}, so we suspect the
+those in the digital catalogs hosted on \texttt{exomol.com}, so we suspect the
 error was merely a transcription error of some sort.
 %A more detailed re-fitting and prediction of the frequencies is beyond the
 %scope of this \emph{Letter}, but is certainly warranted for follow-up efforts.
@@ -683,12 +689,12 @@ $T_{eq}=120-185$ K for a flat disk \cite{Chiang1997a}.  These cooler temperature
 are consistent with the observed brightness temperatures in the outer
 part of the continuum disk (in Figure \ref{fig:spatial}, the NaCl emission
 begins just beyond the $T=300$ K contour), although the temperature in the inner
-portion of the disk reaches $\gtrsim500$ K.
+portion of the disk reaches $>500$ K.
 
 \begin{figure*}[!htp]
-\includegraphics[scale=1,width=2.25in]{figures/OrionSourceI_NaClv=3_7-6_robust0.5.maskedclarkclean10000_medsub_K_peak_offset_contours.pdf}
-\includegraphics[scale=1,width=2.25in]{figures/OrionSourceI_NaClv=1_18-17_robust0.5.maskedclarkclean10000_medsub_K_peak_offset_contours.pdf}
-\includegraphics[scale=1,width=2.25in]{figures/OrionSourceI_NaClv=2_26-25_robust0.5.maskedclarkclean10000_medsub_K_peak_offset_contours.pdf}
+    \includegraphics[scale=1,width=2.25in]{{figures/OrionSourceI_NaClv=3_7-6_robust0.5.maskedclarkclean10000_medsub_K_peak_offset_contours}.pdf}
+    \includegraphics[scale=1,width=2.25in]{{figures/OrionSourceI_NaClv=1_18-17_robust0.5.maskedclarkclean10000_medsub_K_peak_offset_contours}.pdf}
+    \includegraphics[scale=1,width=2.25in]{{figures/OrionSourceI_NaClv=2_26-25_robust0.5.maskedclarkclean10000_medsub_K_peak_offset_contours}.pdf}
 \caption{Peak intensity images of NaCl lines in each band showing the spatial
 distribution of the emission.  From left to right, the lines are: 87.26 GHz
 NaCl v=3 J=7-6, 232.51 GHz NaCl v=1 J=18-17, and 333.01 GHz NaCl v=2 J=26-25.
@@ -831,7 +837,7 @@ with \hh are similar to those for He, we used RADEX \cite{van-der-Tak2007a} to
 examine the excitation \footnote{The
 RADEX-compatible molecular data
 file incorporating these coefficients is available from
-\url{https://github.com/keflavich/SaltyDisk/blob/\githash/nacl.dat}}.
+\texttt{https://github.com/keflavich/SaltyDisk/blob/bfd7419/nacl.dat}}.
 %For T=100 K, $\delta v=1$ \kms \perpc, $N_{NaCl}=10^{12}$ \persc,
 % \footnote{\rlp{presumably,
 % the fractional abundance doesn't matter when one is computing critical density;
@@ -1003,7 +1009,7 @@ potential of 5.99 eV, and so is ionized at a few hundred K higher temperatures
 than sodium).  These ions react with HCl to form NaCl and KCl.  However, at
 present, only the inner $<20$ AU region, which is currently unresolved, clearly
 reaches such high temperatures\footnote{We also know from RRL studies that
-there is little to no ionized gas with $T\gtrsim10^4$ K around \sourcei
+there is little to no ionized gas with $T>10^4$ K around \sourcei
 \cite{Plambeck2016a,Baez-Rubio2018a}}.  
 
 For gas-phase formation to be a significant process, then, either material in
