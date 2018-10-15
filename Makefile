@@ -12,6 +12,13 @@ SHELL=/bin/bash
 
 all: gitstuff.tex saltydisk
 
+science:
+	${PDFLATEX} science.tex
+	${BIBTEX} science
+	${PDFLATEX} science.tex
+	${BIBTEX} science
+	${PDFLATEX} science.tex
+
 .PHONY: saltydisk
 saltydisk: 
 	echo "texpath: ${texpath}"
