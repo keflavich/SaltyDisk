@@ -88,6 +88,7 @@
 \newcommand{\araa}{ARAA}
 \newcommand{\jqsrt}{JQSRT}
 \newcommand{\jcp}{JCP}
+\newcommand{\ssr}{SSR}
 \newcommand{\mnras}{MNRAS}
 
 \author{
@@ -591,8 +592,8 @@ The majority of the NaCl and KCl lines that we detected are in excited
 vibrational states.  Although transitions in higher vibrational states were
 measured, and some reported, in \cite{Caris2004a}, these did not provide the
 complete catalogs needed for this analysis, nor to our knowledge are these
-catalogues available in any of the standard online databases \cite[i.e., CDMS,
-SLAIM, JPL;][]{Muller2005a,Lovas2005b,Pickett1998a}.  We obtained the KCl
+catalogues available in any of the standard online databases: CDMS, SLAIM, JPL
+\cite{Muller2005a,Lovas2005b,Pickett1998a}.  We obtained the KCl
 frequencies for these lines from the catalogs of \cite{Barton2014a}, which was
 designed primarily for use in exoplanet atmospheres and includes over 10$^5$
 transitions for each molecular species and isotopologue with levels up to
@@ -692,9 +693,9 @@ begins just beyond the $T=300$ K contour), although the temperature in the inner
 portion of the disk reaches $>500$ K.
 
 \begin{figure*}[!htp]
-    \includegraphics[scale=1,width=2.25in]{{figures/OrionSourceI_NaClv=3_7-6_robust0.5.maskedclarkclean10000_medsub_K_peak_offset_contours}.pdf}
-    \includegraphics[scale=1,width=2.25in]{{figures/OrionSourceI_NaClv=1_18-17_robust0.5.maskedclarkclean10000_medsub_K_peak_offset_contours}.pdf}
-    \includegraphics[scale=1,width=2.25in]{{figures/OrionSourceI_NaClv=2_26-25_robust0.5.maskedclarkclean10000_medsub_K_peak_offset_contours}.pdf}
+    \includegraphics[scale=1,width=2.0in]{{figures/OrionSourceI_NaClv=3_7-6_robust0.5.maskedclarkclean10000_medsub_K_peak_offset_contours}.pdf}
+    \includegraphics[scale=1,width=2.0in]{{figures/OrionSourceI_NaClv=1_18-17_robust0.5.maskedclarkclean10000_medsub_K_peak_offset_contours}.pdf}
+    \includegraphics[scale=1,width=2.0in]{{figures/OrionSourceI_NaClv=2_26-25_robust0.5.maskedclarkclean10000_medsub_K_peak_offset_contours}.pdf}
 \caption{Peak intensity images of NaCl lines in each band showing the spatial
 distribution of the emission.  From left to right, the lines are: 87.26 GHz
 NaCl v=3 J=7-6, 232.51 GHz NaCl v=1 J=18-17, and 333.01 GHz NaCl v=2 J=26-25.
@@ -747,6 +748,19 @@ states and trace an intermediate region.
 % obtain more realistic temperature estimates using the \citet{Chiang1997a}
 % approximations for a flat or flared disk.}
 
+\input{NaCl_line_parameters.tex}
+\input{Na37Cl_line_parameters.tex}
+\input{KCl_line_parameters.tex}
+\input{K37Cl_line_parameters.tex}
+\input{41KCl_line_parameters.tex}
+\input{41K37Cl_line_parameters.tex}
+
+
+
+
+
+
+
 \section{Excitation}
 The detection of vibrationally excited transitions from v=0 to v=6 at similar
 brightness suggests that the vibrational excitation temperature $T_{ex,vib}$ of
@@ -796,6 +810,16 @@ uncertainties.
 There are also statistically significant
 outliers from the single-temperature model, suggesting that the level
 populations may not be well-characterized by a single temperature.
+
+\begin{figure*}[!htp]
+\includegraphics[scale=1,width=3.5in]{figures/KCl_rotational_diagrams.pdf}
+\includegraphics[scale=1,width=3.5in]{figures/NaCl_rotational_diagrams.pdf}
+\caption{Rotational energy diagrams for the KCl and NaCl lines.  While each
+vibrational state can internally be explained reasonably well by a single
+consistent rotation temperature in the range $T_{rot}\sim50-150$ K, the population
+distribution between vibrational excitation states cannot.}
+\label{fig:rotationdiagrams}
+\end{figure*}
 
 % The rotational temperatures are reasonably consistent with the lower bound
 % disk temperatures at this radius, hinting that the salt emission lines are
@@ -901,7 +925,7 @@ substantially underpredicts the $v>1$ intensities.  A stronger radiation
 field in the 25-45 \um regime is required, but such a field cannot be
 reasonably produced by combinations of blackbodies.  If there were a dust
 emission feature in that range, such as crystalline silicates forsterite
-and enstatite \cite[e.g.][]{Molster2005a}, that dominated the emission spectrum
+and enstatite \cite{Molster2005a}, that dominated the emission spectrum
 in the far-infrared, it could potentially explain the observed vibrational
 excitation patterns.
 
@@ -962,7 +986,7 @@ low rotational and high vibrational temperature.
 
 Sodium and potassium are rarely observed in the dense molecular interstellar
 medium.  They are usually assumed to be rapidly incorporated into dust grains
-after being ejected from dying stars \cite[e.g.,][]{Milam2007a}.  Since we
+after being ejected from dying stars \cite{Milam2007a}.  Since we
 observe NaCl and KCl in the atmosphere of the disk, it is clear that
 there is a zone where either dust has not  formed or
 where dust is destroyed and returned to the gas phase.  We argue that the dust
