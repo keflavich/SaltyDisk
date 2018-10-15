@@ -33,7 +33,8 @@ The disk around Orion Source I (\sourcei) has been the subject of intense
 study, as it is the closest disk around a `high-mass' ($M>8$ \msun) star
 \citep{Hirota2014a,Plambeck2016a,Ginsburg2018b}.  It is also in many ways
 a unique source, being the only known protostellar object with SiO and \water
-masers in an outflow \citep{Goddi2009a,Matthews2010a,Goddi2010a,Goddi2013a,Greenhill2013a}.
+masers in an outflow
+\citep{Goddi2009a,Matthews2010a,Goddi2010a,Goddi2013a,Greenhill2013a}.
 In \citet{Ginsburg2018b}, a subset of the authors reported 0.03$\arcsec$ ALMA
 observations of \sourcei that allowed us to measure the outer rotation curve of
 the 5(5,0)-6(4,3) \water line in the disk and along the base of the outflow;
@@ -507,15 +508,15 @@ RADEX \citep{van-der-Tak2007a} to examine the excitation \footnote{The
 RADEX-compatible molecular data
 file incorporating these coefficients is available from
 \url{https://github.com/keflavich/SaltyDisk/blob/\githash/nacl.dat}}.
-For T=100 K, $\delta v=1$ \kms \perpc, $N_{NaCl}=10^{12}$ \persc,
-\footnote{\rlp{presumably,
-the fractional abundance doesn't matter when one is computing critical density;
-giving this value will create confusion; the linewidth also is questionable}
-\ag{The fractional abundance relative to the collision partner does matter,
-and the velocity gradient affects the optical depth.  These are fiducial,
-poorly-justified parameters, but I think they're a good first guess.}
-}
-the critical density is $n_{cr}\sim10^8$ \percc for the $v=0$
+% For T=100 K, $\delta v=1$ \kms \perpc, $N_{NaCl}=10^{12}$ \persc,
+% \footnote{\rlp{presumably,
+% the fractional abundance doesn't matter when one is computing critical density;
+% giving this value will create confusion; the linewidth also is questionable}
+% \ag{The fractional abundance relative to the collision partner does matter,
+% and the velocity gradient affects the optical depth.  These are fiducial,
+% poorly-justified parameters, but I think they're a good first guess.}
+% }
+The critical density is $n_{cr}\sim10^8$ \percc for the $v=0$
 states and $n_{cr}\sim10^{12}$ for the $v>=1$ states, where $v$ is the
 vibrational state quantum number.  These high critical densities effectively
 rule out collisional excitation producing vibrationally excited states,
@@ -615,11 +616,6 @@ molecules \citep{Zeiri1983, Silver1986}, which
 may therefore be dissociated rather than excited by UV photons.
 Third, there may not be any UV radiation in the outer disk where these lines
 are detected.  
-% since excitation requires only 5 eV, not 13.6 eV, lack of e-p free-free emission 
-% really isn't significant; in fact, 5000 K photosphere seen in reflection nebulosity 
-% could explain these photons?
-%\sourcei has no electron-proton free-free emission
-%\citep{Plambeck2013a}, so a strong $\lambda<912$ \AA\ UV field is ruled out. 
 While UV
 emission may be produced in shocks in the outflow, and $\sim5$ eV photons
 could be produced by the central $\sim4000$ K photosphere \citep{Testi2010a},
@@ -630,200 +626,32 @@ likely shield the molecules from such illumination.
 We conclude that there is no simple model that explains the observed pattern of
 low rotational and high vibrational temperature.
 
-% \textbf{(4) The rovibrational transitions are optically thick up to
-% v$\sim$6, while the rotational transitions remain optically thin.}
-
-% In this scenario, we assume that the salt molecules are all in an `atmosphere'
-% above the disk.  While the disk is optically thick in the 25-45 \um continuum,
-% this `atmosphere' is optically thin, such that the lines are not strictly in
-% equilibrium with the radiation field.  However, the lowest rovibrational
-% transitions are optically thick and therefore do reach equilibrium with the
-% local radiation field set primarily by the disk.  The millimeter lines remain
-% optically thin \rlp{I don't understand how this is possible; wouldn't the
-% pure rotational levels within the lower vibrational states also be thermalized
-% by the IR photons, hence end up at much higher temperature?}, so they remain collisionally rather than 
-% radiatively excited.
-% The higher rovibrational transitions are also optically thin, so the $v>6$
-% states remain thin.  
-
-% This scenario could imply that any other molecules in the disk atmosphere,
-% such as CS or CO if they are present, would have large populations in their
-% vibrationally excited states.
-
-% It is not clear whether this model can explain the observed lines.  Modeling
-% of the radiation field with realistic geometry for the disk (which provides
-% an undiluted 100-500 K background) and the central source (which supplies a highly
-% diluted $\sim4000$ K illumination) is needed.  Without including a background
-% radiation field, this scenario does not appear to work, as the rotational
-% transitions tend to be optically thicker than the vibrational if only collisional
-% processes are active.
-
-% {\color{red} todo: compute the column density needed to achieve $\tau=1$ in the
-% v=1-0 J=10-9 transition, or similar}
-%This scenario sounds enticing, but I'm not sure it will pass numerical checks.
-%It may be that the columns required to get the rovibrational states to be
-%optically thick would also drive the rotational states to be, which would be
-%inconsistent with the observations.
-
-% \textbf{(4) Collisions with electrons}
-% Collisions with electrons are much more efficient than collisions with \hh.
-% Using the approximations from \citet{Dickinson1975a}, we find that collision
-% rates between both NaCl and KCl and electrons in the J=5-50 v=0 states are
-% $C\approx10^{-5}$ cm$^{3}$ \pers.  These rates imply a critical electron
-% abundance $X_e = C(\hh)/C(e^-) \approx 10^{-5}$, where we  assume
-% $C(\hh)\approx10^{-10}$ cm$^3$ \pers, close to the typical value for
-% the low-lying rotational transitions.  In other words, electrons are
-% $10^5\times$ more efficient at exciting these molecules than \hh.
-
-% The electron abundance may be higher than the critical value.  In typical
-% low-mass disks, electron abundances $X_e \geq 10^4$ occur in the upper layers
-% of the disk, where some UV radiation is able to ionize H and C to H+ and C+
-% \citep{Bergin2007a}.  However, deeper into these disks, only X-rays and cosmic
-% rays can penetrate to ionize neutrals, resulting in abundances too small to be
-% relevant ($X_e < 10^{-6}$).  The importance of this scenario is critically
-% sensitive to the ionization rate in the salt-bearing portion of the disk, which
-% is uncertain.
-
-% \ag{Two questions:
-% (1) Is the electron temperature going to be different from the
-% gas temperature?  I assume so, probably much higher!
-% (2) What do electrons do in terms of vibrational excitation?
-% The \citet{Dickinson1975a} work is focused entirely on rotational
-% excitation.
-% }
-% 
-% \bam{At least in laboratory plasmas, the vibrational temperature of many
-% molecules is directly coupled to the electron temperature.  Different density
-% environments, though...}
 
 
-%\textbf{Text from earlier}
-%
-%%{\color{red} This is a note to be incorporated somewhere:}
-%The $\Delta v=1$ rovibrational transitions of KCl are all around 36.1-38 \um,
-%while the NaCl transitions are in the range 27.6-30 \um.  If there is a strong
-%radiation field at these wavelengths, it may pump the lines into progressively
-%higher vibrational states.
-
-% More interesting for constraining the exciting source, though, are the v=0 to
-% v=1 through v=6 lines.
-% For example, the KCl v=6-0 J=1-0 line is at 6.13 \um and the NaCl v=7-0 J=1-0
-% line is at 4.07 \um.  \bam{These would be wickedly forbidden transitions.
-% Allowed vibrational transitions have $\Delta$V = $\pm$1.  Are there better
-% candidates that would follow that?  Say a v$_6$ - v$_5$ or something?}
-% \ag{Right, these are too forbidden to be plausible: this paragraph will be
-% removed; we need to find another way to excite the molecules up to these states.}
-% Assuming
-% the population of these lines are created
-% from excitation from the ground state, they require a radiation field with
-% significant emission in the 4-6 \um range.
-% A blackbody with f $T\approx500-750$ K
-% % ($T\approx b / \lambda$, where $b\approx2900$ \um K is Wien's displacement constant)
-% peaks in this range.
-% [MCHW : consistent with Tb observed in the high resolution images]
-
-% A plausible scenario is that the hot radiation field from the central star,
-% with $T_*\sim4000$ K \citep{Testi2010a}, excites molecules to high vibrational
-% excitation states, from which they cascade through rovibrational transitions
-% down to the v=0 state, providing a relatively uniform level population
-% across the excited vibrational states instead of a thermal level population.
-% However, a 4000 K blackbody should produce most of its flux around 1 \um,
-% which should result in much higher excitation than we observe, suggesting
-% that the starlight is extincted before reaching the salts.
-% 
-% The densities required to produce equilibrium populations within the individual
-% vibrationally excited states are very high.  The Einstein A coefficients of the
-% $\Delta v=1$ transitions are of order $\sim1$ \pers.  If we assume the
-% collision rates for the salts are similar to SiS, the most similar-mass
-% two-atom molecule available from
-% \url{http://home.strw.leidenuniv.nl/~moldata/datafiles}, with values
-% $\sim10^{-12}-10^{-10}$ cm$^{3}$ \pers, densities exceeding $n>10^{10}$ \percc
-% (possibly $n>10^{12}$ \percc, depending on which collisional coefficients are
-% used) are required to have collisions dominate over radiation. 
-% 
-% \ag{However, I think there's a problem with the above logic: if the densities
-% really are that high, i.e., high enough that there are typically several collisions
-% per spontaneous emission, then we should not expect to see any spontaneous emission.
-% So instead, we're left with an upper limit density of $n<10^{10}-10^{12}$ \percc,
-% but no clear explanation for the apparent consistent rotational temperatures.
-% }
-
-
-% Either
-% the higher-excitation lines are too faint {\color{red} do we expect this?}
-% or the salt emission is coming from a region of the disk that is shielded
-% behind an extinction layer.   Since the salts would likely be incorporated into
-% grains {\color{red}can we back this?} if a large population of grains
-% were present, it is not clear that such a layer can exist.
-
-
-
-% We plot and fit rotational diagrams to measure the abundance and temperature of
-% these molecules.  However, the results are ambiguous: for each vibrational
-% state with more than one detected transition, we are able to fit an excitation
-% temperature, but the abundances of the vibrationally excited states are much
-% higher than the ground state.  This distribution implies that the lines are
-% radiatively excited.
-%
-% The excitation temperatures derived from the rotational diagram fits are in the
-% range 50-100 K.  The
-% radiation temperature within 50 AU of a $10^4$ \lsun star should be $T_R>500$ K,
-% so how do we get lower temperatures?
-% {\color{red} This is a place for some discussion: is it possible that the gas
-% is cooler and the transitions we're seeing are affected by collisions?
-% This is the process invoked in \citet{Kaplan2017a}, but it doesn't make sense here:
-% it requires the gas to be below the radiation temperature.  Also, the critical density
-% of these transitions is likely to be absurdly high, given their A-values in the 0.1s
-% range.}
-
-
-
-\subsection{Why are these salts present?}
+\subsection{What is producing gas-phase salts?}
 
 Sodium and potassium are rarely observed in the dense molecular interstellar
 medium.  They are usually assumed to be rapidly incorporated into dust grains
 after being ejected from dying stars \citep[e.g.,][]{Milam2007a}.  Since we
 observe NaCl and KCl in the atmosphere of the disk, it is clear that
-there is a zone where either dust has not (yet?) formed or
+there is a zone where either dust has not  formed or
 where dust is destroyed and returned to the gas phase.  We argue that the dust
 must be destroyed almost immediately as it is launched into the disk-driven
-outflow \citep{Hirota2017a}.
-% As above, we evaluate several possibilities to explain the presence of
-% these molecules.
-
-% I really hope someone takes this too seriously...
-%Most likely, the lack of salt in the outflow is because it's dissolved into
-%the \water.  The outflow is a beach.
+outflow \citep{Hirota2017a}. We evaluate three scenarios for dust destruction:
+sputtering by high-energy particles, gas-phase formation from atomic gas, and
+thermal desorption
 
 
-% The HCl+ ion has several transitions in our band 3, but none are detected.
-% This could be an excitation issue, as these lines have upper state energies
-% In the range 1200-1400 K, but since similar excitation lines of NaCl are
-% Seen, it is likely that HCl+ has a lower abundance...
-% Is this in any way useful or constraining?
-% The real question is, why don't we detect any hydrogen-containing molecules
-% In the disk?
-
-% If we assume the column density for the v=0 state represents the total
-% column of KCl - which is a fairly bad assumption - we can infer the relative abundance.
-% We assume the disk has a column density
-
-% {\color{red} What can
-% we say about the dust destruction/sublimation zone?  I need to do some disk
-% research; there must be a dust sublimation zone at the surfaces of disks in
-% addition to the radial one.}
-
-
-In this scenario,  NaCl and KCl molecules are sputtered from the grains.  The
-most plausible means to achieve the energies required to sputter grains is with
-strong shocks \citep{Schilke1997a,Decin2016a}.  In
-\sourcei, it seems unlikely that there would be very strong shocks in the disk,
-but there are high-velocity shocks throughout the outflow. Strong SiO emission
-is observed in the inner part of the outflow (i.e., within $<100$ AU of
-\sourcei), suggesting that grains are efficiently destroyed there.
-Without knowing the grain structure, however, it is unclear whether high-energy
-particles capable of destroying the grain cores are present, or if instead
-the salts are being released from evaporation of the grain mantles.
+\textbf{(1) Sputtering:}
+In the first scenario, NaCl and KCl molecules are sputtered from the grains.
+The most plausible means to achieve the energies required to sputter grains is
+with strong shocks \citep{Schilke1997a,Decin2016a}.  In \sourcei, it seems
+unlikely that there would be very strong shocks in the disk, but there are
+high-velocity shocks throughout the outflow. Strong SiO emission is observed in
+the inner part of the outflow (i.e., within $<100$ AU of \sourcei), suggesting
+that grains are efficiently destroyed there.  Without knowing the grain
+structure, however, it is unclear whether high-energy particles capable of
+destroying the grain cores are present.
 
 Since the salts are detected close to but above the disk midplane, the
 grains must be sputtered very rapidly after being launched from the disk surface.
@@ -832,65 +660,43 @@ molecules are not in the gas phase at all in the midplane, although radiative
 transfer can also easily explain their non-detection (i.e., the continuum
 background is the same intensity as the emission lines).
 
-
 In this model, the different morphology of the SiO and NaCl lines in the disk
-and outflow is driven mostly by excitation, since both SiO and the salts are
+and outflow must be driven mostly by excitation, since both SiO and the salts are
 in the gas phase.  However, excitation alone cannot explain this difference,
 since there are low-excitation lines of KCl and NaCl observed that do not
-show any vertical extent.  Most likely, the salts are depleting back onto
-grains or reacting and forming other molecules more rapidly than SiO.
-% \bam{I can't buy this, actually.  That's a *huge*
-% difference to be due just to excitation.  Perhaps the salts are just depleting
-% out back onto the grains (or reacting away) faster than SiO $\rightarrow$
-% SiO$_2$?  This is perhaps more probable to me if we work with the
-% oxygen-depleted route, since there's less oxygen to make the SiO$_2$?  This is
-% all just spit-balling, though.}
-% This hypothesis is plausible, since the
-% SiO v=0 J=8-7 transition shown in Figure \ref{fig:sioonnacl} has $A_{8,7} =
-% 2.2030\ee{-3}$ \pers, while the NaCl v=2 J=26-25 transition has $A_{26,25} =
-% 1.8242\ee{-2}$ \pers, and their collision rates are nearly the same (assuming SiS and NaCl have
-% identical collision rates, as above, and that vibrational excitation does not
-% change the rates), implying that the critical density of the
-% NaCl transition is $\sim10\times$ higher.
-
-While NaCl and KCl are clearly detected here, there are also several transitions of
-AlCl and AlF in our observational bands that were not detected.
-\citet{Cernicharo1987a} detected these transitions at comparable brightness to NaCl
-and KCl in IRC+10216.  The lack of AlCl may be because \sourcei's disk is
-oxygen-rich, and aluminum is locked into AlOH, as suggested in the
-\citet{Cherchneff2012a} model.  Indeed, the tentative detection of AlO
-in our spectra supports this conclusion.
-\rlp{Highberger et al 2003 note lack of AlCl toward CRL2688; but they remark
-on ubiquity of NaCN, which also is seen toward IRC10216; do we have nondetections
-of NaCN in our band?}\ag{Yes, NaCN is in-band and nondetected.}
+show measurable vertical extent.  Most likely, the salts are depleting back onto
+grains, or reacting and forming other molecules, or dissociating into 
+atomic form, while SiO remains molecular.
 
 
-We consider an alternative hypothesis: the salts are observed because they are
-presently forming directly in the gas phase.  Potassium and sodium have similar
-first ionization potentials at 4.34 and 5.14 eV, respectively.  These atoms
-would be nearly fully ionized between 1500-2000 K at a density of $10^6$
-\percc (Aluminum has a higher first ionization potential of 5.99 eV, and so is ionized
-at a few hundred K higher temperatures than sodium).  These ions react with HCl
-to form NaCl and KCl.  However, at present, only the inner $<20$ AU region,
-which is currently unresolved, clearly reaches
-such high temperatures\footnote{We also know from RRL studies
-that there is little to no ionized gas with $T\gtrsim10^4$ K around \sourcei
-\citep{Plambeck2016a,Baez-Rubio2018a}}.  Either material in that inner region is being
-transported outward, which seems unlikely since there is a bulk outflow lifting
-material off of the disk, or the disk was previously substantially warmer.
-Under the dynamical formation scenario of the disk, in which it is the remnant
-of a previously larger disk from the \sourcei-BN interaction
-\citep{Bally2017a,Luhman2017a}, a great deal of kinetic energy was released as
-the disk re-settled into its current apparently smooth state.  This scenario
-implies that the observable state of NaCl and KCl is very short lived, as these
-molecules are in the process of depleting onto grains.
-While plausible, there are many processes that need to coincide perfectly
-in this scenario (disk temperature history, gas density, gas-phase formation
-rates), so we favor the dust destruction hypothesis.
 
+\textbf{(2) Gas-phase formation:}
+Gas-phase formation of NaCl and KCl is possible from ionized Na and K.
+Potassium and sodium have similar first ionization potentials at 4.34 and 5.14
+eV, respectively.  These atoms would be nearly fully ionized between 1500-2000
+K at a density of $10^6$ \percc (Aluminum has a higher first ionization
+potential of 5.99 eV, and so is ionized at a few hundred K higher temperatures
+than sodium).  These ions react with HCl to form NaCl and KCl.  However, at
+present, only the inner $<20$ AU region, which is currently unresolved, clearly
+reaches such high temperatures\footnote{We also know from RRL studies that
+there is little to no ionized gas with $T\gtrsim10^4$ K around \sourcei
+\citep{Plambeck2016a,Baez-Rubio2018a}}.  
 
-\ag{Note: This section needs to be rewritten in light of this new information;
-this needs to be incorporated as an additional hypothesis.}
+For gas-phase formation to be a significant process, then, either material in
+that hot inner region is being transported outward, which seems unlikely since
+there is a bulk outflow lifting material off of the disk, or the disk was
+previously substantially warmer.  Under the dynamical formation scenario of the
+disk, in which it is the remnant of a previously larger disk from the
+\sourcei-BN interaction \citep{Bally2017a,Luhman2017a}, a great deal of kinetic
+energy was released as the disk re-settled into its current apparently smooth
+state, which could have resulted in much higher gas temperatures over the last
+few hundred years.  This scenario would imply that the observable state of NaCl
+and KCl is very short lived, as these molecules are in the process of depleting
+onto grains.  While plausible, there are many processes that need to coincide
+perfectly in this scenario (disk temperature history, gas density, gas-phase
+formation rates), so we favor the dust destruction hypotheses.
+
+\textbf{(3) Thermal desorption from grain surfaces}
 \citet{Decin2016a} presented a model for the gas-phase abundance of
 NaCl in which it is thermally desorbed from grains at grain temperatures
 between 100 and 300 K, depending on the unknown binding energy of NaCl with
@@ -902,37 +708,26 @@ it must be dissociated at smaller radii, which most likely requires
 a substantial UV field within that radius in the wavelength range
 $912 \mathrm{\AA} < \lambda < 3000 \mathrm{\AA}$ \citep{Silver1986a}.
 
-% However, the \citet{Decin1986a} model assumes that NaCl exists entirely
-% on the surface of the dust.  
+This model is plausible, though it relies on unknown physical parameters.
+Additionally, while a 4000 K stellar atmosphere \citep{Testi2010a} produces
+non-negligible radiation short of 3000 \AA, it is unclear whether that
+radiation can propagate to the part of the disk where the salts are observed,
+since small dust grains may pervade the system.
 
-%(1) the dust is totally vaporized, so the salts are in the gas phase.  This is
-%pretty implausible, since it presumably requires temperatures >1000 K,
-%and the highest excitation line can be excited by 4 \um photons.
-%Also, if we trust the rotational temperatures, there has to be dust
-%shielding to keep the salt-emitting layer cool.  If we trust those temperatures,
-%it is hard to understand why the molecules haven't condensed into grains
-%already, unless the dust chemical equilibrium timescale is long.  But, because
-%RCB stars exist, I think the dust formation timescale is very tiny, more like
-%months or years?
 
-%\subsubsection{Alternative 1: The salts are just now beginning to fr
-%(2) the salts are just forming now as they’re released from the star.  This
-%doesn’t work at all if the star is accreting, BUT if the collision hypothesis
-%is correct, we might see tons of stellar interior products mixed into the
-%disk’s atmosphere.  This scenario requires the adsorption timescale for the
-%salts to be $>500$ yr, which again seems to contradict the existence of RCB
-%stars that rapidly form dust at probably comparable or lower densities.
-%Also, I believe Na, K, and Cl are supernova products, not stellar nucleosynthesis
-%products, but I am not sure of that!
-%
-%\bam{(3) Stupid idea: the salts are ejected from the star, do condense out, and
-%then are being ejected again in the outer edges of the disk as there is some
-%sort of turbulent mixing there grinding the dust back up?  If that's the case
-%though, wouldn't we expect to see SiO there as well? hm...}
-%\ag{Since these metals are SN products, both in this case and in case (2),
-%we're just talking about putting gas-phase materials out that already
-%had the same metallicity as the star.  So I think (3) is best simplified
-%as just: ``the dust is naturally `ground up' in the disk''.}
+\subsection{Other salts}
+While NaCl and KCl are clearly detected here, there are also several transitions of
+AlCl and AlF in our observational bands that were not detected.
+\citet{Cernicharo1987a} detected these transitions at comparable brightness to NaCl
+and KCl in IRC+10216.  The lack of AlCl may be because \sourcei's disk is
+oxygen-rich, and aluminum is locked into AlOH, as suggested in the
+\citet{Cherchneff2012a} model.  Indeed, the tentative detection of AlO
+in our spectra supports this conclusion.
+%\rlp{Highberger et al 2003 note lack of AlCl toward CRL2688; but they remark
+%on ubiquity of NaCN, which also is seen toward IRC10216; do we have nondetections
+%of NaCN in our band?}\ag{Yes, NaCN is in-band and nondetected.}
+
+
 
 \subsection{Isotopologue abundances}
 With several transitions of each of the observed isotopologues, we can in
@@ -940,20 +735,18 @@ principle measure the relative abundance of the various isotopes.  However,
 because of the uncertainties in the excitation above, these measurements should
 be taken with a grain of salt.
 
-The $^{37}$Cl abundance can be measured by comparing the intensity of the
-NaCl and Na$^{37}$Cl v=3 J=7-6, v=4 J=8-7 and J=7-6, and v=5 J=8-7 lines.
-The ratio $^{35}$/$^{37}$Cl is $r=1.4\pm0.4$.  The KCl v=0 J=45-44 line
-gives a $^{35}/^{37}$Cl ratio $r=0.8$.  \citet{Agundez2012a} measured
-this ratio to be $r=2.9\pm0.3$ in IRC+10216.  Our measurement is somewhat lower,
-but should be regarded as consistent at least until we can obtain more
-accurate column density measurements. \rlp{Highberger et al 2003 found 35/37 Cl
-ratio of 2.1 +/- 0.8 in CRL 2688, suggest it might indicate s-process enhancement
-of 37Cl (kind of silly, since their measurement uncertainties are consistent
-with solar ratio of 3.1} 
+The $^{37}$Cl abundance can be measured by comparing the intensity of the NaCl
+and Na$^{37}$Cl v=3 J=7-6, v=4 J=8-7 and J=7-6, and v=5 J=8-7 lines.  The ratio
+$^{35}$/$^{37}$Cl is $r=1.4\pm0.4$.  The KCl v=0 J=45-44 line gives a
+$^{35}/^{37}$Cl ratio $r=0.8$.  \citet{Agundez2012a} measured this ratio to be
+$r=2.9\pm0.3$ in IRC+10216, and \citet{Highberger2003a} reported a ratio of 2.1
+$\pm$ 0.8 in CRL 2688.  Our measurement is somewhat lower, but should be
+regarded as consistent at least until we can obtain more accurate column
+density measurements.
+
 
 We only have one commonly observed $^{41}$KCl / $^{39}$KCl line, v=0 J=13-12,
-which has a ratio $^{39}/^{41}$ $r=2.4$.  \ag{Have there been any measurements
-of this ratio?}
+which has a ratio $^{39}/^{41}$ $r=2.4$. 
 
 
 \subsection{Future prospects}
