@@ -79,6 +79,7 @@
 \newcommand{\water}{H$_{2}$O\xspace}		%  H2O
 \newcommand{\kms}{\textrm{km~s}\ensuremath{^{-1}}\xspace}	%  km s-1
 \newcommand{\percc}{\ensuremath{\textrm{cm}^{-3}}\xspace}
+\newcommand{\persc}{\ensuremath{\textrm{cm}^{-2}}\xspace}
 \newcommand{\um}{\ensuremath{\mu \textrm{m}}\xspace}    % micron
 
 \newcommand{\apj}{ApJ}
@@ -346,7 +347,15 @@ excitation mechanisms that are less likely but not ruled out.
     \includegraphics[scale=1,width=3.0in]{{figures/squash_lte_overlay_K_b_OrionSourceI_B7.lb_spw3_robust0.5}.pdf}\\
     \end{tabular}
     \label{fig:spectra}
-    \caption{Spectra with NaCl (green) and KCl (red) models overlaid}
+    \caption{Spectra with NaCl (green) and KCl (red) models overlaid.
+    The models assume a constant, single excitation temperature $T_{ex}=1000$ K
+    and column densities $N(\mathrm{NaCl})=4\ee{12}$ \persc and $N(\mathrm{KCl})=2\ee{12}$ \persc.
+    The $^{37}$Cl isotopologues are included at half those column densities,
+    and the $^{41}$K isotopologue at one quarter.
+    These models are not a good fit to the data, underpredicting the vibrationally
+    excited level populations, but they highlight that the lines with expected
+    emission are uniformly strongly detected.
+    }
 \end{figure}
 
 
