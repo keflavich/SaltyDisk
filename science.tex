@@ -136,6 +136,7 @@ Melvyn Wright\\
  % rlp: I think we should advertise that we detected lots of transitions;
  % this is not your typical detection of 3 or 4 lines.  Not sure if 
  % Science will allow the use of the word isotopologues, however...
+ % What's wrong with isotopologue?  Is it too technical?
  We have detected more than 50 transitions of these molecules and their
  less common isotopologues toward \sourcei.
  Indeed, the chemical and physical environments of the disk around \sourcei appear to be so
@@ -147,15 +148,15 @@ Melvyn Wright\\
  high-mass regime. 
 \end{sciabstract}
 
-% This file is a draft document for a Science/Nature-style submission.  If we % submit to one of these journals and are turned down, this can be a summary we % pass off to NRAO for a press release.
 
-% BAM: I removed the hard line wraps because they make my eyes twitch to look
-% at while working on this.  Feel free to put them back in =).
-% % AG: You % don't do all of your work in VIM?  Huh, weird.
-% BAM: Uh... nope.  I don't hate myself =).
-%
-
- %Disks around high-mass stars have been difficult to identify and observe, in part because most molecular emission lines do not uniquely trace the disk. Observing disks around more massive stars is the critical test of whether star formation theories developed on low-mass stars apply at higher masses.  % \bam{I think these first two sentences need to contrast more to the low-mass % star/disk case.  The general audience is not going to know that the nice % protoplanetary disk images they see all over the place from ALMA are around % low-mass stars.  I leave a suggestion below.} % :+1: from me 
+ %Disks around high-mass stars have been difficult to identify and observe, in
+ %part because most molecular emission lines do not uniquely trace the disk.
+ %Observing disks around more massive stars is the critical test of whether
+ %star formation theories developed on low-mass stars apply at higher masses.
+ %% \bam{I think these first two sentences need to contrast more to the
+ % low-mass % star/disk case.  The general audience is not going to know that the
+ % nice % protoplanetary disk images they see all over the place from ALMA are
+ % around % low-mass stars.  I leave a suggestion below.} % :+1: from me 
  
  % \bam{Distinct is the wrong word there. % I'm trying to convey that the
  % conditions are super 'choosey' or 'highl % selective' but that aren't right,
@@ -181,20 +182,12 @@ is, at least in part, because there were no known spectral lines that trace a
 disk and not the molecule-rich ``hot core'' in the surrounding region
 \cite{Goddi2018a,Cesaroni2017a}.  For low-mass sources, where the disks are
 observed in isolation after the surrounding core has accreted or dispersed,
-this ambiguity is absent.  For high-mass sources, %where
-% rlp: need to explain WHY high mass sources, but not low mass ones, are embedded
+this ambiguity is absent.  For high-mass sources, 
 which evolve so quickly that the disks are observed
 still embedded in their natal hot core, substantial confusion can arise.
 Further complicating matters, the large densities in these regions can result
 in central disks that may be further obscured by dust opacity at wavelengths
 shorter than 3 mm.
-
-%BAM: This paragraph has its ordering confused, but I'm not sure immediately
-%how to fix it.  The sentence starting 'for low-mass sources' and the one right
-%after it are the most important ones int he paragraph and are very strong.
-%But they follow the sentence beginning 'However,' which mor eor less says the
-%same thing, diluting hte impact of hte better sentences...
-%% AG: Good point.  I've split into 'theoretical importance' / 'observational uncertainty'
 
 While dozens of species have been detected in the disks around low-mass stars
 \cite{McGuire2018c}, these molecules are comprised solely of a small selection
@@ -304,14 +297,13 @@ dust grains \cite{Cherchneff2012a}.  Since we observe them in emission, with
 narrow velocity line profiles, they must be released into the gas phase either
 by grain destruction by chemical production from simple gas-phase
 precursors, likely elemental atomic gas (either neutral or ionized Na and K).
-Because previous studies have %ruled out the presence of 
-failed to detect any atomic
-recombination lines (from atomic ions recombining with electrons) in this
-source
+Because previous studies have failed to detect any atomic recombination lines
+(from atomic ions recombining with electrons) in this source
 % rlp: note that Na and K MUST be ionized in the > 1000 K gas near the 
 % central source; the electrons released from Na and K are presumably the
 % source of the low frequency (< 43 GHz) continuum emission from SrcI
 % via the H- free-free emission (electron-neutral brehmsstrahlung)
+% Good point!
 %
 % and therefore demonstrated that there is no ionized gas around Source I
 \cite{Plambeck2016a,Baez-Rubio2018a}, we reject the atomic formation route. We
@@ -337,10 +329,16 @@ extreme physical or radiative conditions.
 %excitation is important in this environment.
 The molecular transitions we
 observe have high Einstein A values, in the range $\sim10^{-3}-10^0$ s$^{-1}$, and
-correspondingly high critical densities $n_{cr} \sim10^{8}$ \percc for v=0 and
-$n_{cr} \sim 10^{12}$ for $v>=1$ {\bf [rlp: I thought the RADEX plots showed
+correspondingly high critical densities $n_{cr} \sim10^{5}$ \percc for v=0 and
+$n_{cr} \sim 10^{9}$ for $v>=1$
+{\bf [rlp: I thought the RADEX plots showed
 $10^{11}$ for the vibrational levels; in any case, seems weird that 3 orders
-of magnitude in A give 4 orders of magnitude in critical density]}, 
+of magnitude in A give 4 orders of magnitude in critical density][ag: I've gone
+back into RADEX and looked at this, and of course the definition of `critical density'
+matters quite a lot, but it does appear that the critical density ratio
+is an order of magnitude higher than the A-value ratio.  It is probably
+better to use an `effective density' per Shirley 2015 rather than a critical
+density, since ncrit is... at best difficult to understand]}, 
 where $v$ is the vibrational quantum number.
 Collisional excitation alone cannot explain the different vibrational states
 being observed at a similar brightness level. The rovibrational $\Delta v=1$
@@ -578,6 +576,8 @@ spectrum of AlO.
 
 % I count 15 unidentified emission lines in B3; I added "emission" above 
 % because there are lots of unidentified absorption lines from foreground gas. - Dick
+% There are some of these lines (e.g., HNCO) that are trivial to identify, I just
+% haven't done it yet because I got caught up with NaCl.... - Adam
 %
 %We additionally labeled
 %\emph{some} of the lines that were not detected because of severe confusion
@@ -634,6 +634,7 @@ prediction of frequencies in vibrational states higher than those measured in
 the laboratory. 
 % \rlp{Would it be fair just to say that we used Cabezas for the NaCl
 % frequencies and Barton for the KCl frequencies?}
+% in short: yes.
 
 % The results of these works were then subsequently used by
 % \citet{Barton2014a} to generate high-temperature line lists, primarily for use
@@ -657,9 +658,9 @@ the KCl lines appear to be systematically offset by $\sim$15-20 \kms in the
 Barton catalog.  
 The Barton data are also discrepant with the more recent
 \cite{Cabezas2016a} work that cataloged only NaCl lines
-{\bf [rlp: is the NaCl offset also 15-20 \kms?]}. The offset is a
+{\bf [rlp: is the NaCl offset also 15-20 \kms?][ag:no, smaller]}. The offset is a
 function of the vibrational and rotational energy states, indicating that it
-resulted from an incorrect rotational and/or distortion constant.  We %correct
+resulted from an incorrect rotational and/or distortion constant.  We
 corrected the KCl data
 for this error by performing a bilinear fit in frequency as a function of $v_u$
 and $J_u$ to the transitions available in both \cite{Barton2014a} and
@@ -678,18 +679,11 @@ error was merely a transcription error of some sort.
 %A more detailed re-fitting and prediction of the frequencies is beyond the
 %scope of this \emph{Letter}, but is certainly warranted for follow-up efforts.
 
-% \textbf{\color{red} At the moment, all of the line frequencies are shifted
-% to higher frequencies by 17 \kms (KCl) and 3 \kms (NaCl) because of a discrepancy
-% between the \cite{Barton2014a} catalog line frequencies and those of CDMS,
-% JPL, and SLAIM.  The latter three, catalogued in Splatalogue, agree, and they
-% agree better with my measurements.}
 
 \input{lines_in_band3.tex}
 \input{lines_in_band6.tex}
 \input{lines_in_band7.tex}
 
-%The low observed brightness temperatures suggest that the emission from
-%these lines is optically thin.
 
 We have fit Gaussian line profiles to each of the transitions we flagged as
 `detected' in Tables \ref{tab:all_detections_B3}-\ref{tab:all_detections_B7}.
