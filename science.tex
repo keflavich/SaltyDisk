@@ -133,10 +133,6 @@ Melvyn Wright\\
  that two molecular species, NaCl and KCl, appear to uniquely trace the outer
  edges of the disk around Orion \srci, the disk around the closest high-mass
  (15~\msun) protostellar system, and are not seen in the disks's natal cloud.
- % rlp: I think we should advertise that we detected lots of transitions;
- % this is not your typical detection of 3 or 4 lines.  Not sure if 
- % Science will allow the use of the word isotopologues, however...
- % What's wrong with isotopologue?  Is it too technical?
  We have detected more than 50 transitions of these molecules and their
  less common isotopologues toward \sourcei.
  Indeed, the chemical and physical environments of the disk around \sourcei appear to be so
@@ -255,14 +251,27 @@ spectrum to measure and  identify the emission lines (see Methods).
 % parenthetical may be techincally wrong, though?} % nope, it's (to first
 % order) right, that's good
 
+
+
 \begin{figure*}[!htp]
-\includegraphics[scale=1,width=4in]{figures/SiO_8-7_on_NaClv=2_26-25.pdf}
-\caption{Peak intensity map of SiO v=0 J=8-7 (gray scale), NaCl v=2 J=26-25
-(red contour; 200 K) and {SiO v=5 J=8-7} (blue contours; 300, 400, 500, and 600
-K).  The blue contours in the upper-left come from a blend with a different
-line.
+    %\includegraphics[scale=1,width=2.0in]{{figures/OrionSourceI_NaClv=3_7-6_robust0.5.maskedclarkclean10000_medsub_K_peak_offset_contours}.pdf}
+    \includegraphics[scale=1,width=3.25in]{{figures/OrionSourceI_NaClv=1_18-17_robust0.5.maskedclarkclean10000_medsub_K_peak_offset_contours}.pdf}
+    \includegraphics[scale=1,width=3.25in]{{figures/OrionSourceI_NaClv=2_26-25_robust0.5.maskedclarkclean10000_medsub_K_peak_offset_contours}.pdf}
+\caption{Peak intensity images of NaCl lines in band 6 and 7 showing the spatial
+distribution of the emission.  
+%From left to right, the lines are: 87.26 GHz NaCl v=3 J=7-6,
+The lines shown are
+232.51 GHz NaCl v=1 J=18-17 (left), and 333.01 GHz NaCl v=2 J=26-25 (right).
+%These are the brightest uncontaminated lines in each of their observing bands.
+The red contours show the Band 6 226 GHz continuum at levels of 50, 300, and 500 K.
+White contours are shown at 50, 100, and 150 K.
+The red and blue ellipses show the beams for the continuum and the line emission,
+respectively.  The beam sizes are
+%$0.10 \arcsec \times 0.08 \arcsec$, PA $40.6 \degrees$,
+$0.043 \arcsec \times 0.034 \arcsec$, PA $-87.4 \degrees$ and
+$0.029 \arcsec \times 0.022 \arcsec$, PA $-54.6 \degrees$, respectively.
 }
-\label{fig:sioonnacl}
+\label{fig:spatial}
 \end{figure*}
 
 
@@ -295,24 +304,16 @@ that, unlike SiO and \water, the salts do not trace the outflow.
 Once in the gas phase, however, we expect salts to rapidly deplete back into
 dust grains \cite{Cherchneff2012a}.  Since we observe them in emission, with
 narrow velocity line profiles, they must be released into the gas phase either
-by grain destruction by chemical production from simple gas-phase
-precursors, likely elemental atomic gas (either neutral or ionized Na and K).
-Because previous studies have failed to detect any atomic recombination lines
-(from atomic ions recombining with electrons) in this source
-% rlp: note that Na and K MUST be ionized in the > 1000 K gas near the 
-% central source; the electrons released from Na and K are presumably the
-% source of the low frequency (< 43 GHz) continuum emission from SrcI
-% via the H- free-free emission (electron-neutral brehmsstrahlung)
-% Good point!
-%
-% and therefore demonstrated that there is no ionized gas around Source I
-\cite{Plambeck2016a,Baez-Rubio2018a}, we suspect the gas-phase route is less
-likely. We
-therefore suggest that the salts are produced by dust destruction, either
-via sputtering by high-energy particles \cite{Schilke1997a} or by thermal
-desorption of the outer dust layers \cite{Decin2016a}.  The SiO emission seen
-in the outflow confirms that dust destruction is occurring as part of the outflow
-launch process.
+by grain destruction or sputtering, or produced by chemical production from
+simple gas-phase precursors, likely elemental atomic gas (either neutral or
+ionized Na and K).  Because previous studies have failed to detect any atomic
+recombination lines (from atomic ions recombining with electrons) in this
+source \cite{Plambeck2016a,Baez-Rubio2018a}, we suggest the gas-phase route is
+less likely. We therefore suggest that the salts are produced by dust
+destruction, either via sputtering by high-energy particles \cite{Schilke1997a}
+or by thermal desorption of the outer dust layers \cite{Decin2016a}.  The SiO
+emission seen in the outflow confirms that dust destruction is occurring as
+part of the outflow launch process.
 
 %Since we see SiO tracing
 %the outflow, and SiO is also released by grain destruction, we infer that...
@@ -328,52 +329,50 @@ with upper-state energy levels of as much as $\sim$3000~K, is suggestive of
 extreme physical or radiative conditions.
 %The vibrationally excited transitions observed suggest that radiative
 %excitation is important in this environment.
-The molecular transitions we
-observe have high Einstein A values, in the range $\sim10^{-3}-10^0$ s$^{-1}$, and
-the collision rates for....
-% correspondingly high critical densities $n_{cr} \sim10^{5}$ \percc for v=0 and
-% $n_{cr} \sim 10^{9}$ for $v>=1$
-% {\bf [rlp: I thought the RADEX plots showed
-% $10^{11}$ for the vibrational levels; in any case, seems weird that 3 orders
-% of magnitude in A give 4 orders of magnitude in critical density][ag: I've gone
-% back into RADEX and looked at this, and of course the definition of `critical density'
-% matters quite a lot, but it does appear that the critical density ratio
-% is an order of magnitude higher than the A-value ratio.  It is probably
-% better to use an `effective density' per Shirley 2015 rather than a critical
-% density, since ncrit is... at best difficult to understand]}, 
-where $v$ is the vibrational quantum number.
-Collisional excitation alone cannot explain the different vibrational states
-being observed at a similar brightness level. The rovibrational $\Delta v=1$
-transitions of NaCl and KCl occur in the 25-35 \um and 35-45 \um range,
-respectively.  Since a blackbody with $T\sim100$ K peaks at $\lambda\sim30$
-\um, and the observed disk brightness temperature is around 100-300 K at the
-radii where salts are observed, it is plausible that strong radiation from the
-disk in the mid-infrared is responsible for exciting the molecules.  However,
-we have not been able to assemble a self-consistent model explaining both the
-rotational and vibrational excitation ladders of NaCl or KCl.  In the
-supplemental material, we describe  and evaluate several possible
-excitation mechanisms that are less likely but not ruled out.
+The molecular transitions we observe have  Einstein A values in the range
+$A\sim10^{-3}-10^{-2}$ s$^{-1}$, though the vibrationally excited states have
+transitions with rates $A\sim1$ s$^{-1}$.  The collision rates into the $v=0$
+states are $C\sim10^{-11}$ cm$^3$ s$^{-1}$ (insensitive to temperature),
+while collision rates into $v>0$ states from $v=0$ states are lower,
+$C\sim10^{-13}-10^{-12}$ cm$^3$ s$^{-1}$ at $T=1000$ K, but only
+$C < 10^{-15}$  cm$^3$ s$^{-1}$ at $T=100$ K.  Extremely high
+gas temperatures and densities would be required to excite a significant
+population of the molecules into vibrational states.
+Furthermore, collisional excitation alone cannot explain the different
+vibrational states being observed at a similar brightness level. However, the
+rovibrational $\Delta v=1$ transitions of NaCl and KCl occur in the 25-35 \um
+and 35-45 \um range, respectively.  Since a blackbody with $T\sim100$ K peaks
+at $\lambda\sim30$ \um, and the observed disk brightness temperature is around
+100-300 K at the radii where salts are observed, it is plausible that strong
+radiation from the disk in the mid-infrared is responsible for exciting the
+molecules.  We have not been able to assemble a self-consistent model
+explaining both the rotational and vibrational excitation ladders of NaCl or
+KCl, so in the supplemental material, we describe  and evaluate several
+additional possible excitation mechanisms that are not ruled out.
 
 \begin{figure}
     \begin{tabular}{lr}
-    \includegraphics[scale=1,width=3.0in]{{figures/squash_lte_overlay_K_a_OrionSourceI_B3_spw1_robust0.5}.pdf}&
-    \includegraphics[scale=1,width=3.0in]{{figures/squash_lte_overlay_K_a_OrionSourceI_B6_spw1_robust0.5}.pdf}\\
-    \includegraphics[scale=1,width=3.0in]{{figures/squash_lte_overlay_K_a_OrionSourceI_B7.lb_spw1_robust0.5}.pdf}&
-    \includegraphics[scale=1,width=3.0in]{{figures/squash_lte_overlay_K_b_OrionSourceI_B3_spw3_robust0.5}.pdf}\\
-    \includegraphics[scale=1,width=3.0in]{{figures/squash_lte_overlay_K_b_OrionSourceI_B6_spw3_robust0.5}.pdf}&
-    \includegraphics[scale=1,width=3.0in]{{figures/squash_lte_overlay_K_b_OrionSourceI_B7.lb_spw3_robust0.5}.pdf}\\
+    %\includegraphics[scale=1,width=3.0in]{{figures/squash_lte_overlay_K_a_OrionSourceI_B3_spw1_robust0.5}.pdf}&
+    %\includegraphics[scale=1,width=6.0in]{{figures/squash_lte_overlay_K_a_OrionSourceI_B6_spw1_robust0.5}.pdf}\\
+    \includegraphics[scale=1,width=6.0in]{{figures/color_labels_OrionSourceI_B6_spw0_robust0.5}.pdf}
+    %\includegraphics[scale=1,width=3.0in]{{figures/squash_lte_overlay_K_a_OrionSourceI_B7.lb_spw1_robust0.5}.pdf}&
+    %\includegraphics[scale=1,width=3.0in]{{figures/squash_lte_overlay_K_b_OrionSourceI_B3_spw3_robust0.5}.pdf}\\
+    %\includegraphics[scale=1,width=3.0in]{{figures/squash_lte_overlay_K_b_OrionSourceI_B6_spw3_robust0.5}.pdf}&
+    %\includegraphics[scale=1,width=3.0in]{{figures/squash_lte_overlay_K_b_OrionSourceI_B7.lb_spw3_robust0.5}.pdf}\\
     \end{tabular}
     \label{fig:spectra}
-    \caption{Spectra with NaCl (green) and KCl (red) models overlaid.
-    The models assume a constant, single excitation temperature $T_{ex}=1000$ K
-    and column densities $N(\mathrm{NaCl})=4\ee{14}$ \persc and
-    $N(\mathrm{KCl})=2\ee{14}$ \persc.
-    The $^{37}$Cl isotopologues are included at half those column densities,
-    and the $^{41}$K isotopologue at one quarter.
-    These models are not a good fit to the data, underpredicting the vibrationally
-    excited level populations, but they highlight that the lines with expected
-    emission are uniformly strongly detected.
-    The absorption lines appear to be from the foreground molecular core and cloud.
+    \caption{A sample spectrum from one of the Band 6 winows.
+    % The models assume a constant, single excitation temperature $T_{ex}=1000$ K
+    % and column densities $N(\mathrm{NaCl})=4\ee{14}$ \persc and
+    % $N(\mathrm{KCl})=2\ee{14}$ \persc.
+    % The $^{37}$Cl isotopologues are included at half those column densities,
+    % and the $^{41}$K isotopologue at one quarter.
+    % These models are not a good fit to the data, underpredicting the vibrationally
+    % excited level populations, but they highlight that the lines with expected
+    % emission are uniformly strongly detected.
+    Identified lines are labeled, with the NaCl shown in red and KCl in blue.
+    The absorption lines appear to be from the foreground molecular core and cloud,
+    and we have not attempted to identify all of them.
     }
 \end{figure}
 
@@ -534,16 +533,9 @@ arcseconds, or about 4, 20, and 40  beam areas, resulting
 in an improvement in the signal-to-noise of about $2\times$, $4\times$, and $6\times$
 respectively in Band 3, 6, and 7.
 This stacked spectrum, shown in Figures \ref{fig:spectrab3}-\ref{fig:spectrab7},
-% is the average spectrum across the disk identified in \citet{Ginsburg2018b}: it
 traces material just above and below the optically thick continuum disk
 (Figure \ref{fig:spatial}), and for the lines discussed here, includes no
 emission associated with the outflow.  
-% OK, I'm putting my preferred sentence here for now. It could be moved
-% to a footnote or the figure caption if desired. - Dick
-% AG: I don't like this because it sounds like the lines are narrower than we
-% observe, which isn't right: they are narrower than what you get by averaging
-% over the observations, but they are wider than you get by pointing a single
-% beam at the disk as is.
 Because this procedure removes the rotational velocity field of the disk,
 lines in the stacked spectrum are narrower than one would observe in
 a lower spatial resolution observation of the disk.  One may think of the
@@ -728,22 +720,13 @@ begins just beyond the $T=300$ K contour), although the temperature in the inner
 portion of the disk reaches $>500$ K.
 
 \begin{figure*}[!htp]
-    \includegraphics[scale=1,width=2.0in]{{figures/OrionSourceI_NaClv=3_7-6_robust0.5.maskedclarkclean10000_medsub_K_peak_offset_contours}.pdf}
-    \includegraphics[scale=1,width=2.0in]{{figures/OrionSourceI_NaClv=1_18-17_robust0.5.maskedclarkclean10000_medsub_K_peak_offset_contours}.pdf}
-    \includegraphics[scale=1,width=2.0in]{{figures/OrionSourceI_NaClv=2_26-25_robust0.5.maskedclarkclean10000_medsub_K_peak_offset_contours}.pdf}
-\caption{Peak intensity images of NaCl lines in each band showing the spatial
-distribution of the emission.  From left to right, the lines are: 87.26 GHz
-NaCl v=3 J=7-6, 232.51 GHz NaCl v=1 J=18-17, and 333.01 GHz NaCl v=2 J=26-25.
-These are the brightest uncontaminated lines in each of their observing bands.
-The red contours show the Band 6 226 GHz continuum at levels of 50, 300, and 500 K.
-White contours are shown at 50, 100, and 150 K.
-The red and blue ellipses show the beams for the continuum and the line emission,
-respectively.  The beam sizes are
-$0.10 \arcsec \times 0.08 \arcsec$, PA $40.6 \degrees$,
-$0.043 \arcsec \times 0.034 \arcsec$, PA $-87.4 \degrees$, and
-$0.029 \arcsec \times 0.022 \arcsec$, PA $-54.6 \degrees$, respectively.
+\includegraphics[scale=1,width=4in]{figures/SiO_8-7_on_NaClv=2_26-25.pdf}
+\caption{Peak intensity map of SiO v=0 J=8-7 (gray scale), NaCl v=2 J=26-25
+(red contour; 200 K) and {SiO v=5 J=8-7} (blue contours; 300, 400, 500, and 600
+K).  The blue contours in the upper-left come from a blend with a different
+line.
 }
-\label{fig:spatial}
+\label{fig:sioonnacl}
 \end{figure*}
 
 We also compare the salt emission locations to the SiO emission regions.
@@ -1084,6 +1067,12 @@ and KCl is very short lived, as these molecules are in the process of depleting
 onto grains.  While plausible, there are many processes that need to coincide
 perfectly in this scenario (disk temperature history, gas density, gas-phase
 formation rates), so we favor the dust destruction hypotheses.
+
+We note that, if the formation rates of NaCl and KCl are very high, it is
+possible that the vibrational excitation observed is from the chemical energy
+of formation.  However, because of the short expected lifetimes of the
+vibrationally excited states, we regard this explanation for the excitation as
+very unlikely.
 
 \textbf{(3) Thermal desorption from grain surfaces}
 Decin et al \cite{Decin2016a} presented a model for the gas-phase abundance of
