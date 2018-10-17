@@ -132,8 +132,13 @@ Melvyn Wright\\
  emission lines do not uniquely trace the disks in these regions. Here, we show
  that two molecular species, NaCl and KCl, appear to uniquely trace the outer
  edges of the disk around the massive (15~\msun) protostellar system Orion
- Source I and are not seen in the disks's natal cloud.  Indeed, the chemical
- and physical environments of the disk around \sourcei appear to be so
+ Source I and are not seen in the disks's natal cloud.
+ % rlp: I think we should advertise that we detected lots of transitions;
+ % this is not your typical detection of 3 or 4 lines.  Not sure if 
+ % Science will allow the use of the word isotopologues, however...
+ We have detected more than 50 transitions of these molecules and their
+ less common isotopologues toward \sourcei.
+ Indeed, the chemical and physical environments of the disk around \sourcei appear to be so
  favorable for NaCl and KCl emission that we observe an unprecedented level of
  vibrational excitation in their populations.  Because the observed emission is
  intense, the number of lines large, and the conditions apparently required to
@@ -176,7 +181,9 @@ is, at least in part, because there were no known spectral lines that trace a
 disk and not the molecule-rich ``hot core'' in the surrounding region
 \cite{Goddi2018a,Cesaroni2017a}.  For low-mass sources, where the disks are
 observed in isolation after the surrounding core has accreted or dispersed,
-this ambiguity is absent.  For high-mass sources, where the disks are observed
+this ambiguity is absent.  For high-mass sources, %where
+% rlp: need to explain WHY high mass sources, but not low mass ones, are embedded
+which evolve so quickly that the disks are observed
 still embedded in their natal hot core, substantial confusion can arise.
 Further complicating matters, the large densities in these regions can result
 in central disks that may be further obscured by dust opacity at wavelengths
@@ -297,9 +304,16 @@ dust grains \cite{Cherchneff2012a}.  Since we observe them in emission, with
 narrow velocity line profiles, they must be released into the gas phase either
 by grain destruction by chemical production from simple gas-phase
 precursors, likely elemental atomic gas (either neutral or ionized Na and K).
-Because previous studies have ruled out the presence of any atomic
+Because previous studies have %ruled out the presence of 
+failed to detect any atomic
 recombination lines (from atomic ions recombining with electrons) in this
-source, and therefore demonstrated that there is no ionized gas around Source I
+source
+% rlp: note that Na and K MUST be ionized in the > 1000 K gas near the 
+% central source; the electrons released from Na and K are presumably the
+% source of the low frequency (< 43 GHz) continuum emission from SrcI
+% via the H- free-free emission (electron-neutral brehmsstrahlung)
+%
+% and therefore demonstrated that there is no ionized gas around Source I
 \cite{Plambeck2016a,Baez-Rubio2018a}, we reject the atomic formation route. We
 therefore suggest that the salts are produced by dust destruction, either
 via sputtering by high-energy particles \cite{Schilke1997a} or by thermal
@@ -324,7 +338,10 @@ extreme physical or radiative conditions.
 The molecular transitions we
 observe have high Einstein A values, in the range $\sim10^{-3}-10^0$ s$^{-1}$, and
 correspondingly high critical densities $n_{cr} \sim10^{8}$ \percc for v=0 and
-$n_{cr} \sim 10^{12}$ for $v>=1$, where $v$ is the vibrational quantum number.
+$n_{cr} \sim 10^{12}$ for $v>=1$ {\bf [rlp: I thought the RADEX plots showed
+$10^{11}$ for the vibrational levels; in any case, seems weird that 3 orders
+of magnitude in A give 4 orders of magnitude in critical density]}, 
+where $v$ is the vibrational quantum number.
 Collisional excitation alone cannot explain the different vibrational states
 being observed at a similar brightness level. The rovibrational $\Delta v=1$
 transitions of NaCl and KCl occur in the 25-35 \um and 35-45 \um range,
@@ -634,20 +651,28 @@ the laboratory.
 % to using the Cabezas values in the tables for NaCl.}
 
 In using these catalogs, we found a systematic discrepancy between the rest
-frequencies reported by \cite{Barton2014a}, and those given by
+frequencies reported by Barton \cite{Barton2014a}, and those given by
 \cite{Caris2004a} and \cite{Caris2002a} and the catalogs generated from them:
 the KCl lines appear to be systematically offset by $\sim$15-20 \kms in the
-Barton catalog.  The Barton data are also discrepant with the more recent
-\cite{Cabezas2016a} work that cataloged only NaCl lines. The offset is a
+Barton catalog.  
+The Barton data are also discrepant with the more recent
+\cite{Cabezas2016a} work that cataloged only NaCl lines
+{\bf [rlp: is the NaCl offset also 15-20 \kms?]}. The offset is a
 function of the vibrational and rotational energy states, indicating that it
-resulted from an incorrect rotational and/or distortion constant.  We correct
+resulted from an incorrect rotational and/or distortion constant.  We %correct
+corrected the KCl data
 for this error by performing a bilinear fit in frequency as a function of $v_u$
-and $J_u$.  In the transitions available in both catalogs the resulting
-frequency differences are generally $<0.1$ \kms, which is more than sufficient
+and $J_u$ to the transitions available in both \cite{Barton2014a} and
+\cite{Caris2004a}; the resulting
+frequency differences were generally $<0.1$ \kms, which is more than sufficient
 for a reliable match to our observational spectra.  We then applied these
+% and $J_u$.  In the transitions available in both catalogs the resulting
+% frequency differences are generally $<0.1$ \kms, which is more than sufficient
+% for a reliable match to our observational spectra.  We then applied these
 fitted models to the higher-$v$ states tabulated by Barton to get corrected
-rest frequencies for KCl, while for NaCl we used the \cite{Cabezas2016a}
-values.  We note that the values printed in \cite{Barton2014a} differ from
+rest frequencies for KCl.  % while for NaCl we used the \cite{Cabezas2016a}
+% values. \rlp{we already said we used the Cabezas values for NaCl}  
+We note that the values printed in \cite{Barton2014a} differ from
 those in the digital catalogs hosted on \texttt{exomol.com}, so we suspect the
 error was merely a transcription error of some sort.
 %A more detailed re-fitting and prediction of the frequencies is beyond the
