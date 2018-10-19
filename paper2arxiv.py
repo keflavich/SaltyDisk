@@ -19,6 +19,7 @@ print("ARGS: ",args)
 
 ppath='/Users/adam/work/orion/alma_lb/paper_salts'
 paper_name = 'saltydisk'
+paper_name = 'science'
 file = open(os.path.join(ppath,paper_name+'.tex'),'r')
 figlistfile = open(os.path.join(ppath, 'figure_list.txt'), 'w')
 full_figure_list = []
@@ -115,7 +116,7 @@ for ii,line in enumerate(file.readlines()):
             print(strip_input(f.readlines()), end='', file=outf)
         f.close()
     elif bib is not None:
-        print(ii, "Doing bib (no solo) " + fn)
+        print(ii, "Doing bib (no solo) " + bib.groups()[0])
         dobib(bib,outf)
     else:
         print(line, end="", file=outf, sep="")
