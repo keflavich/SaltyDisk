@@ -5,7 +5,7 @@
 \newcommand{\sourcen}{SrcN\xspace}
 \newcommand{\sourcex}{SrcX\xspace}
 \newcommand{\bam}[1]{\textcolor{green!65!black}{\textbf{[BAM: #1]}}}
-\newcommand{\rlp}[1]{\textcolor{blue!65!black}{\textbf{[RLP: #1]}}}
+\newcommand{\rlp}[1]{\textcolor{red!65!black}{\textbf{[RLP: #1]}}}
 \newcommand{\ag}[1]{\textcolor{red!65!black}{\textbf{[AG: #1]}}}
 \begin{document}
 \input{authors}
@@ -41,7 +41,9 @@ a unique source, being the only known protostellar object with SiO and \water
 masers in an outflow
 \citep{Plambeck2009a,Goddi2009a,Matthews2010a,Goddi2010a,Niederhofer2012a,Greenhill2013a}.
 In \citet{Ginsburg2018b}, a subset of the authors reported 0.03$\arcsec$ ALMA
-observations of \sourcei that allowed us to measure the outer rotation curve of
+observations of \sourcei that allowed
+%us to measure 
+a measurement of the outer rotation curve of
 the 5(5,0)-6(4,3) \water line in the disk and along the base of the outflow;
 these measurements showed that the interior mass was $15 \pm 2$ \msun.  In the
 same data, we found additional emission lines that closely traced the disk and
@@ -113,22 +115,26 @@ Molecules consisting of alkali metals and halogens have only rarely
 been detected in space \citep{McGuire2018c}.  Because of their rarity, their
 use as a diagnostic tool to measure metallicity and local physical conditions
 has been limited.  However, some of these molecules, such as KCl and NaCl, have
-a rich spectrum with dozens of lines arising in a single observing band with
-modern instrumentation, so they have great potential to probe either local gas
+a rich spectrum with dozens of lines arising in a single observing band
+% with modern instrumentation, 
+so they have great potential to probe either local gas
 properties or the radiation field when they are detected.
 
 
 KCl and NaCl have so far been observed toward evolved stars including the
-carbon star IRC +10216 \citep{Cernicharo1987a}, oxygen-rich evolved stars IK
+carbon star IRC +10216 \citep{Cernicharo1987a}, the oxygen-rich evolved stars IK
 Tauri and VY Canis
 Majoris \citep{Milam2007a}, the post-AGB star envelope CRL 2688
 \citep{Highberger2003a}, and the AGB star wind around OH 231+4.2
 \citep{Sanchez-Contreras2018a}.  In these sources, they exist only in a limited
-range of radii from the central star as they are blown away
+range of radii from the central star as they are
+% blown away
+carried outward
 in slow winds \citep{Herwig2005a}.  The limited environments in which these
-molecules have been detected suggests that they only persist in the gas phase
-for a brief period when being ejected from dying stars before being
-incorporated into dust grains.
+molecules have been detected suggests that they persist in the gas phase
+for only a brief period 
+% when being ejected from dying stars before being
+before they are incorporated into dust grains.
 This transient gas-phase abundance is analogous to that which makes SiO an
 excellent tracer of recent shock events: Si is sputtered from grains into the
 gas phase where it reacts with oxygen to form SiO.  Further reactions rapidly
@@ -137,6 +143,9 @@ an indicator of a recent shock \citep{Schilke1997a}.  Thus, if the production
 pathways, and role of the physical environment on those pathways, can be
 constrained for NaCl and KCl, the presence of these molecules has the potential
 to be a powerful tracer of physical conditions and history in a source. 
+\rlp{the point of the Science version was that NaCl and KCl are potentially
+unique tracers of disks around massive stars -- this final sentence doesn't
+actually say that!}
 
 % \bam{Did we check w/ Holger here to see where he thought
 % the v=1 for NaCl was seen?  I still can't find a paper w/ it.  It's also
@@ -190,8 +199,12 @@ respectively in Band 3, 6, and 7.
 This stacked spectrum, shown in Figures \ref{fig:spectrab3}-\ref{fig:spectrab7},
 % is the average spectrum across the disk identified in \citet{Ginsburg2018b}: it
 traces material just above and below the optically thick continuum disk
-(Figure \ref{fig:spatial}), and for the lines discussed here, includes no
-emission associated with the outflow.  
+(Figure \ref{fig:spatial}).
+%
+%, and for the lines discussed here, includes no emission associated with the outflow.
+% rlp: I took the last phrase out because the stacked spectrum does show some lines
+% that are associated with the outflow, like SiO and H2O
+%
 % OK, I'm putting my preferred sentence here for now. It could be moved
 % to a footnote or the figure caption if desired. - Dick
 % AG: I don't like this because it sounds like the lines are narrower than we
@@ -263,7 +276,7 @@ hyperfine spectrum of AlO.
 \end{figure*}
 
 
-In Tables \ref{tab:all_detections_B3}-\ref{tab:all_detections_B7}, we list all
+In Tables \ref{tab:Na_detections_B3}-\ref{tab:K_detections_B7}, we list all
 of the salt lines in vibrational energy levels up to v=8 that lie within our
 observed bands and whether or not they were detected.  We employ the following
 flag scheme: `D' for detection, `N' for nondetection, `Q' for questionable
@@ -345,17 +358,20 @@ error was merely a transcription error of some sort.
 %these lines is optically thin.
 
 We have fit Gaussian line profiles to each of the transitions we flagged as
-`detected' in Tables \ref{tab:all_detections_B3}-\ref{tab:all_detections_B7}.
+`detected' in Tables \ref{tab:Na_detections_B3}-\ref{tab:K_detections_B7}.
 The fits are reported in Tables
-\ref{tab:NaCl_salt_lines}-\ref{tab:41K37Cl_salt_lines}.  Some of these
-measurements (e.g., of the KCl v=5 45-44 line) are discrepantly
+\ref{tab:NaCl_salt_lines}-\ref{tab:41K37Cl_salt_lines}.  
+%Some of these measurements 
+A few of the integrated intensities (e.g., for the KCl v=5 45-44 line) are discrepantly
 high, suggesting that they are blends with other species as denoted in 
-Tables \ref{tab:all_detections_B3}-\ref{tab:all_detections_B7}.
+Tables \ref{tab:Na_detections_B3}-\ref{tab:K_detections_B7}.
 
 
 
 \section{Discussion}
-NaCl and KCl have only been seen in a small handful of other sources, all of
+NaCl and KCl have only been seen in a 
+% small 
+handful of other sources, all of
 which were moderately high-mass evolved stars blowing off their envelopes.  The
 known detections include the carbon star envelope IRC +10216
 \citep{Cernicharo1987a,Agundez2012a,Zack2011a}, the post-AGB star envelope CRL 2688
@@ -363,8 +379,10 @@ known detections include the carbon star envelope IRC +10216
 Majoris and IK Tauri \citep{Milam2007a,Kaminski2013a}. To our knowledge,
 \sourcei is only the
 fifth astronomical source in which KCl and NaCl have been detected.
-The only previous detections of vibrationally excited NaCl were of the v=1
-line in IRC+10216 \citep{Quintana-Lacaci2016a} and VY CMa \citep{Decin2016a}, 
+The only previous detections of vibrationally excited NaCl were 
+% of the v=1 line
+in the v=1 level
+in IRC+10216 \citep{Quintana-Lacaci2016a} and VY CMa \citep{Decin2016a}, 
 % (\citealt{Agundez2012a} presented the most systematic study of salt lines, 
 %which only included detections of v=0 rotational transitions),
 while \sourcei exhibits clear emission up to v=6 in both NaCl and KCl.
@@ -387,7 +405,9 @@ lines exhibit NaCl emission peaks at $\pm0.032\arcsec=13$ AU above the disk),
 unlike SiO and \water that both exhibit high vertical extents consistent with
 outflow \citep{Ginsburg2018b}.  No emission in the salt lines is observed
 toward the optically thick continuum in the disk midplane (Figure
-\ref{fig:spatial}).  Although the carriers of the lines were unassigned at the time, \citet{Ginsburg2018b} modeled the line emission now assigned to these salts as a
+\ref{fig:spatial}).  
+% Although the carriers of the lines were unassigned at the time, 
+\citet{Ginsburg2018b} modeled the line emission now assigned to these salts as a
 truncated Keplerian disk, finding that the radial distribution of the emission
 has an inner cutoff $\approx35-40$ AU and an outer cutoff $\approx55-60$~AU.
 
@@ -631,7 +651,9 @@ emission feature in that range, such as crystalline silicates forsterite
 and enstatite \citep[e.g.][]{Molster2005a}, that dominated the emission spectrum
 in the far-infrared, it could potentially explain the observed vibrational
 excitation patterns.
-
+\rlp{The RADEX models show this??  If the radiation field is sufficient to
+excite the high vibrational levels, why does it not also thermalize the
+rotational levels to a very high temperature?}
 
 \par{\textbf{(4) Ultraviolet excitation.}}
 % In this model, collisions and infrared radiation can be ignored.  Instead,
@@ -691,12 +713,18 @@ Sodium and potassium are rarely observed in the dense molecular interstellar
 medium.  They are usually assumed to be rapidly incorporated into dust grains
 after being ejected from dying stars \citep[e.g.,][]{Milam2007a}.  Since we
 observe NaCl and KCl in the atmosphere of the disk, it is clear that
-there is a zone where either dust has not  formed or
+there is a zone where either dust has not  formed 
+\rlp{dust has not formed?? that is applicable to evolved stars, but not
+to a protstar like SrcI}
+or
 where dust is destroyed and returned to the gas phase.  We argue that the dust
 must be destroyed almost immediately as it is launched into the disk-driven
 outflow \citep{Hirota2017a}. We evaluate three scenarios for dust destruction:
 sputtering by high-energy particles, gas-phase formation from atomic gas, and
-thermal desorption
+thermal desorption.
+\rlp{gas phase formation from atomic gas is not a dust destruction scenario.
+Presumably you mean release of Na, K, and Cl from grains, which must then
+form NaCl and KCl in the gas phase.}
 
 
 \textbf{(1) Sputtering:}
@@ -704,7 +732,7 @@ In the first scenario, NaCl and KCl molecules are sputtered from the grains.
 The most plausible means to achieve the energies required to sputter grains is
 with strong shocks \citep{Schilke1997a,Decin2016a}.  In \sourcei, it seems
 unlikely that there would be very strong shocks in the disk, but there are
-high-velocity shocks throughout the outflow. Strong SiO emission is observed in
+high-velocity shocks throughout the outflow.  Bright SiO emission is observed in
 the inner part of the outflow (i.e., within $<100$ AU of \sourcei), suggesting
 that grains are efficiently destroyed there.  Without knowing the grain
 structure, however, it is unclear whether high-energy particles capable of
@@ -806,7 +834,7 @@ $^{35}/^{37}$Cl ratio $r=0.8$.  \citet{Agundez2012a} measured this ratio to be
 $r=2.9\pm0.3$ in IRC+10216, and \citet{Highberger2003a} reported a ratio of 2.1
 $\pm$ 0.8 in CRL 2688.  Our measurement is somewhat lower, but should be
 regarded as consistent at least until we can obtain more accurate column
-density measurements.
+density measurements. 
 
 
 We only have one commonly observed $^{41}$KCl / $^{39}$KCl line, v=0 J=13-12,
