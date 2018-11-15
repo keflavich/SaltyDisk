@@ -654,10 +654,37 @@ reasonably produced by combinations of blackbodies.  If there were a dust
 emission feature in that range, such as crystalline silicates forsterite
 and enstatite \citep[e.g.][]{Molster2005a}, that dominated the emission spectrum
 in the far-infrared, it could potentially explain the observed vibrational
-excitation patterns.
-\rlp{The RADEX models show this??  If the radiation field is sufficient to
-excite the high vibrational levels, why does it not also thermalize the
-rotational levels to a very high temperature?}
+excitation patterns.  Alternatively, bright emission lines from other molecules,
+such as water, in the mid-infrared might also drive the peculiar excitation.
+
+To demonstrate that radiatiative excitation in the mid-infrared is a plausible
+mechanism to explain the rotation diagrams, we performed additional RADEX
+modeling in which we modified the background radiation field.  We adopted a
+model with a dilute $150$K blackbody representing the disk, a very dilute 4000
+K blackbody representing the star, plus a strong Gaussian feature centered at
+29 \um with width 1 \um.  With this radiation field, the vibrational lines 
+are highly excited and exhibit a vibrational temperature significantly higher
+than the rotational temperature seen within any vibrational state.
+We show one example model in Figure \ref{fig:naclexcitationmodel}.
+
+\begin{figure*}[!htp]
+\includegraphics[scale=1,width=4in]{figures/simulated_populations_with_wacky_radiation_field.pdf}
+\caption{A model figure demonstrating that a bright emission feature in the mid-infrared may
+explain the observed level populations.  The top panel shows the input radiation field as a blue
+line, with orange dots showing the NaCl transitions.  The narrow peak at 29 \um is artificially
+added, and it may represent a broad dust emission feature.
+The bottom panel shows a level population diagram similar to Figures \ref{fig:rotationdiagrams}.
+The models include only v=0,1,2,3 because the collisional constants are limited to these states.
+The black dashed line shows a fit to the J=8 transitions of all vibrational states, yielding a high
+$\sim1000$ K temperature.  The red dashed line shows a fit to the observed $v=1$ lines, obtaining a
+much lower $\sim100$ K temperature.  The vertical scaling, the column density, is arbitrary.
+This toy model illustrates that it is possible, via radiative excitation, to obtain level
+population ratios similar to those observed, but only with a peculiar radiation field.
+}
+\label{fig:naclexcitationmodel}
+\end{figure*}
+
+
 
 \par{\textbf{(4) Ultraviolet excitation.}}
 % In this model, collisions and infrared radiation can be ignored.  Instead,
