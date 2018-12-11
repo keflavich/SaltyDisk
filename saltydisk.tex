@@ -1,4 +1,5 @@
-
+% overheard on astroph hasn't been active for a while, but I want to add some
+% breadcrumbs here anyway
 \documentclass[twocolumn]{aastex62}
 \input{preface}
 \newcommand{\sourcei}{SrcI\xspace}
@@ -7,10 +8,13 @@
 \newcommand{\bam}[1]{\textcolor{green!65!black}{\textbf{[BAM: #1]}}}
 \newcommand{\rlp}[1]{\textcolor{red!65!black}{\textbf{[RLP: #1]}}}
 \newcommand{\ag}[1]{\textcolor{red!65!black}{\textbf{[AG: #1]}}}
+\newcommand{\referee}[1]{\textbf{#1}}
 \begin{document}
 \input{authors}
 
 \title{Orion \sourcei's disk is salty}
+% and I am too.
+
 \begin{abstract}
     We report the detection of NaCl and KCl and their $^{37}$Cl and $^{41}$K
     isotopologues toward the disk around Orion \sourcei.  About 60 transitions
@@ -37,12 +41,12 @@ The disk around Orion Source I (\sourcei) has been the subject of intense
 study, as it is the closest \citep[$d\approx400$ pc;][]{Grossschedl2018a} disk
 around a `high-mass' ($M>8$ \msun) star
 \citep{Hirota2014a,Plambeck2016a,Ginsburg2018b}.  It is also in many ways
-a unique source, being the only known protostellar object with SiO and \water
+a unique source, being the only known protostellar object with \referee{both}
+SiO and \water
 masers in an outflow
 \citep{Plambeck2009a,Goddi2009a,Matthews2010a,Goddi2010a,Niederhofer2012a,Greenhill2013a}.
 In \citet{Ginsburg2018b}, a subset of the authors reported 0.03$\arcsec$ ALMA
 observations of \sourcei that allowed
-%us to measure 
 a measurement of the outer rotation curve of
 the 5(5,0)-6(4,3) \water line in the disk and along the base of the outflow;
 these measurements showed that the interior mass was $15 \pm 2$ \msun.  In the
@@ -168,6 +172,7 @@ be the only molecules that specifically trace disks around high-mass stars.
 % We have now identified these unknown lines as transitions of NaCl and KCl.
 
 \section{Observations and Analysis}
+\label{sec:observations}
 
 % rlp: I have moved pieces of this paragraph - but not all of it - to later in this section
 % The pure-rotational spectra of KCl and its rare isotopologues was reported by
@@ -189,37 +194,22 @@ The observations presented here are described in \citet{Ginsburg2018b} as part
 of ALMA project 2016.1.00165.S.  We use the robust 0.5 weighted spectral cubes
 from all three bands (B3 3 mm, B6 1 mm, B7 0.85 mm) for our spectroscopic analysis.
 
-Appendix D of that paper describes the spectral extraction method,
-which we summarize here.  We used the U232.511 line (which we now identify as
-NaCl v=1 J=18-17) to find the velocity centroid for each (spatial) pixel
-across the \sourcei disk.  We shifted the spectrum along
-each such pixel to 0 \kms, then averaged the shifted spectra over the region with
-significant emission in the NaCl line.  
-The
-averaging area is approximately the extent of the continuum disk, 0.03 square
-arcseconds, or about 4, 20, and 40  beam areas, resulting
-in an improvement in the signal-to-noise of about $2\times$, $4\times$, and $6\times$
-respectively in Band 3, 6, and 7.
-This stacked spectrum, shown in Figures \ref{fig:spectrab3}-\ref{fig:spectrab7},
-% is the average spectrum across the disk identified in \citet{Ginsburg2018b}: it
-traces material just above and below the optically thick continuum disk
-(Figure \ref{fig:spatial}).
-%
-%, and for the lines discussed here, includes no emission associated with the outflow.
-% rlp: I took the last phrase out because the stacked spectrum does show some lines
-% that are associated with the outflow, like SiO and H2O
-%
-% OK, I'm putting my preferred sentence here for now. It could be moved
-% to a footnote or the figure caption if desired. - Dick
-% AG: I don't like this because it sounds like the lines are narrower than we
-% observe, which isn't right: they are narrower than what you get by averaging
-% over the observations, but they are wider than you get by pointing a single
-% beam at the disk as is.
-Because this procedure removes the rotational velocity field of the disk,
-lines in the stacked spectrum are narrower than one would observe in
-a lower spatial resolution observation of the disk.  One may think of the
-stacked spectrum as the output of a matched filter that is optimized for
-detection of disk emission.
+Appendix D of that paper describes the spectral extraction method, which we
+summarize here.  We used the U232.511 line (which we now identify as NaCl v=1
+J=18-17) to find the velocity centroid for each (spatial) pixel across the
+\sourcei disk.  We shifted the spectrum along each such pixel to 0 \kms, then
+averaged the shifted spectra over the region with significant emission in the
+NaCl line.  The averaging area is approximately the extent of the continuum
+disk, 0.03 square arcseconds, or about 4, 20, and 40  beam areas, resulting in
+an improvement in the signal-to-noise of about $2\times$, $4\times$, and
+$6\times$ respectively in Band 3, 6, and 7.  This stacked spectrum, shown in
+Figures \ref{fig:spectrab3}-\ref{fig:spectrab7}, traces material just above and
+below the optically thick continuum disk (Figure \ref{fig:spatial}).  Because
+this procedure removes the rotational velocity field of the disk, lines in the
+stacked spectrum are narrower than one would observe in a lower spatial
+resolution observation of the disk.  One may think of the stacked spectrum as
+the output of a matched filter that is optimized for detection of disk
+emission.
 
 % The stacked spectrum is equivalent to that
 % obtained with a matched filter using a narrow (delta-function) filter at each
@@ -259,7 +249,7 @@ hyperfine spectrum of AlO.
 \includegraphics[scale=1,width=5.5in]{figures/color_labels_OrionSourceI_B3_spw1_robust0.5.pdf}
 \includegraphics[scale=1,width=5.5in]{figures/color_labels_OrionSourceI_B3_spw2_robust0.5.pdf}
 \includegraphics[scale=1,width=5.5in]{figures/color_labels_OrionSourceI_B3_spw3_robust0.5.pdf}
-\caption{Stacked spectra  B3}
+\caption{Stacked spectra from the Band 3 setup (see Section \ref{sec:observations}).}
 \label{fig:spectrab3}
 \end{figure*}
 \begin{figure*}[!htp]
@@ -267,7 +257,7 @@ hyperfine spectrum of AlO.
 \includegraphics[scale=1,width=5.5in]{figures/color_labels_OrionSourceI_B6_spw1_robust0.5.pdf}
 \includegraphics[scale=1,width=5.5in]{figures/color_labels_OrionSourceI_B6_spw2_robust0.5.pdf}
 \includegraphics[scale=1,width=5.5in]{figures/color_labels_OrionSourceI_B6_spw3_robust0.5.pdf}
-\caption{Stacked spectra B6}
+\caption{Stacked spectra from the Band 6 setup (see Section \ref{sec:observations}).}
 \label{fig:spectrab6}
 \end{figure*}
 \begin{figure*}[!htp]
@@ -275,7 +265,7 @@ hyperfine spectrum of AlO.
 \includegraphics[scale=1,width=5.5in]{figures/color_labels_OrionSourceI_B7.lb_spw1_robust0.5.pdf}
 \includegraphics[scale=1,width=5.5in]{figures/color_labels_OrionSourceI_B7.lb_spw2_robust0.5.pdf}
 \includegraphics[scale=1,width=5.5in]{figures/color_labels_OrionSourceI_B7.lb_spw3_robust0.5.pdf}
-\caption{Stacked spectra B7}
+\caption{Stacked spectra from the Band 7 setup (see Section \ref{sec:observations}).}
 \label{fig:spectrab7}
 \end{figure*}
 
@@ -367,8 +357,9 @@ The fits are reported in Tables
 \ref{tab:NaCl_salt_lines}-\ref{tab:41K37Cl_salt_lines}.  
 %Some of these measurements 
 A few of the integrated intensities (e.g., for the KCl v=5 45-44 line) are discrepantly
-high, suggesting that they are blends with other species as denoted in 
-Tables \ref{tab:Na_detections_B3}-\ref{tab:K_detections_B7}.
+high \referee{compared to transitions at similar $v$ and $J$ states},
+suggesting that they are blends with other species as denoted in Tables
+\ref{tab:Na_detections_B3}-\ref{tab:K_detections_B7}.
 
 
 
@@ -415,21 +406,20 @@ toward the optically thick continuum in the disk midplane (Figure
 truncated Keplerian disk, finding that the radial distribution of the emission
 has an inner cutoff $\approx35-40$ AU and an outer cutoff $\approx55-60$~AU.
 
-% ((constants.sigma_sb * 4 * np.pi * (35*u.au)**2 / (1e4*u.L_sun))**(-1/4)).decompose()
-% <Quantity 665.33595877 K>
-% ((constants.sigma_sb * 4 * np.pi * (60*u.au)**2 / (1e4*u.L_sun))**(-1/4)).decompose()
-% <Quantity 508.15873227 K>
+% disk_predictions.py
 The equilibrium temperature in this radius range can be computed assuming the central
 source has a luminosity $L=10^4 \lsun = 4 \pi r^2 \sigma_{SB} T^4 $, where we
 solve for temperature with $r$ at the inner and outer radius, giving $T_{eq} =
-508-665$ K for $r=35-60$ AU, assuming the disk intercepts all of the starlight 
+500-670$ K for $r=35-60$ AU, assuming the disk intercepts all of the starlight
 at this radius.  More realistically, providing the opposite limiting case,
-$T_{eq}=120-185$ K for a flat disk \citep{Chiang1997a}.  These cooler temperatures
-are consistent with the observed brightness temperatures in the outer
-part of the continuum disk (in Figure \ref{fig:spatial}, the NaCl emission
-begins just beyond the $T=300$ K contour), although the temperature in the inner
-portion of the disk reaches $\gtrsim500$ K.
+$T_{eq}=120-180$ K for a flat disk \citep[Eqn. 4 of][]{Chiang1997a}.  These
+cooler temperatures are consistent with the observed brightness temperatures in
+the outer part of the continuum disk (in Figure \ref{fig:spatial}, the \referee{Band 6
+and 7} NaCl emission begins just beyond the $T=300$ K \referee{continuum}
+contour), although the temperature in the inner portion of the disk reaches
+$\gtrsim500$ K.
 
+% extract_lines.py
 \begin{figure*}[!htp]
 \includegraphics[scale=1,width=2.25in]{figures/OrionSourceI_NaClv=3_7-6_robust0.5.maskedclarkclean10000_medsub_K_peak_offset_contours.pdf}
 \includegraphics[scale=1,width=2.25in]{figures/OrionSourceI_NaClv=1_18-17_robust0.5.maskedclarkclean10000_medsub_K_peak_offset_contours.pdf}
@@ -439,7 +429,8 @@ distribution of the emission.  From left to right, the lines are: 87.26 GHz
 NaCl v=3 J=7-6, 232.51 GHz NaCl v=1 J=18-17, and 333.01 GHz NaCl v=2 J=26-25.
 These are the brightest uncontaminated lines in each of their observing bands.
 The red contours show the Band 6 226 GHz continuum at levels of 50, 300, and 500 K.
-White contours are shown at 50, 100, and 150 K.
+White contours are shown at \referee{50 and 100 K (left), 50, 100, and 150 K (center),
+and 150, 250, and 350 K (right)}.
 The red and blue ellipses show the beams for the continuum and the line emission,
 respectively.  The beam sizes are
 $0.10 \arcsec \times 0.08 \arcsec$, PA $40.6 \degrees$,
@@ -538,7 +529,7 @@ distribution between vibrational excitation states cannot.}
 
 Similarly, for each rotational transition observed from multiple vibrational
 levels, we measure a vibrational temperature.  We find values that range from
-1000-5000 K, although these fits are subject to very large
+1000 to 5000 K, although these fits are subject to very large
 uncertainties.
 % the fits are consistent with any temperature within this range.
 % (and, statistically but not physically, they are consistent with arbitrarily
@@ -657,7 +648,7 @@ state to the same high temperature, which is not observed.
 We experimented with several RADEX models with varying backgrounds.  The
 fiducial system, with a half-sky-filling $T_{bg}=200$ K (representing the
 optically thick disk) and a dilute 4000 K radiation field $I_{\nu} = (100
-\mathrm{R_\odot})^2 / (30 \mathrm{au})^2 B_\nu(4000 \mathrm{K}$ (representing
+\mathrm{R_\odot})^2 / (30 \mathrm{au})^2 B_\nu(4000 \mathrm{K})$ (representing
 the star) reasonably predicts the $v=1$ and $v=0$ intensities, but
 substantially underpredicts the $v>1$ intensities.  A stronger radiation
 field in the 25-45 \um regime is required, but such a field cannot be
@@ -668,7 +659,7 @@ in the far-infrared, it could potentially explain the observed vibrational
 excitation patterns.  Alternatively, bright emission lines from other molecules,
 such as water, in the mid-infrared might also drive the peculiar excitation.
 
-To demonstrate that radiatiative excitation in the mid-infrared is a plausible
+To demonstrate that radiative excitation in the mid-infrared is a plausible
 mechanism to explain the rotation diagrams, we performed additional RADEX
 modeling in which we modified the background radiation field.  We adopted a
 model with a dilute $150$K blackbody representing the disk, a very dilute 4000
@@ -689,9 +680,12 @@ The bottom panel shows a level population diagram similar to Figure \ref{fig:rot
 The models include only v=0,1,2,3 because the collisional constants are limited to these states.
 The black dashed line shows a fit to the J=8 transitions of all vibrational states, yielding a high
 $\sim1000$ K temperature.  The red dashed line shows a fit to the observed $v=1$ lines, obtaining a
-much lower $\sim100$ K temperature.  The vertical scaling, the column density, is arbitrary.
+much lower $\sim100$ K temperature.  The vertical scaling, the column density, is arbitrary\referee{, i.e., it
+does not represent a fit to the data; the optical depths of the observed lines range from $\sim0.25$ to $\sim1.5$}.
 This toy model illustrates that it is possible, via radiative excitation, to obtain level
-population ratios similar to those observed, but only with a peculiar radiation field.
+population ratios similar to those observed, but only with a peculiar radiation field\referee{; similar
+experiments exploring a range of physical parameters with a blackbody radiation field could not reproduce
+the different vibrational and rotational temperatures}.
 }
 \label{fig:naclexcitationmodel}
 \end{figure*}
@@ -711,7 +705,7 @@ population ratios similar to those observed, but only with a peculiar radiation 
 % orders of magnitude lower than the $\Delta v=1$ transitions.
 %
 The high vibrational and low rotational temperatures of the
-salt lines resembles the `sawtooth' pattern observed for the rovibrational
+salt lines resemble the `sawtooth' pattern observed for the rovibrational
 populations of \hh toward the Orion bar photodissociation region.  This
 pattern is explained by ultraviolet excitation into higher electronic states,
 followed by decay back to excited vibrational levels in the ground electronic
@@ -784,13 +778,20 @@ molecules are not in the gas phase at all in the midplane, although radiative
 transfer can also easily explain their non-detection (i.e., the continuum
 background is the same intensity as the emission lines).
 
-In this model, the different morphology of the SiO and NaCl lines in the disk
-and outflow must be driven mostly by excitation, since both SiO and the salts are
-in the gas phase.  However, excitation alone cannot explain this difference,
-since there are low-excitation lines of KCl and NaCl observed that do not
-show measurable vertical extent.  Most likely, the salts are depleting back onto
-grains, or reacting and forming other molecules, or dissociating into 
-atomic form, while SiO remains molecular.
+\referee{
+In this model, both SiO and the salts are in the gas phase outside of the disk
+midplane, where we assume they are incorporated into dust grains.  However, the
+SiO and NaCl have different morphology: low-J SiO lines are seen throughout the
+outflow at very high elevations above the disk, while the salt lines are
+limited to $\lesssim 30$ AU from the midplane.  Even the low-J salt lines,
+which can be excited at similar modest densities ($n\sim10^4$ to $10^6$
+\percc), are not observed at high elevations.  Excitation therefore cannot
+explain the morphological difference between SiO and the salts, and instead we
+infer that they are chemically distinct.  Possibilities include that the salts
+deplete back onto grains as they are entrained in the outflow, or they react to
+form other molecules, or they dissociate into atomic form while SiO remains
+molecular.
+}
 
 
 
@@ -867,13 +868,13 @@ because of the uncertainties in the excitation above, these measurements should
 be taken with a grain of salt.
 
 The $^{37}$Cl abundance can be measured by comparing the intensity of the NaCl
-and Na$^{37}$Cl v=3 J=7-6, v=4 J=8-7 and J=7-6, and v=5 J=8-7 lines.  The ratio
-$^{35}$/$^{37}$Cl is $r=1.4\pm0.4$.  The KCl v=0 J=45-44 line gives a
-$^{35}/^{37}$Cl ratio $r=0.8$.  \citet{Agundez2012a} measured this ratio to be
-$r=2.9\pm0.3$ in IRC+10216, and \citet{Highberger2003a} reported a ratio of 2.1
-$\pm$ 0.8 in CRL 2688.  Our measurement is somewhat lower, but should be
-regarded as consistent at least until we can obtain more accurate column
-density measurements. 
+and Na$^{37}$Cl v=3 J=7-6, v=4 J=8-7 and J=7-6, and v=5 J=7-6 lines
+\referee{assuming they are optically thin}.  The ratio $^{35}$/$^{37}$Cl is
+$r=1.4\pm0.4$.  The KCl v=0 J=45-44 line gives a $^{35}/^{37}$Cl ratio $r=0.8$.
+\citet{Agundez2012a} measured this ratio to be $r=2.9\pm0.3$ in IRC+10216, and
+\citet{Highberger2003a} reported a ratio of 2.1 $\pm$ 0.8 in CRL 2688.  Our
+measurement is somewhat lower, but should be regarded as consistent at least
+until we can obtain more accurate column density measurements. 
 
 
 We only have one commonly observed $^{41}$KCl / $^{39}$KCl line, v=0 J=13-12,
@@ -884,14 +885,15 @@ which has a ratio $^{39}/^{41}$ $r=2.4$.
 The detection of these refractory species in the gas phase in the atmosphere
 of \sourcei's disk hints that other refractory molecules may be present, 
 which could enable their first detection in the ISM (e.g., such rare species as
-FeO and FeS), and may enable direct measurments of the metallicity in
+FeO and FeS), and may enable direct measurements of the metallicity in
 star-forming gas.
 
 The observed NaCl and KCl transitions uniquely trace the disk, unlike most other
 molecules observed in the ISM that are bright and abundant in hot cores like
 Sgr B2 \citep{Nummelin1998a,Belloche2013a}.  These lines therefore potentially
 represent tracers that can uniquely trace high-mass disks, making them extremely
-valuable probes of early-stage high-mass star formation.
+valuable probes of early-stage high-mass star formation\referee{, at least at
+distances where the salt-emitting regions can be resolved}.
 However, it remains unclear whether \sourcei is a unique source or is
 representative of the class of high-mass protostars with disks; if the latter,
 these lines and potentially many others can be used to probe the radiation
@@ -947,6 +949,7 @@ protostars and measure their kinematics.
 
 
 \acknowledgements
+We thank the anonymous referee for a productive and detailed review.
 The National Radio Astronomy Observatory is a facility of the National Science
 Foundation operated under cooperative agreement by Associated Universities,
 Inc. The Green Bank Observatory is a facility of the National Science
