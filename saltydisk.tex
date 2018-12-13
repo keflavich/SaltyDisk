@@ -739,6 +739,52 @@ it is unclear whether it could penetrate into the disk where the salt emission
 is observed.  Even a light haze of dust in the upper layers of the disk would
 likely shield the molecules from such illumination.
 
+\par{\textbf{(5) Dust opacity.}}
+\referee{
+Finally, we consider a more mundane explanation that the apparently-steep
+rotational temperatures are driven by high dust opacity at the higher
+frequencies, either in the disk or in the foreground molecular cloud.
+Because the vibrational temperatures are measured from lines within the same
+ALMA band, they are unaffected by changes in opacity with frequency.
+}
+
+\referee{
+We measure the continuum within the spectral extraction region to have
+a mean brightness temperature $T_B=230, 220$ and $250$ K in our band 3, 6, and
+7 data, respectively.  These values are equivalent to within $\approx10\%$,
+which is the approximate calibration uncertainty of ALMA.  If the foreground
+cloud had significant optical depth, we would expect the band 7 brightness to
+be lower than at band 3; for dust with a typical interstellar medium opacity
+index $\beta=1.75$, the dust should be $\approx9\times$ optically thicker at
+345 GHz (band 7) than at 100 GHz (band 3).  Since we do not observe a lower
+brightness temperature at higher frequency, we conclude that the foreground
+cloud has a negligible effect on the observed line ratios.
+}
+
+% dust_opacity_test.py
+\referee{
+We attempt to evaluate the opacity within the salt-emitting portion of the disk.
+However, we first note that the vertical profile of salt emission is unresolved,
+so adopting the typical assumption that the disk has a column density that
+exponentially decays vertically, the substructure within the beam is the
+dominant uncertainty.  Despite this uncertainty, we can rule out opacity as the explanation of
+the rotation temperatures by noting that
+the KCl v=0 lines, which are the only vibrational state detected in all three observed
+bands, have similar peak brightnesses at $\sim100$ and $\sim345$ GHz
+($T_{B,max}(\textrm{KCl v=0 13-12}) = 15.3\pm0.9$ K and $T_{B,max}(\textrm{KCl
+v=0 45-44}) = 9.7\pm1.8$ K).  However, at temperatures $T_{ex} > 140$ K, 
+the expected intensity of the higher frequency line is greater, and at
+the high observed vibrational temperatures $T_{vib} \sim 1000$ K, $T_{B}(\textrm{KCl
+v=0 45-44}) \approx 9 \times T_{B}(\textrm{KCl v=0 13-12})$.
+If we assume a dust opacity index $\beta=2$,
+which is conservative in that it provides the greatest difference in opacity
+between the two frequencies, the dust opacity required to produce the observed ratio
+is $\tau_{345 \textrm{GHz}} = 2.8$.  If the dust opacity were this large,
+the lines would not be detectable in emission.
+}
+
+\bigskip
+
 We conclude that there is no simple model that explains the observed pattern of
 low rotational and high vibrational temperature.
 
