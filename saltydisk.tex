@@ -745,7 +745,12 @@ Finally, we consider a more mundane explanation that the apparently-steep
 rotational temperatures are driven by high dust opacity at the higher
 frequencies, either in the disk or in the foreground molecular cloud.
 Because the vibrational temperatures are measured from lines within the same
-ALMA band, they are unaffected by changes in opacity with frequency.
+ALMA band, they are unaffected by changes in opacity with frequency.  We
+acknowledge that changing dust opacity with frequency in the foreground
+molecular cloud or in the disk may affect the rotational temperature
+measurements from line ratios between our observed bands, but in this section,
+we show that such opacity effects are unlikely to be the dominant effect
+setting these ratios.
 }
 
 % measurements in continuum_measurements_linestack_region.py
@@ -788,6 +793,34 @@ dust brightness at 0.85 \um than at 3 mm, which is not observed.  We therefore
 rule out dust opacity within the disk as an explanation for the temperature
 discrepancy.
 }
+
+\referee{
+Finally, changes in dust opacity could affect which salt-emitting regions we
+are able to observe.  If the dust changes from optically thin at long
+wavelengths, letting through all of the salt emission, to optically thick at
+shorter wavelengths, we would not detect signal at all from some regions, such
+as the hotter inner disk, and therefore receive a biased view of the rotational
+temperatures.  We cannot strictly rule this possibility out because such obscuration
+can occur on sub-beam scales.  However, the morphology of the salt lines does not change
+with frequency.  Figure \ref{fig:resolutioncomparison} shows a selected salt line from
+each of the observed frequency windows, as in Figure \ref{fig:spatial}, convolved to a common
+resolution.  There are no clear morphological differences in the line emission regions.
+}
+
+\begin{figure*}[!htp]
+\includegraphics[scale=1,width=7in]{figures/resolution_comparison_nacl_peaks.pdf}
+\caption{Comparison of three NaCl emission lines in different wavebands viewed at
+the same spatial resolution.  The columns show, from left to right, NaCl v=3 J=7-6,
+NaCl v=1 J=18-17, and NaCl v=2 J=26-25, as in Figure \ref{fig:spatial}.  The top row
+shows these images in their native resolution, the middle shows them convolved to
+the resolution of the 3 mm band (note that the 3 mm band image is unchanged, but is repeated
+because the color scale has changed), and the bottom row shows the difference images $T_{B,3 \mathrm{mm}} - T_{B, 1.4 \mathrm{mm}}$ 
+and $T_{B,3 \mathrm{mm}} - T_{B, 0.87 \mathrm{mm}}$. }
+}
+\label{fig:resolutioncomparison}
+\end{figure*}
+
+
 
 \bigskip
 
