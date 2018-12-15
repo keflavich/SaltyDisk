@@ -741,79 +741,108 @@ likely shield the molecules from such illumination.
 
 \par{\textbf{(5) Dust opacity.}}
 \referee{
-Finally, we consider a more mundane explanation that the apparently-steep
-rotational temperatures are driven by high dust opacity at the higher
-frequencies, either in the disk or in the foreground molecular cloud.
-Because the vibrational temperatures are measured from lines within the same
-ALMA band, they are unaffected by changes in opacity with frequency.  We
-acknowledge that changing dust opacity with frequency in the foreground
-molecular cloud or in the disk may affect the rotational temperature
-measurements from line ratios between our observed bands, but in this section,
-we show that such opacity effects are unlikely to be the dominant effect
-setting these ratios.
-}
+% Finally, we consider the possibility that the apparently-steep
+% rotational temperatures result from greater dust opacity at the higher
+% frequencies, either in the disk or in the foreground molecular cloud.
+% Because the vibrational temperatures are measured from lines within the same
+% ALMA band, they are unaffected by changes in opacity with frequency.  Changing dust opacity with frequency in the foreground
+% molecular cloud or in the disk may affect the rotational temperature
+% measurements from line ratios between our observed bands, but in this section,
+% we show that such opacity effects are unlikely to be the dominant effect
+% setting these ratios.
+Finally, we consider the possibility that rotational temperatures,
+which are based on measurements of spectral lines over a wide frequency
+range, are underestimated because of greater dust extinction at high
+frequencies.  Vibrational temperatures should be little affected by
+extinction because they are derived from lines in the same ALMA band that
+suffer similar dust attenuation.}
 
 % measurements in continuum_measurements_linestack_region.py
-\referee{
-We measure the continuum within the spectral extraction region to have
-a mean brightness temperature $T_B=210, 200$ and $220$ K in our 3 mm, 1.3 mm, and
-870 \um data, respectively.  These values are equivalent to within
-$\approx10\%$,
-which is the approximate calibration uncertainty of ALMA.  If the foreground
-cloud had significant optical depth, we
-would expect the 870 \um brightness to be lower than the 3 mm; for dust with a
-typical interstellar medium opacity index $\beta=1.75$, the dust should be
-$\approx9\times$ optically thicker at
-870 \um than at 3 mm.  Since we do not observe a lower
-brightness temperature at higher frequency, we conclude that the foreground
-cloud has a negligible effect on the observed line ratios.
-}
+% \referee{
+% We measure the continuum within the spectral extraction region to have
+% a mean brightness temperature $T_B=210, 200$ and $220$ K in our 3 mm, 1.3 mm, and
+% 870 \um data, respectively.  These values are equivalent to within
+% $\approx10\%$,
+% which is the approximate calibration uncertainty of ALMA.  If the foreground
+% cloud had significant optical depth, we
+% would expect the 870 \um brightness to be lower than the 3 mm; for dust with a
+% typical interstellar medium opacity index $\beta=1.75$, the dust should be
+% $\approx9\times$ optically thicker at
+% 870 \um than at 3 mm.  Since we do not observe a lower
+% brightness temperature at higher frequency, we conclude that the foreground
+% cloud has a negligible effect on the observed line ratios.
+% }
 
 % dust_opacity_test.py
 \referee{
-We attempt to evaluate the opacity within the salt-emitting portion of the disk.
-However, we first note that the vertical profile of salt emission is unresolved,
-so adopting the typical assumption that the disk has a column density that
-exponentially decays vertically, the substructure within the beam is the
-dominant uncertainty.  Despite this uncertainty, we can rule out opacity as the explanation of
-the rotation temperatures by noting that
-the KCl v=0 lines, which are the only vibrational state detected in all three observed
+% We attempt to evaluate the opacity within the salt-emitting portion of the disk.
+% However, we first note that the vertical profile of salt emission is unresolved,
+% so adopting the typical assumption that the disk has a column density that
+% exponentially decays vertically, the substructure within the beam is the
+% dominant uncertainty.  Despite this uncertainty, we can rule out opacity as the explanation of
+% the rotation temperatures by noting that
+It seems unlikely that dust extinction is the dominant effect in setting the observed
+line ratios.
+The KCl v=0 lines, which are the only vibrational state detected in all three observed
 bands, have similar peak brightnesses at $\sim100$ and $\sim345$ GHz
 ($T_{B,max}(\textrm{KCl v=0 13-12}) = 15.3\pm0.9$ K and $T_{B,max}(\textrm{KCl
-v=0 45-44}) = 9.7\pm1.8$ K).  However, at temperatures $T_{ex} > 140$ K, 
-the expected intensity of the higher frequency line is greater, and at
-the high observed vibrational temperatures $T_{vib} \sim 1000$ K, $T_{B}(\textrm{KCl
-v=0 45-44}) \approx 9 \times T_{B}(\textrm{KCl v=0 13-12})$.
+v=0 45-44}) = 9.7\pm1.8$ K).  
+% However, at temperatures $T_{ex} > 140$ K, 
+% the expected intensity of the higher frequency line is expected to be greater, and at
+% the high observed vibrational temperatures $T_{vib} \sim 1000$ K, 
+If the rotational excitation temperature $T_{ex}$ were comparable
+with the observed vibrational excitation temperatures $T_{vib} \sim 1000$ K, 
+the 45-44 transition would be 9 times as bright as the 13-12 transition.
+% $T_{B}(\textrm{KCl
+% v=0 45-44}) \approx 9 \times T_{B}(\textrm{KCl v=0 13-12})$.
 If we assume a dust opacity index $\beta=2$,
-which is conservative in that it provides the greatest difference in opacity
-between the two frequencies, the dust opacity required to produce the observed ratio
-is $\tau_{345 \textrm{GHz}} = 2.8$ and $\tau_{100 \textrm{GHz}} = 0.2$.  These optical
+which is conservative in that it provides the greatest difference in extinction
+between the two frequencies, the dust opacities required to produce the observed line ratio
+are $\tau_{345 \textrm{GHz}} = 2.8$ and $\tau_{100 \textrm{GHz}} = 0.2$.  These optical
 depth differences in the dust would result in a substantially ($\approx4\times$) higher 
-dust brightness at 0.85 \um than at 3 mm, which is not observed.  We therefore
-rule out dust opacity within the disk as an explanation for the temperature
-discrepancy.
+dust brightness at 0.85 \um than at 3 mm, which is not observed.
 }
+
+%%  The continuum images are consistent with Tb in B6
+%%  4x Tb in B3 at the peak of the moment0 image of salt
+%% emission.
+
+%which is not observed.  We therefore
+%rule out dust opacity within the disk as an explanation for %the temperature
+%discrepancy.
+
 
 % resolution_comparison_nacl.py
 \referee{
-Finally, changes in dust opacity could affect which salt-emitting regions we
-are able to observe.  If the dust changes from optically thin at long
-wavelengths, letting through all of the salt emission, to optically thick at
-shorter wavelengths, we would not detect signal at all from some regions, such
-as the hotter inner disk, and therefore receive a biased view of the rotational
-temperatures.  We cannot strictly rule this possibility out because such
-obscuration can occur on sub-beam scales.  However, the morphology of the salt
-lines does not change with frequency.  Figure \ref{fig:resolutioncomparison}
-shows a selected salt line from each of the observed frequency windows, as in
-Figure \ref{fig:spatial}, convolved to a common resolution.  If selective
-obscuration was a significant effect, we would expect to see progressively less
+% Finally, changes in dust opacity could affect which salt-emitting regions we
+% are able to observe.  If the dust changes from optically thin at long
+% wavelengths, letting through all of the salt emission, to optically thick at
+% shorter wavelengths, we would not detect signal at all from some regions, such
+% as the hotter inner disk, and therefore receive a biased view of the rotational
+% temperatures.  We cannot strictly rule this possibility out because such
+% obscuration can occur on sub-beam scales. 
+While we cannot rule out the possibility that dust obscuration on sub-beam scales
+preferentially blocks our view of some of the high frequency salt emission, there
+is little evidence that the morphology of the emission region changes appreciably with frequency.
+% However, the morphology of the salt
+% lines does not change with frequency.  
+Figure \ref{fig:resolutioncomparison}
+shows the images from Figure \ref{fig:spatial}, of a salt line in each frequency band,
+% selected  salt line from each of the observed frequency windows, as in
+% Figure \ref{fig:spatial}, 
+convolved to a common resolution.  If selective
+obscuration were a significant effect, we would expect to see progressively less
 emission at higher frequencies, or perhaps missing emission at certain
 locations at higher frequencies.  There is a gap in the emission from the
 southwest part of the disk at 1.4 mm that becomes slightly more pronounced at
-0.87 mm, and the southeast end of the disk is brighter at 1.4 mm than at either
-3 mm or 0.87 mm, but overall the morphology is similar in all wavebands when
-viewed at the same resolution.  We attribute the remaining residuals to the
-different vibrational and rotational states selected for this comparison.
+0.87 mm,
+%% rlp: what do you mean by the southeast 'end' of the disk?
+% and the southeast end of the disk is brighter at 1.4 mm than at either
+% 3 mm or 0.87 mm, 
+but overall the morphology is similar in all wavebands when
+viewed at the same resolution.  
+% We attribute the remaining residuals to the
+% different vibrational and rotational states selected for this comparison.
 }
 
 % resolution_comparison_nacl.py
@@ -830,7 +859,6 @@ the bottom row shows the difference images $T_{B,3 \mathrm{mm}} - T_{B, 1.4
 }
 \label{fig:resolutioncomparison}
 \end{figure*}
-
 
 
 \bigskip
