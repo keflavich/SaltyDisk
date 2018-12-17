@@ -282,7 +282,7 @@ detections of about 60 lines, up to the v=6 vibrational level.
 
 The majority of the NaCl and KCl lines that we detected are in excited
 vibrational states.  Although transitions in higher vibrational states were
-measured, and some reported, in \citet{Caris2004a}, these did not provide the
+measured, and some reported, in \citet{Caris2004a}, they did not provide the
 complete catalogs needed for this analysis, nor to our knowledge are these
 catalogues available in any of the standard online databases \citep[i.e., CDMS,
 SLAIM, JPL;][]{Muller2005a,Lovas2005b,Pickett1998a}.  We obtained the KCl
@@ -314,7 +314,7 @@ the laboratory.
 
 In using these catalogs, we found a systematic discrepancy between the rest
 frequencies reported by \citet{Barton2014a}, and those given by
-\citet{Caris2004a} and \citet{Caris2002a} and the catalogs generated from them:
+\citet{Caris2004a} and \citet{Caris2002a}:
 the KCl lines appear to be systematically offset by $\sim$15-20 \kms in the
 Barton catalog.  The Barton data are also discrepant with the more recent
 \citet{Cabezas2016a} work that cataloged only NaCl lines. The offset is a
@@ -323,7 +323,7 @@ resulted from an incorrect rotational and/or distortion constant.  We correct
 for this error by performing a bilinear fit in frequency as a function of $v_u$
 and $J_u$.  In the transitions available in both catalogs the resulting
 frequency differences are generally $<0.1$ \kms, which is more than sufficient
-for a reliable match to our observational spectra.  We then applied these
+for a reliable match to our spectra.  We then applied these
 fitted models to the higher-$v$ states tabulated by Barton to get corrected
 rest frequencies for KCl, while for NaCl we used the \citet{Cabezas2016a}
 values.  We note that the values printed in \citet{Barton2014a} differ from
@@ -577,7 +577,10 @@ $10^{-10}$~cm$^3$ \pers.  Making the usual assumption that the collision rates
 with \hh are similar to those for He, we used RADEX \citep{van-der-Tak2007a} to
 examine the excitation \footnote{The RADEX-compatible molecular data file
 incorporating these coefficients is available from
-\url{https://github.com/keflavich/SaltyDisk/blob/\githash/nacl.dat}}.
+\url{https://github.com/keflavich/SaltyDisk/blob/\githash/nacl.dat}.
+\referee{We used the \texttt{pyradex} wrapper of RADEX for these
+calculations (\url{https://github.com/keflavich/pyradex/}).}
+}.
 % For T=100 K, $\delta v=1$ \kms \perpc, $N_{NaCl}=10^{12}$ \persc,
 % \footnote{\rlp{presumably,
 % the fractional abundance doesn't matter when one is computing critical density;
@@ -899,23 +902,20 @@ destroying the grain cores are present.
 Since the salts are detected close to but above the disk midplane, the
 grains must be sputtered very rapidly after being launched from the disk surface.
 The lack of salt and SiO emission in the disk midplane may be because these
-molecules are not in the gas phase at all in the midplane, although radiative
-transfer can also easily explain their non-detection (i.e., the continuum
-background is the same intensity as the emission lines).
+molecules are not in the gas phase at all in the midplane.  Alternatively,
+radiative transfer can explain their non-detection, i.e., if the continuum
+background is the same intensity as the emission lines.
 
 \referee{
-% In this model, both SiO and the salts are in the gas phase outside of the disk
-% midplane, where we assume they are incorporated into dust grains.  However, the
-Although in this model both SiO and NaCl are released from grains at the
-base of the outflow,
-% SiO and NaCl have different morphology: 
-low-J SiO lines are seen throughout the
-outflow at very high elevations above the disk, while the salt lines are
-limited to $\lesssim 30$ AU from the midplane.  Even the low-J salt lines,
-which can be excited at similar modest densities ($n\sim10^4$ to $10^6$
-\percc), are not observed at high elevations.  Excitation therefore cannot
+In this model, both SiO and the salts are in the gas phase above the disk
+midplane. 
+However, while low-J SiO lines are seen throughout the outflow at very high
+elevations above the disk, the salt lines are limited to $\lesssim 30$ AU from
+the midplane.  Even the low-J salt lines, which can be excited at the same
+modest densities required to excite SiO  ($n\sim10^4$ to $10^6$ \percc), are
+not observed at high elevations.  Excitation therefore cannot
 explain the morphological difference between SiO and the salts, and instead we
-infer that they are chemically distinct.  Possibilities include that the salts
+infer that they are chemically distinct.  Possible explanations are that the salts
 deplete back onto grains as they are entrained in the outflow, they react to
 form other molecules, or they dissociate into atomic form while SiO remains
 molecular.
@@ -928,7 +928,7 @@ molecular.
 Gas-phase formation of NaCl and KCl is possible from ionized Na and K.
 Potassium and sodium have similar first ionization potentials at 4.34 and 5.14
 eV, respectively.  These atoms would be nearly fully ionized between 1500-2000
-K at a density of $10^6$ \percc (Aluminum has a higher first ionization
+K at a density of $10^6$ \percc (aluminum has a higher first ionization
 potential of 5.99 eV, and so is ionized at a few hundred K higher temperatures
 than sodium).  These ions react with HCl to form NaCl and KCl.  However, at
 present, only the inner $<20$ AU region, which is currently unresolved, clearly
@@ -941,7 +941,7 @@ that hot inner region is being transported outward, which seems unlikely since
 there is a bulk outflow lifting material off of the disk, or the disk was
 previously substantially warmer.  Under the dynamical formation scenario of the
 disk, in which it is the remnant of a previously larger disk from the
-\sourcei-BN interaction \citep{Bally2017a,Luhman2017a}, a great deal of kinetic
+\sourcei-BN interaction \citep{Bally2017a,Luhman2017a,Kim2018f},  
 energy was released as the disk re-settled into its current apparently smooth
 state, which could have resulted in much higher gas temperatures over the last
 few hundred years.  This scenario would imply that the observable state of NaCl
@@ -1028,7 +1028,7 @@ representative of the class of high-mass protostars with disks; if the latter,
 these lines and potentially many others can be used to probe the radiation
 environment of extremely embedded high-mass protostars.  An obvious next step
 is to search for these lines in other resolved disks around high-mass
-protostars \citep[e.g.  HH80/81;][]{Girart2017a}.  These species are
+protostars \citep[e.g.,  HH80/81;][]{Girart2017a}.  These species are
 particularly interesting for future millimeter and centimeter wavelength
 observatories like the ngVLA and SKA, since they have lower-J transitions into
 the few centimeter range, wavelengths at which the dust is very likely
@@ -1107,6 +1107,7 @@ from the
 \texttt{radio-astro-tools} package
 (\url{radio-astro-tools.github.io}), \texttt{astropy}
 \citep{Astropy-Collaboration2013a},
+\texttt{pyradex} \url{https://github.com/keflavich/pyradex/},
 \texttt{scipy} \citep{Scipy2001},
 \texttt{numpy} \citep{Numpy2006a},
 \texttt{matplotlib} \citep{Matplotlib},
