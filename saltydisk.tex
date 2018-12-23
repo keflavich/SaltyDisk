@@ -408,7 +408,7 @@ has an inner cutoff $\approx35-40$ AU and an outer cutoff $\approx55-60$~AU.
 
 % disk_predictions.py
 The equilibrium temperature in this radius range can be computed assuming the central
-source has a luminosity $L=10^4 \lsun = 4 \pi r^2 \sigma_{SB} T^4 $, where we
+source has a luminosity $L=10^4 \lsun = 4 \pi r^2 \sigma_{SB} T^4$ \referee{($T_*=4000$ K, $R_*=210$ \rsun)}, where we
 solve for temperature with $r$ at the inner and outer radius, giving $T_{eq} =
 500-670$ K for $r=35-60$ AU, assuming the disk intercepts all of the starlight
 at this radius.  More realistically, providing the opposite limiting case,
@@ -423,13 +423,13 @@ $\gtrsim500$ K.
 \begin{figure*}[!htp]
 \includegraphics[scale=1,width=2.25in]{figures/OrionSourceI_NaClv=3_7-6_robust0.5.maskedclarkclean10000_medsub_K_peak_offset_contours.pdf}
 \includegraphics[scale=1,width=2.25in]{figures/OrionSourceI_NaClv=1_18-17_robust0.5.maskedclarkclean10000_medsub_K_peak_offset_contours.pdf}
-\includegraphics[scale=1,width=2.25in]{figures/OrionSourceI_NaClv=2_26-25_robust0.5.maskedclarkclean10000_medsub_K_peak_offset_contours.pdf}
+\includegraphics[scale=1,width=2.25in]{figures/OrionSourceI_NaClv=2_26-25_robust0.5.maskedclarkclean10000_medsub_K_peak_offset_B6cont_contours.pdf}
 \caption{Peak intensity images of NaCl lines in each band showing the spatial
 distribution of the emission.  From left to right, the lines are: 87.26 GHz
 NaCl v=3 J=7-6, 232.51 GHz NaCl v=1 J=18-17, and 333.01 GHz NaCl v=2 J=26-25.
 These are the brightest uncontaminated lines in each of their observing bands.
 The red contours show the Band 6 226 GHz continuum at levels of 50, 300, and 500 K.
-White contours are shown at \referee{50 and 100 K (left), 50, 100, and 150 K (center),
+White contours are shown at \referee{50 and 100 K (left), 50, 100,  150, and 200 K (center),
 and 150, 250, and 350 K (right)}.
 The red and blue ellipses show the beams for the continuum and the line emission,
 respectively.  The beam sizes are
@@ -671,6 +671,10 @@ K blackbody representing the star, plus a strong Gaussian feature centered at
 are highly excited and exhibit a vibrational temperature significantly higher
 than the rotational temperature seen within any vibrational state.
 We show one example model in Figure \ref{fig:naclexcitationmodel}.
+This toy model illustrates that it is possible, via radiative excitation, to obtain level
+population ratios similar to those observed, but only with a peculiar radiation field\referee{; similar
+experiments exploring a range of physical parameters with a blackbody radiation field could not reproduce
+the different vibrational and rotational temperatures}.
 
 % radiation_field_tests.py
 \begin{figure*}[!htp]
@@ -685,10 +689,6 @@ The black dashed line shows a fit to the J=8 transitions of all vibrational stat
 $\sim1000$ K temperature.  The red dashed line shows a fit to the observed $v=1$ lines, obtaining a
 much lower $\sim100$ K temperature.  The vertical scaling, the column density, is arbitrary\referee{, i.e., it
 does not represent a fit to the data; the optical depths of the observed lines range from $\sim0.25$ to $\sim1.5$}.
-This toy model illustrates that it is possible, via radiative excitation, to obtain level
-population ratios similar to those observed, but only with a peculiar radiation field\referee{; similar
-experiments exploring a range of physical parameters with a blackbody radiation field could not reproduce
-the different vibrational and rotational temperatures}.
 }
 \label{fig:naclexcitationmodel}
 \end{figure*}
