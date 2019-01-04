@@ -19,7 +19,7 @@ print("ARGS: ",args)
 
 ppath='/Users/adam/work/orion/alma_lb/paper_salts'
 paper_name = 'saltydisk'
-paper_name = 'science'
+#paper_name = 'science'
 file = open(os.path.join(ppath,paper_name+'.tex'),'r')
 figlistfile = open(os.path.join(ppath, 'figure_list.txt'), 'w')
 full_figure_list = []
